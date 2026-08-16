@@ -177,6 +177,10 @@ svg{display:block; width:100%; height:auto; overflow:visible}
 
 footer{border-top:1px solid var(--rule); padding:22px 0 40px; font-size:11.5px; color:var(--muted); display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap}
 footer b{color:var(--burgundy); font-weight:500}
+/* Footer links inherit the footer's own colour and only pick up an underline on
+   hover, so the row still reads as one quiet line rather than three links. */
+footer a{color:inherit; text-decoration:none; border-bottom:1px solid transparent}
+footer a:hover{color:var(--ink); border-bottom-color:currentColor}
 
 @media (max-width:920px){
   .g2,.g3{grid-template-columns:1fr}
@@ -410,8 +414,9 @@ footer b{color:var(--burgundy); font-weight:500}
 </main>
 
 <footer class="wrap">
-  <span>Open to Buy · the season in flight · <b>Astrodata</b></span>
+  <span>Open to Buy · the season in flight · <a href="https://astrodata.us" target="_blank" rel="noopener"><b>Astrodata</b></a></span>
   <span id="foot-source">—</span>
+  <a href="https://design.wagabaza.com" target="_blank" rel="noopener">Design System</a>
 </footer>
 
 <script>
