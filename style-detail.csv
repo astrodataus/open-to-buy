@@ -1,0 +1,600 @@
+style_month.style_key,style_month.style_name,style_month.print_name,style_month.division,style_month.department,style_month.dept_key,style_month.class_name,style_month.season,style_month.lifecycle,style_month.channel,style_month.fiscal_year,style_month.units_sold,style_month.sales_dollars,style_month.on_hand_units,style_month.on_order_units
+ST-0085,Strawberry Fields Maxi Dress,Strawberry Fields,Women,Dresses,Women Dresses,Maxi Dress,Summer,New,Ecommerce,2026,1860,289976.29,2826,1466
+ST-0087,Ditsy Rose Day Dress,Ditsy Rose,Women,Dresses,Women Dresses,Day Dress,Spring,New,Ecommerce,2025,1839,242947.11,2974,1865
+ST-0086,Autumn Gingham Maxi Dress,Autumn Gingham,Women,Dresses,Women Dresses,Maxi Dress,Fall,New,Ecommerce,2025,1452,224871.19,2076,643
+ST-0088,Nantucket Stripe Day Dress,Nantucket Stripe,Women,Dresses,Women Dresses,Day Dress,Summer,New,Ecommerce,2025,1559,220231.69,2102,721
+ST-0085,Strawberry Fields Maxi Dress,Strawberry Fields,Women,Dresses,Women Dresses,Maxi Dress,Summer,New,Ecommerce,2025,1347,200590.49,1479,688
+ST-0086,Autumn Gingham Maxi Dress,Autumn Gingham,Women,Dresses,Women Dresses,Maxi Dress,Fall,New,Ecommerce,2026,1248,196675.47,2390,1946
+ST-0001,Snowdrop Party Dress,Snowdrop,Girls,Dresses,Girls Dresses,Party Dress,Holiday,New,Ecommerce,2026,1936,170030.63,3438,1578
+ST-0087,Ditsy Rose Day Dress,Ditsy Rose,Women,Dresses,Women Dresses,Day Dress,Spring,New,Ecommerce,2026,1268,161608.14,2276,1048
+ST-0084,Tulip Garden Maxi Dress,Tulip Garden,Women,Dresses,Women Dresses,Maxi Dress,Spring,New,Ecommerce,2025,1079,157014.71,2108,1351
+ST-0005,Palm Frond Maxi Dress,Palm Frond,Girls,Dresses,Girls Dresses,Maxi Dress,Summer,New,Ecommerce,2025,1779,151781.48,3013,1957
+ST-0086,Autumn Gingham Maxi Dress,Autumn Gingham,Women,Dresses,Women Dresses,Maxi Dress,Fall,New,Wholesale,2025,1261,150705.65,2435,656
+ST-0088,Nantucket Stripe Day Dress,Nantucket Stripe,Women,Dresses,Women Dresses,Day Dress,Summer,New,Wholesale,2025,1350,141902.28,2408,1646
+ST-0006,Winter Fair Isle Maxi Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Maxi Dress,Holiday,New,Ecommerce,2026,1724,138462.8,1886,406
+ST-0084,Tulip Garden Maxi Dress,Tulip Garden,Women,Dresses,Women Dresses,Maxi Dress,Spring,New,Retail Stores,2026,942,135656.95,1403,749
+ST-0004,Winter Fair Isle Day Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Day Dress,Holiday,New,Ecommerce,2025,1425,133109.99,2191,1266
+ST-0088,Nantucket Stripe Day Dress,Nantucket Stripe,Women,Dresses,Women Dresses,Day Dress,Summer,New,Retail Stores,2026,914,128293.21,1296,563
+ST-0088,Nantucket Stripe Day Dress,Nantucket Stripe,Women,Dresses,Women Dresses,Day Dress,Summer,New,Retail Stores,2025,875,123855.88,1068,627
+ST-0001,Snowdrop Party Dress,Snowdrop,Girls,Dresses,Girls Dresses,Party Dress,Holiday,New,Ecommerce,2025,1414,123377.64,1792,492
+ST-0004,Winter Fair Isle Day Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Day Dress,Holiday,New,Ecommerce,2026,1300,123323.67,1272,702
+ST-0088,Nantucket Stripe Day Dress,Nantucket Stripe,Women,Dresses,Women Dresses,Day Dress,Summer,New,Ecommerce,2026,841,113802.32,1649,442
+ST-0006,Winter Fair Isle Maxi Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Maxi Dress,Holiday,New,Ecommerce,2025,1467,113735.55,2627,687
+ST-0094,Snowdrop Tunic,Snowdrop,Women,Tops,Women Tops,Tunic,Holiday,New,Ecommerce,2025,1369,110563.03,2036,686
+ST-0005,Palm Frond Maxi Dress,Palm Frond,Girls,Dresses,Girls Dresses,Maxi Dress,Summer,New,Ecommerce,2026,1268,109459.36,2360,1845
+ST-0038,Snowdrop Quilted Jacket,Snowdrop,Girls,Outerwear,Girls Outerwear,Quilted Jacket,Holiday,New,Ecommerce,2026,978,108562.95,1131,136
+ST-0085,Strawberry Fields Maxi Dress,Strawberry Fields,Women,Dresses,Women Dresses,Maxi Dress,Summer,New,Retail Stores,2025,692,107665.92,1158,674
+ST-0002,Strawberry Fields Day Dress,Strawberry Fields,Girls,Dresses,Girls Dresses,Day Dress,Summer,New,Ecommerce,2025,1237,107629.91,1944,849
+ST-0002,Strawberry Fields Day Dress,Strawberry Fields,Girls,Dresses,Girls Dresses,Day Dress,Summer,New,Ecommerce,2026,1211,106891.43,2247,1395
+ST-0084,Tulip Garden Maxi Dress,Tulip Garden,Women,Dresses,Women Dresses,Maxi Dress,Spring,New,Retail Stores,2025,715,103880.62,950,560
+ST-0084,Tulip Garden Maxi Dress,Tulip Garden,Women,Dresses,Women Dresses,Maxi Dress,Spring,New,Ecommerce,2026,684,98794.64,1295,796
+ST-0092,Winter Fair Isle Blouse,Winter Fair Isle,Women,Tops,Women Tops,Blouse,Holiday,New,Ecommerce,2025,1203,98421.11,1885,690
+ST-0058,Holiday Holly Two-Piece Set,Holiday Holly,Boys,Sets,Boys Sets,Two-Piece Set,Holiday,New,Ecommerce,2025,1308,97640.02,2429,1180
+ST-0089,Tulip Garden Blouse,Tulip Garden,Women,Tops,Women Tops,Blouse,Spring,New,Ecommerce,2026,1216,97044.28,1600,577
+ST-0056,Tulip Garden Two-Piece Set,Tulip Garden,Boys,Sets,Boys Sets,Two-Piece Set,Spring,New,Ecommerce,2026,1451,91962.57,2477,1192
+ST-0023,Acorn Toile Two-Piece Set,Acorn Toile,Girls,Sets,Girls Sets,Two-Piece Set,Fall,New,Ecommerce,2026,1191,87394.98,1759,421
+ST-0093,Strawberry Fields Tunic,Strawberry Fields,Women,Tops,Women Tops,Tunic,Summer,New,Ecommerce,2025,1095,85622.73,1735,1062
+ST-0038,Snowdrop Quilted Jacket,Snowdrop,Girls,Outerwear,Girls Outerwear,Quilted Jacket,Holiday,New,Ecommerce,2025,759,85509.5,717,309
+ST-0027,Candy Cane Stripe Romper,Candy Cane Stripe,Girls,Sets,Girls Sets,Romper,Holiday,New,Ecommerce,2026,1465,85094.42,2342,626
+ST-0026,Palm Frond Romper,Palm Frond,Girls,Sets,Girls Sets,Romper,Summer,New,Ecommerce,2025,1140,84754.58,1570,734
+ST-0086,Autumn Gingham Maxi Dress,Autumn Gingham,Women,Dresses,Women Dresses,Maxi Dress,Fall,New,Retail Stores,2025,528,83898.77,1226,657
+ST-0038,Snowdrop Quilted Jacket,Snowdrop,Girls,Outerwear,Girls Outerwear,Quilted Jacket,Holiday,New,Retail Stores,2026,713,83126.62,1516,865
+ST-0024,Winter Fair Isle Two-Piece Set,Winter Fair Isle,Girls,Sets,Girls Sets,Two-Piece Set,Holiday,Carryover,Ecommerce,2026,1063,82113.28,1258,267
+ST-0003,Autumn Gingham Day Dress,Autumn Gingham,Girls,Dresses,Girls Dresses,Day Dress,Fall,New,Ecommerce,2025,976,80609.36,2042,521
+ST-0038,Snowdrop Quilted Jacket,Snowdrop,Girls,Outerwear,Girls Outerwear,Quilted Jacket,Holiday,New,Retail Stores,2025,684,78611.27,1077,511
+ST-0087,Ditsy Rose Day Dress,Ditsy Rose,Women,Dresses,Women Dresses,Day Dress,Spring,New,Retail Stores,2026,609,78526.46,981,359
+ST-0087,Ditsy Rose Day Dress,Ditsy Rose,Women,Dresses,Women Dresses,Day Dress,Spring,New,Wholesale,2026,764,78105.86,1161,711
+ST-0026,Palm Frond Romper,Palm Frond,Girls,Sets,Girls Sets,Romper,Summer,New,Ecommerce,2026,1077,77710.75,1935,826
+ST-0022,Cherry Blossom Two-Piece Set,Cherry Blossom,Girls,Sets,Girls Sets,Two-Piece Set,Spring,New,Ecommerce,2025,1098,77271.68,1850,1127
+ST-0003,Autumn Gingham Day Dress,Autumn Gingham,Girls,Dresses,Girls Dresses,Day Dress,Fall,New,Ecommerce,2026,920,77187.49,1554,683
+ST-0087,Ditsy Rose Day Dress,Ditsy Rose,Women,Dresses,Women Dresses,Day Dress,Spring,New,Retail Stores,2025,570,77175.91,804,412
+ST-0085,Strawberry Fields Maxi Dress,Strawberry Fields,Women,Dresses,Women Dresses,Maxi Dress,Summer,New,Retail Stores,2026,503,76614.77,643,180
+ST-0090,Palm Frond Blouse,Palm Frond,Women,Tops,Women Tops,Blouse,Summer,New,Ecommerce,2025,956,76249.71,1629,786
+ST-0002,Strawberry Fields Day Dress,Strawberry Fields,Girls,Dresses,Girls Dresses,Day Dress,Summer,New,Retail Stores,2026,879,75686.78,1707,933
+ST-0006,Winter Fair Isle Maxi Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Maxi Dress,Holiday,New,Wholesale,2025,1247,75409.59,2023,660
+ST-0085,Strawberry Fields Maxi Dress,Strawberry Fields,Women,Dresses,Women Dresses,Maxi Dress,Summer,New,Wholesale,2025,627,74934.53,467,189
+ST-0058,Holiday Holly Two-Piece Set,Holiday Holly,Boys,Sets,Boys Sets,Two-Piece Set,Holiday,New,Ecommerce,2026,1041,74477.52,1407,812
+ST-0038,Snowdrop Quilted Jacket,Snowdrop,Girls,Outerwear,Girls Outerwear,Quilted Jacket,Holiday,New,Wholesale,2025,812,73658.79,1158,439
+ST-0100,Acorn Toile PJ Set,Acorn Toile,Women,Sleepwear,Women Sleepwear,PJ Set,Fall,New,Ecommerce,2026,881,73486.41,1312,638
+ST-0086,Autumn Gingham Maxi Dress,Autumn Gingham,Women,Dresses,Women Dresses,Maxi Dress,Fall,New,Retail Stores,2026,471,73408.52,958,642
+ST-0024,Winter Fair Isle Two-Piece Set,Winter Fair Isle,Girls,Sets,Girls Sets,Two-Piece Set,Holiday,Carryover,Ecommerce,2025,1038,73256.75,2102,1421
+ST-0029,Hydrangea Rash Guard Set,Hydrangea,Girls,Swim,Girls Swim,Rash Guard Set,Spring,New,Ecommerce,2025,1291,72159.58,2138,1222
+ST-0090,Palm Frond Blouse,Palm Frond,Women,Tops,Women Tops,Blouse,Summer,New,Ecommerce,2026,889,71962.82,1602,985
+ST-0038,Snowdrop Quilted Jacket,Snowdrop,Girls,Outerwear,Girls Outerwear,Quilted Jacket,Holiday,New,Wholesale,2026,792,71844.54,1557,837
+ST-0046,Lemon Grove Polo,Lemon Grove,Boys,Tops,Boys Tops,Polo,Summer,New,Ecommerce,2026,1272,71301.96,1687,522
+ST-0014,Acorn Toile Cardigan,Acorn Toile,Girls,Tops,Girls Tops,Cardigan,Fall,New,Ecommerce,2025,1267,71264.74,1491,710
+ST-0022,Cherry Blossom Two-Piece Set,Cherry Blossom,Girls,Sets,Girls Sets,Two-Piece Set,Spring,New,Ecommerce,2026,986,71026.46,1814,1336
+ST-0092,Winter Fair Isle Blouse,Winter Fair Isle,Women,Tops,Women Tops,Blouse,Holiday,New,Ecommerce,2026,805,70826.64,1161,517
+ST-0004,Winter Fair Isle Day Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Day Dress,Holiday,New,Retail Stores,2026,732,70717.16,962,582
+ST-0003,Autumn Gingham Day Dress,Autumn Gingham,Girls,Dresses,Girls Dresses,Day Dress,Fall,New,Retail Stores,2025,813,70560.97,1130,780
+ST-0093,Strawberry Fields Tunic,Strawberry Fields,Women,Tops,Women Tops,Tunic,Summer,New,Ecommerce,2026,833,70285.42,1647,932
+ST-0099,Strawberry Fields PJ Set,Strawberry Fields,Women,Sleepwear,Women Sleepwear,PJ Set,Summer,New,Ecommerce,2026,1044,70082.49,1230,369
+ST-0091,Wildflower Blouse,Wildflower,Women,Tops,Women Tops,Blouse,Fall,New,Ecommerce,2026,738,69691.36,1230,245
+ST-0004,Winter Fair Isle Day Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Day Dress,Holiday,New,Wholesale,2025,980,69141.74,1351,586
+ST-0089,Tulip Garden Blouse,Tulip Garden,Women,Tops,Women Tops,Blouse,Spring,New,Ecommerce,2025,886,68917.31,1582,552
+ST-0014,Acorn Toile Cardigan,Acorn Toile,Girls,Tops,Girls Tops,Cardigan,Fall,New,Ecommerce,2026,1144,68518.61,1973,1434
+ST-0003,Autumn Gingham Day Dress,Autumn Gingham,Girls,Dresses,Girls Dresses,Day Dress,Fall,New,Wholesale,2026,1028,68087.32,838,256
+ST-0003,Autumn Gingham Day Dress,Autumn Gingham,Girls,Dresses,Girls Dresses,Day Dress,Fall,New,Retail Stores,2026,759,66290.31,742,406
+ST-0077,Pomegranate PJ Set,Pomegranate,Baby,Sleepwear,Baby Sleepwear,PJ Set,Fall,New,Ecommerce,2026,1550,65919.93,2015,650
+ST-0001,Snowdrop Party Dress,Snowdrop,Girls,Dresses,Girls Dresses,Party Dress,Holiday,New,Wholesale,2026,951,65726.27,1151,162
+ST-0009,Acorn Toile Blouse,Acorn Toile,Girls,Tops,Girls Tops,Blouse,Fall,New,Ecommerce,2026,1345,65401.33,2068,826
+ST-0007,Cherry Blossom Blouse,Cherry Blossom,Girls,Tops,Girls Tops,Blouse,Spring,Carryover,Ecommerce,2026,1197,65279.83,1678,549
+ST-0006,Winter Fair Isle Maxi Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Maxi Dress,Holiday,New,Retail Stores,2025,837,65078.8,1080,691
+ST-0048,Candy Cane Stripe Polo,Candy Cane Stripe,Boys,Tops,Boys Tops,Polo,Holiday,New,Ecommerce,2026,1246,64383.95,1511,966
+ST-0096,Pomegranate Short,Pomegranate,Women,Bottoms,Women Bottoms,Short,Fall,New,Ecommerce,2026,919,64181.58,1727,568
+ST-0054,Acorn Toile Pant,Acorn Toile,Boys,Bottoms,Boys Bottoms,Pant,Fall,New,Ecommerce,2025,1346,63934.98,2749,1891
+ST-0100,Acorn Toile PJ Set,Acorn Toile,Women,Sleepwear,Women Sleepwear,PJ Set,Fall,New,Retail Stores,2025,768,63859.45,1371,1034
+ST-0002,Strawberry Fields Day Dress,Strawberry Fields,Girls,Dresses,Girls Dresses,Day Dress,Summer,New,Wholesale,2026,943,63815.46,1255,386
+ST-0004,Winter Fair Isle Day Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Day Dress,Holiday,New,Wholesale,2026,904,63779.73,1078,357
+ST-0097,Holiday Holly Short,Holiday Holly,Women,Bottoms,Women Bottoms,Short,Holiday,New,Ecommerce,2025,958,63647.01,1095,658
+ST-0091,Wildflower Blouse,Wildflower,Women,Tops,Women Tops,Blouse,Fall,New,Wholesale,2025,898,63356.41,1670,1063
+ST-0077,Pomegranate PJ Set,Pomegranate,Baby,Sleepwear,Baby Sleepwear,PJ Set,Fall,New,Ecommerce,2025,1495,63321.15,2748,1197
+ST-0060,Nantucket Stripe Swim Trunk,Nantucket Stripe,Boys,Swim,Boys Swim,Swim Trunk,Summer,Carryover,Ecommerce,2026,1007,61926.97,1628,901
+ST-0061,Garden Trellis Rash Guard Set,Garden Trellis,Boys,Swim,Boys Swim,Rash Guard Set,Spring,New,Ecommerce,2026,1134,61458.2,1566,502
+ST-0094,Snowdrop Tunic,Snowdrop,Women,Tops,Women Tops,Tunic,Holiday,New,Ecommerce,2026,777,61196.42,1442,551
+ST-0099,Strawberry Fields PJ Set,Strawberry Fields,Women,Sleepwear,Women Sleepwear,PJ Set,Summer,New,Ecommerce,2025,854,61158.99,1886,795
+ST-0098,Garden Trellis Pant,Garden Trellis,Women,Bottoms,Women Bottoms,Pant,Spring,New,Ecommerce,2025,952,61046.68,1625,702
+ST-0101,Winter Fair Isle PJ Set,Winter Fair Isle,Women,Sleepwear,Women Sleepwear,PJ Set,Holiday,Carryover,Retail Stores,2025,782,60189.58,1235,673
+ST-0096,Pomegranate Short,Pomegranate,Women,Bottoms,Women Bottoms,Short,Fall,New,Ecommerce,2025,938,59743.17,1637,735
+ST-0039,Seashell Button-Down,Seashell,Boys,Tops,Boys Tops,Button-Down,Summer,New,Ecommerce,2026,1197,58954.94,1788,808
+ST-0055,Candy Cane Stripe Pant,Candy Cane Stripe,Boys,Bottoms,Boys Bottoms,Pant,Holiday,Carryover,Ecommerce,2025,1366,58931.94,1575,699
+ST-0001,Snowdrop Party Dress,Snowdrop,Girls,Dresses,Girls Dresses,Party Dress,Holiday,New,Wholesale,2025,847,58538.54,1658,1412
+ST-0011,Lemon Grove Tee,Lemon Grove,Girls,Tops,Girls Tops,Tee,Summer,New,Ecommerce,2026,1171,58520.01,1452,724
+ST-0101,Winter Fair Isle PJ Set,Winter Fair Isle,Women,Sleepwear,Women Sleepwear,PJ Set,Holiday,Carryover,Wholesale,2025,990,58442.47,1398,495
+ST-0002,Strawberry Fields Day Dress,Strawberry Fields,Girls,Dresses,Girls Dresses,Day Dress,Summer,New,Retail Stores,2025,670,58364.56,1333,911
+ST-0006,Winter Fair Isle Maxi Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Maxi Dress,Holiday,New,Retail Stores,2026,706,58259.7,1082,67
+ST-0069,Autumn Gingham Coverall,Autumn Gingham,Baby,Rompers,Baby Rompers,Coverall,Fall,New,Ecommerce,2026,1288,57502.21,1956,842
+ST-0006,Winter Fair Isle Maxi Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Maxi Dress,Holiday,New,Wholesale,2026,948,57328.21,998,461
+ST-0032,Pomegranate PJ Set,Pomegranate,Girls,Sleepwear,Girls Sleepwear,PJ Set,Fall,New,Ecommerce,2026,1143,56852.45,1744,258
+ST-0001,Snowdrop Party Dress,Snowdrop,Girls,Dresses,Girls Dresses,Party Dress,Holiday,New,Retail Stores,2025,660,56791.36,1011,382
+ST-0090,Palm Frond Blouse,Palm Frond,Women,Tops,Women Tops,Blouse,Summer,New,Retail Stores,2025,733,56744.97,1072,476
+ST-0035,Palm Frond Nightgown,Palm Frond,Girls,Sleepwear,Girls Sleepwear,Nightgown,Summer,New,Ecommerce,2025,1086,56252.02,1818,665
+ST-0070,Winter Fair Isle Coverall,Winter Fair Isle,Baby,Rompers,Baby Rompers,Coverall,Holiday,New,Ecommerce,2026,1292,55709.91,2390,324
+ST-0042,Lemon Grove Tee,Lemon Grove,Boys,Tops,Boys Tops,Tee,Summer,New,Ecommerce,2025,1055,55349.88,1397,534
+ST-0042,Lemon Grove Tee,Lemon Grove,Boys,Tops,Boys Tops,Tee,Summer,New,Ecommerce,2026,1022,55052.77,1469,1017
+ST-0005,Palm Frond Maxi Dress,Palm Frond,Girls,Dresses,Girls Dresses,Maxi Dress,Summer,New,Wholesale,2025,831,55039.46,1065,495
+ST-0013,Hydrangea Cardigan,Hydrangea,Girls,Tops,Girls Tops,Cardigan,Spring,New,Ecommerce,2025,1155,54767.94,1683,960
+ST-0095,Tulip Garden Short,Tulip Garden,Women,Bottoms,Women Bottoms,Short,Spring,New,Retail Stores,2025,786,54444.51,1255,836
+ST-0057,Wildflower Two-Piece Set,Wildflower,Boys,Sets,Boys Sets,Two-Piece Set,Fall,New,Ecommerce,2026,940,54340.9,1449,712
+ST-0095,Tulip Garden Short,Tulip Garden,Women,Bottoms,Women Bottoms,Short,Spring,New,Ecommerce,2025,773,54174.26,1242,846
+ST-0025,Hydrangea Romper,Hydrangea,Girls,Sets,Girls Sets,Romper,Spring,New,Ecommerce,2025,908,54173.15,1887,335
+ST-0008,Seashell Blouse,Seashell,Girls,Tops,Girls Tops,Blouse,Summer,New,Ecommerce,2025,987,54127.22,1467,374
+ST-0097,Holiday Holly Short,Holiday Holly,Women,Bottoms,Women Bottoms,Short,Holiday,New,Ecommerce,2026,853,53982.84,1531,507
+ST-0053,Strawberry Fields Pant,Strawberry Fields,Boys,Bottoms,Boys Bottoms,Pant,Summer,New,Ecommerce,2026,1266,53699.06,1912,797
+ST-0002,Strawberry Fields Day Dress,Strawberry Fields,Girls,Dresses,Girls Dresses,Day Dress,Summer,New,Wholesale,2025,792,53596.86,1751,637
+ST-0056,Tulip Garden Two-Piece Set,Tulip Garden,Boys,Sets,Boys Sets,Two-Piece Set,Spring,New,Wholesale,2026,1092,53456.46,1524,755
+ST-0091,Wildflower Blouse,Wildflower,Women,Tops,Women Tops,Blouse,Fall,New,Retail Stores,2025,576,53425.04,916,350
+ST-0050,Palm Frond Short,Palm Frond,Boys,Bottoms,Boys Bottoms,Short,Summer,New,Ecommerce,2025,1072,53297.89,1615,1076
+ST-0091,Wildflower Blouse,Wildflower,Women,Tops,Women Tops,Blouse,Fall,New,Ecommerce,2025,570,53284.67,1044,424
+ST-0004,Winter Fair Isle Day Dress,Winter Fair Isle,Girls,Dresses,Girls Dresses,Day Dress,Holiday,New,Retail Stores,2025,612,53264.38,910,65
+ST-0008,Seashell Blouse,Seashell,Girls,Tops,Girls Tops,Blouse,Summer,New,Ecommerce,2026,993,53252.95,1648,467
+ST-0046,Lemon Grove Polo,Lemon Grove,Boys,Tops,Boys Tops,Polo,Summer,New,Ecommerce,2025,946,53196.08,1476,871
+ST-0100,Acorn Toile PJ Set,Acorn Toile,Women,Sleepwear,Women Sleepwear,PJ Set,Fall,New,Retail Stores,2026,637,53120.04,1290,374
+ST-0023,Acorn Toile Two-Piece Set,Acorn Toile,Girls,Sets,Girls Sets,Two-Piece Set,Fall,New,Ecommerce,2025,730,53073.41,1338,550
+ST-0036,Autumn Gingham Nightgown,Autumn Gingham,Girls,Sleepwear,Girls Sleepwear,Nightgown,Fall,New,Ecommerce,2025,1213,52906.12,1887,700
+ST-0056,Tulip Garden Two-Piece Set,Tulip Garden,Boys,Sets,Boys Sets,Two-Piece Set,Spring,New,Ecommerce,2025,845,52384.94,909,118
+ST-0019,Garden Trellis Legging,Garden Trellis,Girls,Bottoms,Girls Bottoms,Legging,Spring,New,Ecommerce,2025,1264,52379.84,2183,1517
+ST-0020,Acorn Toile Legging,Acorn Toile,Girls,Bottoms,Girls Bottoms,Legging,Fall,New,Ecommerce,2025,1125,51969.91,1956,1358
+ST-0052,Garden Trellis Pant,Garden Trellis,Boys,Bottoms,Boys Bottoms,Pant,Spring,New,Ecommerce,2025,1117,51805.19,1759,768
+ST-0059,Hydrangea Swim Trunk,Hydrangea,Boys,Swim,Boys Swim,Swim Trunk,Spring,New,Ecommerce,2025,963,51368.54,1285,909
+ST-0028,Tulip Garden One-Piece,Tulip Garden,Girls,Swim,Girls Swim,One-Piece,Spring,New,Ecommerce,2025,956,51344.52,1348,601
+ST-0075,Tulip Garden PJ Set,Tulip Garden,Baby,Sleepwear,Baby Sleepwear,PJ Set,Spring,New,Ecommerce,2025,1127,50850.22,1420,499
+ST-0045,Hydrangea Polo,Hydrangea,Boys,Tops,Boys Tops,Polo,Spring,New,Ecommerce,2026,897,50170.69,1211,339
+ST-0047,Wildflower Polo,Wildflower,Boys,Tops,Boys Tops,Polo,Fall,Carryover,Ecommerce,2026,1023,50001.39,2198,1214
+ST-0017,Seashell Short,Seashell,Girls,Bottoms,Girls Bottoms,Short,Summer,New,Ecommerce,2025,1211,49733.06,1558,839
+ST-0071,Tulip Garden Two-Piece Set,Tulip Garden,Baby,Sets,Baby Sets,Two-Piece Set,Spring,New,Ecommerce,2025,875,49726.63,1483,556
+ST-0062,Seashell Rash Guard Set,Seashell,Boys,Swim,Boys Swim,Rash Guard Set,Summer,New,Ecommerce,2026,963,49511.33,1227,264
+ST-0017,Seashell Short,Seashell,Girls,Bottoms,Girls Bottoms,Short,Summer,New,Ecommerce,2026,1175,49263.5,1908,1115
+ST-0075,Tulip Garden PJ Set,Tulip Garden,Baby,Sleepwear,Baby Sleepwear,PJ Set,Spring,New,Wholesale,2025,1420,49064.97,2134,629
+ST-0085,Strawberry Fields Maxi Dress,Strawberry Fields,Women,Dresses,Women Dresses,Maxi Dress,Summer,New,Wholesale,2026,409,48880.74,734,32
+ST-0021,Seashell Skirt,Seashell,Girls,Bottoms,Girls Bottoms,Skirt,Summer,New,Ecommerce,2025,1105,48880.05,1750,532
+ST-0015,Winter Fair Isle Cardigan,Winter Fair Isle,Girls,Tops,Girls Tops,Cardigan,Holiday,Carryover,Ecommerce,2026,1015,48842.78,1886,734
+ST-0100,Acorn Toile PJ Set,Acorn Toile,Women,Sleepwear,Women Sleepwear,PJ Set,Fall,New,Wholesale,2025,770,48781.66,1316,358
+ST-0026,Palm Frond Romper,Palm Frond,Girls,Sets,Girls Sets,Romper,Summer,New,Retail Stores,2025,693,48515.8,1215,315
+ST-0072,Strawberry Fields Two-Piece Set,Strawberry Fields,Baby,Sets,Baby Sets,Two-Piece Set,Summer,New,Ecommerce,2025,1078,48453.5,1784,746
+ST-0027,Candy Cane Stripe Romper,Candy Cane Stripe,Girls,Sets,Girls Sets,Romper,Holiday,New,Ecommerce,2025,821,48378.9,1036,526
+ST-0047,Wildflower Polo,Wildflower,Boys,Tops,Boys Tops,Polo,Fall,Carryover,Ecommerce,2025,984,48354.55,1524,825
+ST-0041,Hydrangea Tee,Hydrangea,Boys,Tops,Boys Tops,Tee,Spring,New,Ecommerce,2025,917,48123.01,1426,819
+ST-0005,Palm Frond Maxi Dress,Palm Frond,Girls,Dresses,Girls Dresses,Maxi Dress,Summer,New,Retail Stores,2026,563,47925.49,1092,426
+ST-0037,Holiday Holly Nightgown,Holiday Holly,Girls,Sleepwear,Girls Sleepwear,Nightgown,Holiday,Carryover,Ecommerce,2025,872,47878.88,1131,414
+ST-0012,Wildflower Tee,Wildflower,Girls,Tops,Girls Tops,Tee,Fall,New,Ecommerce,2025,1003,47844.08,2087,918
+ST-0036,Autumn Gingham Nightgown,Autumn Gingham,Girls,Sleepwear,Girls Sleepwear,Nightgown,Fall,New,Ecommerce,2026,1083,47426.78,1697,726
+ST-0033,Snowdrop PJ Set,Snowdrop,Girls,Sleepwear,Girls Sleepwear,PJ Set,Holiday,New,Ecommerce,2025,972,47338.45,1603,770
+ST-0045,Hydrangea Polo,Hydrangea,Boys,Tops,Boys Tops,Polo,Spring,New,Wholesale,2026,1093,47209.73,1595,963
+ST-0054,Acorn Toile Pant,Acorn Toile,Boys,Bottoms,Boys Bottoms,Pant,Fall,New,Wholesale,2026,1259,47127.9,2461,1182
+ST-0052,Garden Trellis Pant,Garden Trellis,Boys,Bottoms,Boys Bottoms,Pant,Spring,New,Ecommerce,2026,995,47011.67,1348,611
+ST-0005,Palm Frond Maxi Dress,Palm Frond,Girls,Dresses,Girls Dresses,Maxi Dress,Summer,New,Retail Stores,2025,523,46917.66,575,97
+ST-0094,Snowdrop Tunic,Snowdrop,Women,Tops,Women Tops,Tunic,Holiday,New,Retail Stores,2025,576,46838.83,1027,755
+ST-0062,Seashell Rash Guard Set,Seashell,Boys,Swim,Boys Swim,Rash Guard Set,Summer,New,Wholesale,2026,1198,46569.61,2213,1397
+ST-0034,Cherry Blossom Nightgown,Cherry Blossom,Girls,Sleepwear,Girls Sleepwear,Nightgown,Spring,New,Ecommerce,2026,893,46423.25,1460,354
+ST-0068,Strawberry Fields Coverall,Strawberry Fields,Baby,Rompers,Baby Rompers,Coverall,Summer,New,Ecommerce,2025,941,46328.03,940,317
+ST-0001,Snowdrop Party Dress,Snowdrop,Girls,Dresses,Girls Dresses,Party Dress,Holiday,New,Retail Stores,2026,508,46176.39,867,404
+ST-0059,Hydrangea Swim Trunk,Hydrangea,Boys,Swim,Boys Swim,Swim Trunk,Spring,New,Ecommerce,2026,875,45977.4,1694,1057
+ST-0063,Strawberry Fields PJ Set,Strawberry Fields,Boys,Sleepwear,Boys Sleepwear,PJ Set,Summer,New,Ecommerce,2025,896,45942.82,1611,820
+ST-0024,Winter Fair Isle Two-Piece Set,Winter Fair Isle,Girls,Sets,Girls Sets,Two-Piece Set,Holiday,Carryover,Retail Stores,2025,622,45877.08,1148,579
+ST-0037,Holiday Holly Nightgown,Holiday Holly,Girls,Sleepwear,Girls Sleepwear,Nightgown,Holiday,Carryover,Ecommerce,2026,846,45784.52,1432,295
+ST-0071,Tulip Garden Two-Piece Set,Tulip Garden,Baby,Sets,Baby Sets,Two-Piece Set,Spring,New,Wholesale,2026,991,45658.14,2166,1254
+ST-0064,Wildflower PJ Set,Wildflower,Boys,Sleepwear,Boys Sleepwear,PJ Set,Fall,New,Ecommerce,2025,928,45515.58,1207,560
+ST-0061,Garden Trellis Rash Guard Set,Garden Trellis,Boys,Swim,Boys Swim,Rash Guard Set,Spring,New,Wholesale,2026,1053,45482.02,2164,1291
+ST-0023,Acorn Toile Two-Piece Set,Acorn Toile,Girls,Sets,Girls Sets,Two-Piece Set,Fall,New,Wholesale,2025,809,45427.61,1693,737
+ST-0061,Garden Trellis Rash Guard Set,Garden Trellis,Boys,Swim,Boys Swim,Rash Guard Set,Spring,New,Ecommerce,2025,800,45420.74,1230,544
+ST-0075,Tulip Garden PJ Set,Tulip Garden,Baby,Sleepwear,Baby Sleepwear,PJ Set,Spring,New,Ecommerce,2026,998,45242.14,1063,437
+ST-0031,Strawberry Fields PJ Set,Strawberry Fields,Girls,Sleepwear,Girls Sleepwear,PJ Set,Summer,Carryover,Ecommerce,2026,943,45105.42,1466,605
+ST-0031,Strawberry Fields PJ Set,Strawberry Fields,Girls,Sleepwear,Girls Sleepwear,PJ Set,Summer,Carryover,Ecommerce,2025,996,44935.78,1923,444
+ST-0030,Nantucket Stripe Rash Guard Set,Nantucket Stripe,Girls,Swim,Girls Swim,Rash Guard Set,Summer,New,Ecommerce,2025,901,44910,1374,510
+ST-0050,Palm Frond Short,Palm Frond,Boys,Bottoms,Boys Bottoms,Short,Summer,New,Ecommerce,2026,941,44875.1,1843,1007
+ST-0065,Tulip Garden Bubble,Tulip Garden,Baby,Rompers,Baby Rompers,Bubble,Spring,New,Ecommerce,2025,938,44661.24,1351,552
+ST-0084,Tulip Garden Maxi Dress,Tulip Garden,Women,Dresses,Women Dresses,Maxi Dress,Spring,New,Wholesale,2025,400,44349.12,649,197
+ST-0060,Nantucket Stripe Swim Trunk,Nantucket Stripe,Boys,Swim,Boys Swim,Swim Trunk,Summer,Carryover,Wholesale,2026,961,44275.96,1723,829
+ST-0026,Palm Frond Romper,Palm Frond,Girls,Sets,Girls Sets,Romper,Summer,New,Wholesale,2026,766,44116.09,1066,346
+ST-0055,Candy Cane Stripe Pant,Candy Cane Stripe,Boys,Bottoms,Boys Bottoms,Pant,Holiday,Carryover,Ecommerce,2026,1054,43985.24,1449,997
+ST-0060,Nantucket Stripe Swim Trunk,Nantucket Stripe,Boys,Swim,Boys Swim,Swim Trunk,Summer,Carryover,Retail Stores,2026,734,43915.66,1095,301
+ST-0043,Pomegranate Tee,Pomegranate,Boys,Tops,Boys Tops,Tee,Fall,New,Ecommerce,2026,959,43892.84,1632,978
+ST-0029,Hydrangea Rash Guard Set,Hydrangea,Girls,Swim,Girls Swim,Rash Guard Set,Spring,New,Wholesale,2026,1016,43883.89,969,430
+ST-0027,Candy Cane Stripe Romper,Candy Cane Stripe,Girls,Sets,Girls Sets,Romper,Holiday,New,Wholesale,2025,951,43815.23,1263,712
+ST-0032,Pomegranate PJ Set,Pomegranate,Girls,Sleepwear,Girls Sleepwear,PJ Set,Fall,New,Ecommerce,2025,897,43806.53,1526,766
+ST-0070,Winter Fair Isle Coverall,Winter Fair Isle,Baby,Rompers,Baby Rompers,Coverall,Holiday,New,Ecommerce,2025,990,43743.52,1556,253
+ST-0023,Acorn Toile Two-Piece Set,Acorn Toile,Girls,Sets,Girls Sets,Two-Piece Set,Fall,New,Wholesale,2026,777,43630.72,1072,693
+ST-0089,Tulip Garden Blouse,Tulip Garden,Women,Tops,Women Tops,Blouse,Spring,New,Retail Stores,2026,556,43608.93,953,148
+ST-0067,Snowdrop Bubble,Snowdrop,Baby,Rompers,Baby Rompers,Bubble,Holiday,New,Ecommerce,2026,851,43517.99,1326,320
+ST-0030,Nantucket Stripe Rash Guard Set,Nantucket Stripe,Girls,Swim,Girls Swim,Rash Guard Set,Summer,New,Ecommerce,2026,878,43285.5,1102,579
+ST-0051,Autumn Gingham Short,Autumn Gingham,Boys,Bottoms,Boys Bottoms,Short,Fall,New,Ecommerce,2026,1084,43186.08,1830,648
+ST-0023,Acorn Toile Two-Piece Set,Acorn Toile,Girls,Sets,Girls Sets,Two-Piece Set,Fall,New,Retail Stores,2025,566,42879.36,869,268
+ST-0066,Seashell Bubble,Seashell,Baby,Rompers,Baby Rompers,Bubble,Summer,New,Ecommerce,2025,1009,42858.66,1647,735
+ST-0093,Strawberry Fields Tunic,Strawberry Fields,Women,Tops,Women Tops,Tunic,Summer,New,Retail Stores,2025,547,42797.35,1018,296
+ST-0011,Lemon Grove Tee,Lemon Grove,Girls,Tops,Girls Tops,Tee,Summer,New,Ecommerce,2025,898,42338.04,1199,579
+ST-0074,Pomegranate Footie,Pomegranate,Baby,Sleepwear,Baby Sleepwear,Footie,Fall,New,Ecommerce,2025,1034,42100.19,1700,568
+ST-0097,Holiday Holly Short,Holiday Holly,Women,Bottoms,Women Bottoms,Short,Holiday,New,Wholesale,2026,834,42027.59,1388,1119
+ST-0041,Hydrangea Tee,Hydrangea,Boys,Tops,Boys Tops,Tee,Spring,New,Wholesale,2025,1005,41961.56,1906,343
+ST-0029,Hydrangea Rash Guard Set,Hydrangea,Girls,Swim,Girls Swim,Rash Guard Set,Spring,New,Ecommerce,2026,775,41700.25,1306,620
+ST-0028,Tulip Garden One-Piece,Tulip Garden,Girls,Swim,Girls Swim,One-Piece,Spring,New,Ecommerce,2026,764,41592.7,1510,651
+ST-0064,Wildflower PJ Set,Wildflower,Boys,Sleepwear,Boys Sleepwear,PJ Set,Fall,New,Ecommerce,2026,832,41522.11,1317,232
+ST-0016,Cherry Blossom Short,Cherry Blossom,Girls,Bottoms,Girls Bottoms,Short,Spring,Carryover,Ecommerce,2026,822,41514.8,1036,140
+ST-0041,Hydrangea Tee,Hydrangea,Boys,Tops,Boys Tops,Tee,Spring,New,Ecommerce,2026,754,41407.45,1366,526
+ST-0007,Cherry Blossom Blouse,Cherry Blossom,Girls,Tops,Girls Tops,Blouse,Spring,Carryover,Ecommerce,2025,715,41260.36,916,478
+ST-0073,Seashell Footie,Seashell,Baby,Sleepwear,Baby Sleepwear,Footie,Summer,New,Ecommerce,2026,1065,41252.06,1369,863
+ST-0087,Ditsy Rose Day Dress,Ditsy Rose,Women,Dresses,Women Dresses,Day Dress,Spring,New,Wholesale,2025,403,41199.82,686,331
+ST-0068,Strawberry Fields Coverall,Strawberry Fields,Baby,Rompers,Baby Rompers,Coverall,Summer,New,Ecommerce,2026,816,40971.97,1315,782
+ST-0039,Seashell Button-Down,Seashell,Boys,Tops,Boys Tops,Button-Down,Summer,New,Wholesale,2026,1041,40466.59,1627,714
+ST-0068,Strawberry Fields Coverall,Strawberry Fields,Baby,Rompers,Baby Rompers,Coverall,Summer,New,Retail Stores,2026,808,40434.57,1096,252
+ST-0048,Candy Cane Stripe Polo,Candy Cane Stripe,Boys,Tops,Boys Tops,Polo,Holiday,New,Ecommerce,2025,760,40172.09,1192,772
+ST-0101,Winter Fair Isle PJ Set,Winter Fair Isle,Women,Sleepwear,Women Sleepwear,PJ Set,Holiday,Carryover,Ecommerce,2026,521,40164.97,798,271
+ST-0072,Strawberry Fields Two-Piece Set,Strawberry Fields,Baby,Sets,Baby Sets,Two-Piece Set,Summer,New,Ecommerce,2026,886,40054.01,1206,447
+ST-0010,Holiday Holly Blouse,Holiday Holly,Girls,Tops,Girls Tops,Blouse,Holiday,New,Ecommerce,2025,833,40040.86,1903,1183
+ST-0066,Seashell Bubble,Seashell,Baby,Rompers,Baby Rompers,Bubble,Summer,New,Ecommerce,2026,916,40011.16,1748,860
+ST-0018,Acorn Toile Short,Acorn Toile,Girls,Bottoms,Girls Bottoms,Short,Fall,New,Wholesale,2026,1066,39903.36,1999,852
+ST-0098,Garden Trellis Pant,Garden Trellis,Women,Bottoms,Women Bottoms,Pant,Spring,New,Retail Stores,2025,592,39809.36,730,83
+ST-0059,Hydrangea Swim Trunk,Hydrangea,Boys,Swim,Boys Swim,Swim Trunk,Spring,New,Wholesale,2025,950,39665.16,1877,475
+ST-0101,Winter Fair Isle PJ Set,Winter Fair Isle,Women,Sleepwear,Women Sleepwear,PJ Set,Holiday,Carryover,Retail Stores,2026,513,39648.86,615,205
+ST-0076,Lemon Grove PJ Set,Lemon Grove,Baby,Sleepwear,Baby Sleepwear,PJ Set,Summer,Carryover,Ecommerce,2025,942,39401.66,1035,731
+ST-0049,Cherry Blossom Short,Cherry Blossom,Boys,Bottoms,Boys Bottoms,Short,Spring,Carryover,Ecommerce,2026,926,39399.8,1116,428
+ST-0022,Cherry Blossom Two-Piece Set,Cherry Blossom,Girls,Sets,Girls Sets,Two-Piece Set,Spring,New,Wholesale,2026,717,39229.08,1109,415
+ST-0023,Acorn Toile Two-Piece Set,Acorn Toile,Girls,Sets,Girls Sets,Two-Piece Set,Fall,New,Retail Stores,2026,538,39135.3,1084,116
+ST-0018,Acorn Toile Short,Acorn Toile,Girls,Bottoms,Girls Bottoms,Short,Fall,New,Ecommerce,2026,832,39097.36,1261,296
+ST-0071,Tulip Garden Two-Piece Set,Tulip Garden,Baby,Sets,Baby Sets,Two-Piece Set,Spring,New,Retail Stores,2026,672,39047.36,1010,356
+ST-0058,Holiday Holly Two-Piece Set,Holiday Holly,Boys,Sets,Boys Sets,Two-Piece Set,Holiday,New,Wholesale,2026,694,38970.04,1133,523
+ST-0091,Wildflower Blouse,Wildflower,Women,Tops,Women Tops,Blouse,Fall,New,Retail Stores,2026,450,38921.65,769,518
+ST-0062,Seashell Rash Guard Set,Seashell,Boys,Swim,Boys Swim,Rash Guard Set,Summer,New,Ecommerce,2025,815,38881.29,1589,772
+ST-0099,Strawberry Fields PJ Set,Strawberry Fields,Women,Sleepwear,Women Sleepwear,PJ Set,Summer,New,Retail Stores,2025,546,38789.89,765,320
+ST-0009,Acorn Toile Blouse,Acorn Toile,Girls,Tops,Girls Tops,Blouse,Fall,New,Retail Stores,2025,771,38659.22,1032,755
+ST-0075,Tulip Garden PJ Set,Tulip Garden,Baby,Sleepwear,Baby Sleepwear,PJ Set,Spring,New,Wholesale,2026,1108,38284.5,1323,867
+ST-0080,Pomegranate Bonnet,Pomegranate,Baby,Accessories,Baby Accessories,Bonnet,Fall,Carryover,Ecommerce,2026,1475,38208.87,2020,1084
+ST-0053,Strawberry Fields Pant,Strawberry Fields,Boys,Bottoms,Boys Bottoms,Pant,Summer,New,Ecommerce,2025,943,38034.52,1422,401
+ST-0012,Wildflower Tee,Wildflower,Girls,Tops,Girls Tops,Tee,Fall,New,Ecommerce,2026,756,37847.25,1197,757
+ST-0014,Acorn Toile Cardigan,Acorn Toile,Girls,Tops,Girls Tops,Cardigan,Fall,New,Retail Stores,2026,659,37839.54,907,618
+ST-0064,Wildflower PJ Set,Wildflower,Boys,Sleepwear,Boys Sleepwear,PJ Set,Fall,New,Wholesale,2025,966,37551.13,855,473
+ST-0016,Cherry Blossom Short,Cherry Blossom,Girls,Bottoms,Girls Bottoms,Short,Spring,Carryover,Ecommerce,2025,760,37423.18,884,452
+ST-0008,Seashell Blouse,Seashell,Girls,Tops,Girls Tops,Blouse,Summer,New,Wholesale,2025,864,37318.57,1410,1089
+ST-0089,Tulip Garden Blouse,Tulip Garden,Women,Tops,Women Tops,Blouse,Spring,New,Retail Stores,2025,480,37119.14,753,325
+ST-0014,Acorn Toile Cardigan,Acorn Toile,Girls,Tops,Girls Tops,Cardigan,Fall,New,Wholesale,2025,826,36866.7,1318,882
+ST-0093,Strawberry Fields Tunic,Strawberry Fields,Women,Tops,Women Tops,Tunic,Summer,New,Wholesale,2025,595,36838.12,568,294
+ST-0062,Seashell Rash Guard Set,Seashell,Boys,Swim,Boys Swim,Rash Guard Set,Summer,New,Wholesale,2025,947,36812.54,1716,182
+ST-0022,Cherry Blossom Two-Piece Set,Cherry Blossom,Girls,Sets,Girls Sets,Two-Piece Set,Spring,New,Wholesale,2025,670,36657.57,917,464
+ST-0030,Nantucket Stripe Rash Guard Set,Nantucket Stripe,Girls,Swim,Girls Swim,Rash Guard Set,Summer,New,Wholesale,2026,977,36571.84,1808,618
+ST-0010,Holiday Holly Blouse,Holiday Holly,Girls,Tops,Girls Tops,Blouse,Holiday,New,Retail Stores,2025,757,36555.23,1249,424
+ST-0043,Pomegranate Tee,Pomegranate,Boys,Tops,Boys Tops,Tee,Fall,New,Wholesale,2026,1013,36460.7,2101,1146
+ST-0044,Snowdrop Tee,Snowdrop,Boys,Tops,Boys Tops,Tee,Holiday,New,Ecommerce,2025,775,36405.31,1291,599
+ST-0054,Acorn Toile Pant,Acorn Toile,Boys,Bottoms,Boys Bottoms,Pant,Fall,New,Ecommerce,2026,749,36132.29,1259,485
+ST-0026,Palm Frond Romper,Palm Frond,Girls,Sets,Girls Sets,Romper,Summer,New,Wholesale,2025,626,36053.1,1044,354
+ST-0074,Pomegranate Footie,Pomegranate,Baby,Sleepwear,Baby Sleepwear,Footie,Fall,New,Ecommerce,2026,929,36048.91,1378,290
+ST-0046,Lemon Grove Polo,Lemon Grove,Boys,Tops,Boys Tops,Polo,Summer,New,Retail Stores,2025,642,35841.07,1035,645
+ST-0097,Holiday Holly Short,Holiday Holly,Women,Bottoms,Women Bottoms,Short,Holiday,New,Retail Stores,2026,561,35772.7,898,299
+ST-0018,Acorn Toile Short,Acorn Toile,Girls,Bottoms,Girls Bottoms,Short,Fall,New,Ecommerce,2025,767,35728.86,1269,520
+ST-0044,Snowdrop Tee,Snowdrop,Boys,Tops,Boys Tops,Tee,Holiday,New,Wholesale,2026,950,35561.16,1308,680
+ST-0035,Palm Frond Nightgown,Palm Frond,Girls,Sleepwear,Girls Sleepwear,Nightgown,Summer,New,Wholesale,2026,911,35413.12,1463,682
+ST-0086,Autumn Gingham Maxi Dress,Autumn Gingham,Women,Dresses,Women Dresses,Maxi Dress,Fall,New,Wholesale,2026,296,35375.79,626,273
+ST-0007,Cherry Blossom Blouse,Cherry Blossom,Girls,Tops,Girls Tops,Blouse,Spring,Carryover,Wholesale,2025,818,35331.71,1346,417
+ST-0045,Hydrangea Polo,Hydrangea,Boys,Tops,Boys Tops,Polo,Spring,New,Retail Stores,2026,626,35325.86,1188,133
+ST-0096,Pomegranate Short,Pomegranate,Women,Bottoms,Women Bottoms,Short,Fall,New,Retail Stores,2026,528,35290.78,678,282
+ST-0003,Autumn Gingham Day Dress,Autumn Gingham,Girls,Dresses,Girls Dresses,Day Dress,Fall,New,Wholesale,2025,531,35169.62,905,634
+ST-0070,Winter Fair Isle Coverall,Winter Fair Isle,Baby,Rompers,Baby Rompers,Coverall,Holiday,New,Wholesale,2026,1017,35140.2,1521,1249
+ST-0099,Strawberry Fields PJ Set,Strawberry Fields,Women,Sleepwear,Women Sleepwear,PJ Set,Summer,New,Retail Stores,2026,518,34936.48,645,97
+ST-0012,Wildflower Tee,Wildflower,Girls,Tops,Girls Tops,Tee,Fall,New,Retail Stores,2025,680,34909.9,724,392
+ST-0068,Strawberry Fields Coverall,Strawberry Fields,Baby,Rompers,Baby Rompers,Coverall,Summer,New,Wholesale,2026,897,34868.9,1697,607
+ST-0050,Palm Frond Short,Palm Frond,Boys,Bottoms,Boys Bottoms,Short,Summer,New,Retail Stores,2025,727,34819.64,1302,740
+ST-0092,Winter Fair Isle Blouse,Winter Fair Isle,Women,Tops,Women Tops,Blouse,Holiday,New,Retail Stores,2025,392,34587.08,419,108
+ST-0095,Tulip Garden Short,Tulip Garden,Women,Bottoms,Women Bottoms,Short,Spring,New,Wholesale,2025,649,34574.04,1333,562
+ST-0019,Garden Trellis Legging,Garden Trellis,Girls,Bottoms,Girls Bottoms,Legging,Spring,New,Retail Stores,2025,828,34488.11,1241,625
+ST-0057,Wildflower Two-Piece Set,Wildflower,Boys,Sets,Boys Sets,Two-Piece Set,Fall,New,Retail Stores,2026,610,34432.21,729,232
+ST-0020,Acorn Toile Legging,Acorn Toile,Girls,Bottoms,Girls Bottoms,Legging,Fall,New,Ecommerce,2026,761,34408.84,1707,981
+ST-0043,Pomegranate Tee,Pomegranate,Boys,Tops,Boys Tops,Tee,Fall,New,Ecommerce,2025,719,34344.19,803,563
+ST-0037,Holiday Holly Nightgown,Holiday Holly,Girls,Sleepwear,Girls Sleepwear,Nightgown,Holiday,Carryover,Wholesale,2025,793,34251.89,1545,824
+ST-0065,Tulip Garden Bubble,Tulip Garden,Baby,Rompers,Baby Rompers,Bubble,Spring,New,Ecommerce,2026,713,34249.09,1286,710
+ST-0057,Wildflower Two-Piece Set,Wildflower,Boys,Sets,Boys Sets,Two-Piece Set,Fall,New,Ecommerce,2025,612,34045.08,824,190
+ST-0018,Acorn Toile Short,Acorn Toile,Girls,Bottoms,Girls Bottoms,Short,Fall,New,Retail Stores,2026,670,33989.27,1260,594
+ST-0031,Strawberry Fields PJ Set,Strawberry Fields,Girls,Sleepwear,Girls Sleepwear,PJ Set,Summer,Carryover,Wholesale,2025,944,33977.21,1437,409
+ST-0060,Nantucket Stripe Swim Trunk,Nantucket Stripe,Boys,Swim,Boys Swim,Swim Trunk,Summer,Carryover,Wholesale,2025,734,33817.44,1457,530
+ST-0055,Candy Cane Stripe Pant,Candy Cane Stripe,Boys,Bottoms,Boys Bottoms,Pant,Holiday,Carryover,Wholesale,2026,1021,33808.17,1498,669
+ST-0010,Holiday Holly Blouse,Holiday Holly,Girls,Tops,Girls Tops,Blouse,Holiday,New,Wholesale,2026,902,33764.39,1439,546
+ST-0063,Strawberry Fields PJ Set,Strawberry Fields,Boys,Sleepwear,Boys Sleepwear,PJ Set,Summer,New,Ecommerce,2026,708,33758.05,1279,418
+ST-0015,Winter Fair Isle Cardigan,Winter Fair Isle,Girls,Tops,Girls Tops,Cardigan,Holiday,Carryover,Wholesale,2025,901,33726.96,1204,609
+ST-0040,Candy Cane Stripe Button-Down,Candy Cane Stripe,Boys,Tops,Boys Tops,Button-Down,Holiday,New,Ecommerce,2026,685,33642.74,1166,562
+ST-0063,Strawberry Fields PJ Set,Strawberry Fields,Boys,Sleepwear,Boys Sleepwear,PJ Set,Summer,New,Retail Stores,2025,691,33575.71,809,151
+ST-0081,Holiday Holly Bonnet,Holiday Holly,Baby,Accessories,Baby Accessories,Bonnet,Holiday,New,Ecommerce,2025,1268,33516.8,2041,1442
+ST-0013,Hydrangea Cardigan,Hydrangea,Girls,Tops,Girls Tops,Cardigan,Spring,New,Retail Stores,2026,708,33483.34,912,456
+ST-0056,Tulip Garden Two-Piece Set,Tulip Garden,Boys,Sets,Boys Sets,Two-Piece Set,Spring,New,Retail Stores,2026,532,33385.86,843,452
+ST-0028,Tulip Garden One-Piece,Tulip Garden,Girls,Swim,Girls Swim,One-Piece,Spring,New,Wholesale,2025,799,33360.49,987,306
+ST-0016,Cherry Blossom Short,Cherry Blossom,Girls,Bottoms,Girls Bottoms,Short,Spring,Carryover,Wholesale,2025,858,33352.86,1998,1048
+ST-0058,Holiday Holly Two-Piece Set,Holiday Holly,Boys,Sets,Boys Sets,Two-Piece Set,Holiday,New,Wholesale,2025,593,33298.6,1114,436
+ST-0052,Garden Trellis Pant,Garden Trellis,Boys,Bottoms,Boys Bottoms,Pant,Spring,New,Wholesale,2026,921,33149.37,1058,526
+ST-0039,Seashell Button-Down,Seashell,Boys,Tops,Boys Tops,Button-Down,Summer,New,Ecommerce,2025,678,32940.08,1184,212
+ST-0066,Seashell Bubble,Seashell,Baby,Rompers,Baby Rompers,Bubble,Summer,New,Wholesale,2025,993,32881.01,1738,942
+ST-0034,Cherry Blossom Nightgown,Cherry Blossom,Girls,Sleepwear,Girls Sleepwear,Nightgown,Spring,New,Wholesale,2025,785,32775.94,1191,442
+ST-0009,Acorn Toile Blouse,Acorn Toile,Girls,Tops,Girls Tops,Blouse,Fall,New,Ecommerce,2025,667,32747.93,1415,816
+ST-0054,Acorn Toile Pant,Acorn Toile,Boys,Bottoms,Boys Bottoms,Pant,Fall,New,Retail Stores,2026,638,32602.56,703,183
+ST-0076,Lemon Grove PJ Set,Lemon Grove,Baby,Sleepwear,Baby Sleepwear,PJ Set,Summer,Carryover,Wholesale,2026,1027,32527.97,1685,835
+ST-0035,Palm Frond Nightgown,Palm Frond,Girls,Sleepwear,Girls Sleepwear,Nightgown,Summer,New,Retail Stores,2025,659,32487.68,600,331
+ST-0033,Snowdrop PJ Set,Snowdrop,Girls,Sleepwear,Girls Sleepwear,PJ Set,Holiday,New,Ecommerce,2026,634,32475.93,596,395
+ST-0069,Autumn Gingham Coverall,Autumn Gingham,Baby,Rompers,Baby Rompers,Coverall,Fall,New,Ecommerce,2025,729,32398.68,1066,395
+ST-0035,Palm Frond Nightgown,Palm Frond,Girls,Sleepwear,Girls Sleepwear,Nightgown,Summer,New,Ecommerce,2026,678,32301.23,1024,436
+ST-0067,Snowdrop Bubble,Snowdrop,Baby,Rompers,Baby Rompers,Bubble,Holiday,New,Ecommerce,2025,661,32261.95,952,365
+ST-0096,Pomegranate Short,Pomegranate,Women,Bottoms,Women Bottoms,Short,Fall,New,Wholesale,2026,620,32136.33,778,411
+ST-0061,Garden Trellis Rash Guard Set,Garden Trellis,Boys,Swim,Boys Swim,Rash Guard Set,Spring,New,Retail Stores,2026,566,32121.26,1127,523
+ST-0076,Lemon Grove PJ Set,Lemon Grove,Baby,Sleepwear,Baby Sleepwear,PJ Set,Summer,Carryover,Ecommerce,2026,765,32086,1130,676
+ST-0011,Lemon Grove Tee,Lemon Grove,Girls,Tops,Girls Tops,Tee,Summer,New,Retail Stores,2025,639,31864.34,863,331
+ST-0065,Tulip Garden Bubble,Tulip Garden,Baby,Rompers,Baby Rompers,Bubble,Spring,New,Wholesale,2025,849,31780.44,1370,341
+ST-0025,Hydrangea Romper,Hydrangea,Girls,Sets,Girls Sets,Romper,Spring,New,Retail Stores,2026,560,31729.14,643,352
+ST-0040,Candy Cane Stripe Button-Down,Candy Cane Stripe,Boys,Tops,Boys Tops,Button-Down,Holiday,New,Wholesale,2026,816,31720.2,1490,1000
+ST-0048,Candy Cane Stripe Polo,Candy Cane Stripe,Boys,Tops,Boys Tops,Polo,Holiday,New,Wholesale,2026,786,31685.86,1381,462
+ST-0064,Wildflower PJ Set,Wildflower,Boys,Sleepwear,Boys Sleepwear,PJ Set,Fall,New,Wholesale,2026,815,31681.33,942,467
+ST-0024,Winter Fair Isle Two-Piece Set,Winter Fair Isle,Girls,Sets,Girls Sets,Two-Piece Set,Holiday,Carryover,Wholesale,2025,549,31618.45,1016,375
+ST-0057,Wildflower Two-Piece Set,Wildflower,Boys,Sets,Boys Sets,Two-Piece Set,Fall,New,Wholesale,2025,708,31600.02,1334,776
+ST-0036,Autumn Gingham Nightgown,Autumn Gingham,Girls,Sleepwear,Girls Sleepwear,Nightgown,Fall,New,Wholesale,2025,953,31556.5,1126,575
+ST-0021,Seashell Skirt,Seashell,Girls,Bottoms,Girls Bottoms,Skirt,Summer,New,Retail Stores,2026,751,31462.1,1146,703
+ST-0026,Palm Frond Romper,Palm Frond,Girls,Sets,Girls Sets,Romper,Summer,New,Retail Stores,2026,429,31404.79,634,132
+ST-0056,Tulip Garden Two-Piece Set,Tulip Garden,Boys,Sets,Boys Sets,Two-Piece Set,Spring,New,Retail Stores,2025,476,31376.6,520,286
+ST-0076,Lemon Grove PJ Set,Lemon Grove,Baby,Sleepwear,Baby Sleepwear,PJ Set,Summer,Carryover,Retail Stores,2026,720,31332.78,1012,707
+ST-0025,Hydrangea Romper,Hydrangea,Girls,Sets,Girls Sets,Romper,Spring,New,Retail Stores,2025,547,31327.36,1135,779
+ST-0027,Candy Cane Stripe Romper,Candy Cane Stripe,Girls,Sets,Girls Sets,Romper,Holiday,New,Retail Stores,2026,525,31323.41,850,369
+ST-0077,Pomegranate PJ Set,Pomegranate,Baby,Sleepwear,Baby Sleepwear,PJ Set,Fall,New,Wholesale,2026,945,31291.59,1387,652
+ST-0013,Hydrangea Cardigan,Hydrangea,Girls,Tops,Girls Tops,Cardigan,Spring,New,Ecommerce,2026,699,31273.49,1436,865
+ST-0044,Snowdrop Tee,Snowdrop,Boys,Tops,Boys Tops,Tee,Holiday,New,Ecommerce,2026,657,31219.34,1234,322
+ST-0054,Acorn Toile Pant,Acorn Toile,Boys,Bottoms,Boys Bottoms,Pant,Fall,New,Retail Stores,2025,641,31197.84,1044,642
+ST-0007,Cherry Blossom Blouse,Cherry Blossom,Girls,Tops,Girls Tops,Blouse,Spring,Carryover,Retail Stores,2026,574,31152.58,736,206
+ST-0071,Tulip Garden Two-Piece Set,Tulip Garden,Baby,Sets,Baby Sets,Two-Piece Set,Spring,New,Wholesale,2025,676,31145.22,1098,554
+ST-0019,Garden Trellis Legging,Garden Trellis,Girls,Bottoms,Girls Bottoms,Legging,Spring,New,Ecommerce,2026,793,31096.89,1622,470
+ST-0045,Hydrangea Polo,Hydrangea,Boys,Tops,Boys Tops,Polo,Spring,New,Wholesale,2025,719,31055.62,858,133
+ST-0071,Tulip Garden Two-Piece Set,Tulip Garden,Baby,Sets,Baby Sets,Two-Piece Set,Spring,New,Ecommerce,2026,545,31050.34,1092,650
+ST-0078,Tulip Garden Bonnet,Tulip Garden,Baby,Accessories,Baby Accessories,Bonnet,Spring,New,Ecommerce,2025,1128,30990.27,1953,903
+ST-0033,Snowdrop PJ Set,Snowdrop,Girls,Sleepwear,Girls Sleepwear,PJ Set,Holiday,New,Retail Stores,2026,608,30898.16,1228,805
+ST-0059,Hydrangea Swim Trunk,Hydrangea,Boys,Swim,Boys Swim,Swim Trunk,Spring,New,Retail Stores,2025,576,30757.65,830,422
+ST-0058,Holiday Holly Two-Piece Set,Holiday Holly,Boys,Sets,Boys Sets,Two-Piece Set,Holiday,New,Retail Stores,2026,428,30662.69,750,582
+ST-0015,Winter Fair Isle Cardigan,Winter Fair Isle,Girls,Tops,Girls Tops,Cardigan,Holiday,Carryover,Ecommerce,2025,600,30650.01,800,517
+ST-0056,Tulip Garden Two-Piece Set,Tulip Garden,Boys,Sets,Boys Sets,Two-Piece Set,Spring,New,Wholesale,2025,625,30595.5,920,223
+ST-0069,Autumn Gingham Coverall,Autumn Gingham,Baby,Rompers,Baby Rompers,Coverall,Fall,New,Wholesale,2025,884,30544.68,1292,601
+ST-0015,Winter Fair Isle Cardigan,Winter Fair Isle,Girls,Tops,Girls Tops,Cardigan,Holiday,Carryover,Retail Stores,2026,670,30211.54,1132,493
+ST-0046,Lemon Grove Polo,Lemon Grove,Boys,Tops,Boys Tops,Polo,Summer,New,Retail Stores,2026,526,30210.66,859,429
+ST-0044,Snowdrop Tee,Snowdrop,Boys,Tops,Boys Tops,Tee,Holiday,New,Wholesale,2025,805,30133.39,1299,1003
+ST-0094,Snowdrop Tunic,Snowdrop,Women,Tops,Women Tops,Tunic,Holiday,New,Wholesale,2026,498,30115.45,838,250
+ST-0062,Seashell Rash Guard Set,Seashell,Boys,Swim,Boys Swim,Rash Guard Set,Summer,New,Retail Stores,2025,586,30015.7,1053,514
+ST-0037,Holiday Holly Nightgown,Holiday Holly,Girls,Sleepwear,Girls Sleepwear,Nightgown,Holiday,Carryover,Retail Stores,2025,542,30007.07,789,440
+ST-0088,Nantucket Stripe Day Dress,Nantucket Stripe,Women,Dresses,Women Dresses,Day Dress,Summer,New,Wholesale,2026,284,29852.04,571,416
+ST-0059,Hydrangea Swim Trunk,Hydrangea,Boys,Swim,Boys Swim,Swim Trunk,Spring,New,Wholesale,2026,712,29727.99,1075,708
+ST-0093,Strawberry Fields Tunic,Strawberry Fields,Women,Tops,Women Tops,Tunic,Summer,New,Retail Stores,2026,381,29711.09,477,238
+ST-0098,Garden Trellis Pant,Garden Trellis,Women,Bottoms,Women Bottoms,Pant,Spring,New,Ecommerce,2026,442,29699.37,605,348
+ST-0020,Acorn Toile Legging,Acorn Toile,Girls,Bottoms,Girls Bottoms,Legging,Fall,New,Retail Stores,2025,614,29698.53,1012,526
+ST-0090,Palm Frond Blouse,Palm Frond,Women,Tops,Women Tops,Blouse,Summer,New,Retail Stores,2026,385,29673.12,699,405
+ST-0046,Lemon Grove Polo,Lemon Grove,Boys,Tops,Boys Tops,Polo,Summer,New,Wholesale,2026,663,29591.54,1068,277
+ST-0031,Strawberry Fields PJ Set,Strawberry Fields,Girls,Sleepwear,Girls Sleepwear,PJ Set,Summer,Carryover,Wholesale,2026,821,29550.09,952,401
+ST-0050,Palm Frond Short,Palm Frond,Boys,Bottoms,Boys Bottoms,Short,Summer,New,Retail Stores,2026,606,29480.34,835,346
+ST-0072,Strawberry Fields Two-Piece Set,Strawberry Fields,Baby,Sets,Baby Sets,Two-Piece Set,Summer,New,Wholesale,2025,815,29334.13,1102,421
+ST-0040,Candy Cane Stripe Button-Down,Candy Cane Stripe,Boys,Tops,Boys Tops,Button-Down,Holiday,New,Ecommerce,2025,598,29322.21,891,755
+ST-0020,Acorn Toile Legging,Acorn Toile,Girls,Bottoms,Girls Bottoms,Legging,Fall,New,Wholesale,2026,813,29262.15,853,343
+ST-0039,Seashell Button-Down,Seashell,Boys,Tops,Boys Tops,Button-Down,Summer,New,Wholesale,2025,749,29115.72,1397,894
+ST-0059,Hydrangea Swim Trunk,Hydrangea,Boys,Swim,Boys Swim,Swim Trunk,Spring,New,Retail Stores,2026,554,28967.93,628,271
+ST-0028,Tulip Garden One-Piece,Tulip Garden,Girls,Swim,Girls Swim,One-Piece,Spring,New,Retail Stores,2025,546,28878.48,861,604
+ST-0032,Pomegranate PJ Set,Pomegranate,Girls,Sleepwear,Girls Sleepwear,PJ Set,Fall,New,Retail Stores,2025,584,28869.47,917,504
+ST-0070,Winter Fair Isle Coverall,Winter Fair Isle,Baby,Rompers,Baby Rompers,Coverall,Holiday,New,Retail Stores,2025,610,28849.4,885,451
+ST-0008,Seashell Blouse,Seashell,Girls,Tops,Girls Tops,Blouse,Summer,New,Wholesale,2026,667,28809.6,1013,426
+ST-0030,Nantucket Stripe Rash Guard Set,Nantucket Stripe,Girls,Swim,Girls Swim,Rash Guard Set,Summer,New,Retail Stores,2025,568,28751.63,808,524
+ST-0015,Winter Fair Isle Cardigan,Winter Fair Isle,Girls,Tops,Girls Tops,Cardigan,Holiday,Carryover,Wholesale,2026,768,28748.39,1565,825
+ST-0097,Holiday Holly Short,Holiday Holly,Women,Bottoms,Women Bottoms,Short,Holiday,New,Retail Stores,2025,440,28686.52,635,305
+ST-0070,Winter Fair Isle Coverall,Winter Fair Isle,Baby,Rompers,Baby Rompers,Coverall,Holiday,New,Retail Stores,2026,621,28478.23,893,299
+ST-0097,Holiday Holly Short,Holiday Holly,Women,Bottoms,Women Bottoms,Short,Holiday,New,Wholesale,2025,562,28320.76,1119,553
+ST-0051,Autumn Gingham Short,Autumn Gingham,Boys,Bottoms,Boys Bottoms,Short,Fall,New,Wholesale,2025,931,28146.74,1189,466
+ST-0055,Candy Cane Stripe Pant,Candy Cane Stripe,Boys,Bottoms,Boys Bottoms,Pant,Holiday,Carryover,Wholesale,2025,848,28079.65,1095,185
+ST-0014,Acorn Toile Cardigan,Acorn Toile,Girls,Tops,Girls Tops,Cardigan,Fall,New,Wholesale,2026,629,28074.03,1023,194
+ST-0035,Palm Frond Nightgown,Palm Frond,Girls,Sleepwear,Girls Sleepwear,Nightgown,Summer,New,Retail Stores,2026,538,27978.09,1034,613
+ST-0034,Cherry Blossom Nightgown,Cherry Blossom,Girls,Sleepwear,Girls Sleepwear,Nightgown,Spring,New,Wholesale,2026,669,27932.62,1351,696
+ST-0041,Hydrangea Tee,Hydrangea,Boys,Tops,Boys Tops,Tee,Spring,New,Wholesale,2026,665,27765.61,1058,288
+ST-0021,Seashell Skirt,Seashell,Girls,Bottoms,Girls Bottoms,Skirt,Summer,New,Wholesale,2025,838,27748.53,1504,576
+ST-0073,Seashell Footie,Seashell,Baby,Sleepwear,Baby Sleepwear,Footie,Summer,New,Ecommerce,2025,684,27711.41,1028,393
+ST-0043,Pomegranate Tee,Pomegranate,Boys,Tops,Boys Tops,Tee,Fall,New,Wholesale,2025,767,27606.48,1321,808
+ST-0055,Candy Cane Stripe Pant,Candy Cane Stripe,Boys,Bottoms,Boys Bottoms,Pant,Holiday,Carryover,Retail Stores,2026,610,27412.86,914,437
+ST-0025,Hydrangea Romper,Hydrangea,Girls,Sets,Girls Sets,Romper,Spring,New,Ecommerce,2026,486,27402.76,459,323
+ST-0037,Holiday Holly Nightgown,Holiday Holly,Girls,Sleepwear,Girls Sleepwear,Nightgown,Holiday,Carryover,Wholesale,2026,634,27384.23,1369,653
+ST-0051,Autumn Gingham Short,Autumn Gingham,Boys,Bottoms,Boys Bottoms,Short,Fall,New,Wholesale,2026,905,27360.69,881,507
+ST-0066,Seashell Bubble,Seashell,Baby,Rompers,Baby Rompers,Bubble,Summer,New,Wholesale,2026,826,27351.17,1406,547
+ST-0032,Pomegranate PJ Set,Pomegranate,Girls,Sleepwear,Girls Sleepwear,PJ Set,Fall,New,Retail Stores,2026,541,27313.26,976,522
+ST-0009,Acorn Toile Blouse,Acorn Toile,Girls,Tops,Girls Tops,Blouse,Fall,New,Retail Stores,2026,525,27281.01,641,279
+ST-0041,Hydrangea Tee,Hydrangea,Boys,Tops,Boys Tops,Tee,Spring,New,Retail Stores,2025,499,27175.3,711,580
+ST-0008,Seashell Blouse,Seashell,Girls,Tops,Girls Tops,Blouse,Summer,New,Retail Stores,2026,474,27139.67,786,431
+ST-0034,Cherry Blossom Nightgown,Cherry Blossom,Girls,Sleepwear,Girls Sleepwear,Nightgown,Spring,New,Retail Stores,2025,510,27122.28,818,442
+ST-0069,Autumn Gingham Coverall,Autumn Gingham,Baby,Rompers,Baby Rompers,Coverall,Fall,New,Retail Stores,2025,607,27089.98,942,529
+ST-0010,Holiday Holly Blouse,Holiday Holly,Girls,Tops,Girls Tops,Blouse,Holiday,New,Retail Stores,2026,572,26995.82,847,491
+ST-0094,Snowdrop Tunic,Snowdrop,Women,Tops,Women Tops,Tunic,Holiday,New,Retail Stores,2026,341,26972.87,489,352
+ST-0039,Seashell Button-Down,Seashell,Boys,Tops,Boys Tops,Button-Down,Summer,New,Retail Stores,2026,523,26959.16,775,469
+ST-0052,Garden Trellis Pant,Garden Trellis,Boys,Bottoms,Boys Bottoms,Pant,Spring,New,Retail Stores,2026,590,26923.74,1021,476
+ST-0092,Winter Fair Isle Blouse,Winter Fair Isle,Women,Tops,Women Tops,Blouse,Holiday,New,Retail Stores,2026,296,26832.68,375,224
+ST-0079,Seashell Bonnet,Seashell,Baby,Accessories,Baby Accessories,Bonnet,Summer,Carryover,Ecommerce,2025,1091,26771.84,2255,641
+ST-0061,Garden Trellis Rash Guard Set,Garden Trellis,Boys,Swim,Boys Swim,Rash Guard Set,Spring,New,Retail Stores,2025,460,26768.67,603,162
+ST-0032,Pomegranate PJ Set,Pomegranate,Girls,Sleepwear,Girls Sleepwear,PJ Set,Fall,New,Wholesale,2025,714,26727.01,1208,626
+ST-0009,Acorn Toile Blouse,Acorn Toile,Girls,Tops,Girls Tops,Blouse,Fall,New,Wholesale,2025,686,26666.74,1063,228
+ST-0040,Candy Cane Stripe Button-Down,Candy Cane Stripe,Boys,Tops,Boys Tops,Button-Down,Holiday,New,Wholesale,2025,684,26588.99,1031,382
+ST-0036,Autumn Gingham Nightgown,Autumn Gingham,Girls,Sleepwear,Girls Sleepwear,Nightgown,Fall,New,Retail Stores,2026,608,26557.51,1045,115
+ST-0095,Tulip Garden Short,Tulip Garden,Women,Bottoms,Women Bottoms,Short,Spring,New,Ecommerce,2026,402,26556.86,705,75
+ST-0011,Lemon Grove Tee,Lemon Grove,Girls,Tops,Girls Tops,Tee,Summer,New,Retail Stores,2026,530,26487.8,808,224
+ST-0007,Cherry Blossom Blouse,Cherry Blossom,Girls,Tops,Girls Tops,Blouse,Spring,Carryover,Wholesale,2026,611,26390.81,756,252
+ST-0030,Nantucket Stripe Rash Guard Set,Nantucket Stripe,Girls,Swim,Girls Swim,Rash Guard Set,Summer,New,Wholesale,2025,703,26315.26,779,413
+ST-0031,Strawberry Fields PJ Set,Strawberry Fields,Girls,Sleepwear,Girls Sleepwear,PJ Set,Summer,Carryover,Retail Stores,2025,560,26304.69,903,434
+ST-0021,Seashell Skirt,Seashell,Girls,Bottoms,Girls Bottoms,Skirt,Summer,New,Ecommerce,2026,616,26207.46,947,462
+ST-0017,Seashell Short,Seashell,Girls,Bottoms,Girls Bottoms,Short,Summer,New,Wholesale,2025,827,26193.4,1509,1138
+ST-0089,Tulip Garden Blouse,Tulip Garden,Women,Tops,Women Tops,Blouse,Spring,New,Wholesale,2025,422,26127.2,820,239
+ST-0040,Candy Cane Stripe Button-Down,Candy Cane Stripe,Boys,Tops,Boys Tops,Button-Down,Holiday,New,Retail Stores,2026,530,26066.65,1038,448
+ST-0068,Strawberry Fields Coverall,Strawberry Fields,Baby,Rompers,Baby Rompers,Coverall,Summer,New,Wholesale,2025,664,25811.53,1201,396
+ST-0077,Pomegranate PJ Set,Pomegranate,Baby,Sleepwear,Baby Sleepwear,PJ Set,Fall,New,Wholesale,2025,779,25794.87,1198,636
+ST-0010,Holiday Holly Blouse,Holiday Holly,Girls,Tops,Girls Tops,Blouse,Holiday,New,Ecommerce,2026,532,25755.76,921,429
+ST-0039,Seashell Button-Down,Seashell,Boys,Tops,Boys Tops,Button-Down,Summer,New,Retail Stores,2025,502,25692.87,858,611
+ST-0019,Garden Trellis Legging,Garden Trellis,Girls,Bottoms,Girls Bottoms,Legging,Spring,New,Wholesale,2026,811,25686.65,1164,638
+ST-0024,Winter Fair Isle Two-Piece Set,Winter Fair Isle,Girls,Sets,Girls Sets,Two-Piece Set,Holiday,Carryover,Wholesale,2026,446,25686.39,531,162
+ST-0051,Autumn Gingham Short,Autumn Gingham,Boys,Bottoms,Boys Bottoms,Short,Fall,New,Ecommerce,2025,682,25666.13,1389,735
+ST-0046,Lemon Grove Polo,Lemon Grove,Boys,Tops,Boys Tops,Polo,Summer,New,Wholesale,2025,574,25619.23,718,166
+ST-0067,Snowdrop Bubble,Snowdrop,Baby,Rompers,Baby Rompers,Bubble,Holiday,New,Wholesale,2025,658,25578.31,1084,570
+ST-0044,Snowdrop Tee,Snowdrop,Boys,Tops,Boys Tops,Tee,Holiday,New,Retail Stores,2025,517,25425.95,898,398
+ST-0063,Strawberry Fields PJ Set,Strawberry Fields,Boys,Sleepwear,Boys Sleepwear,PJ Set,Summer,New,Wholesale,2025,654,25422.81,1024,364
+ST-0034,Cherry Blossom Nightgown,Cherry Blossom,Girls,Sleepwear,Girls Sleepwear,Nightgown,Spring,New,Retail Stores,2026,471,25355.32,563,315
+ST-0051,Autumn Gingham Short,Autumn Gingham,Boys,Bottoms,Boys Bottoms,Short,Fall,New,Retail Stores,2025,655,25352.52,1003,660
+ST-0098,Garden Trellis Pant,Garden Trellis,Women,Bottoms,Women Bottoms,Pant,Spring,New,Retail Stores,2026,392,25290.2,505,262
+ST-0066,Seashell Bubble,Seashell,Baby,Rompers,Baby Rompers,Bubble,Summer,New,Retail Stores,2025,568,25278.35,933,414
+ST-0065,Tulip Garden Bubble,Tulip Garden,Baby,Rompers,Baby Rompers,Bubble,Spring,New,Retail Stores,2026,514,25211.99,873,115
+ST-0095,Tulip Garden Short,Tulip Garden,Women,Bottoms,Women Bottoms,Short,Spring,New,Retail Stores,2026,376,25202.69,628,401
+ST-0053,Strawberry Fields Pant,Strawberry Fields,Boys,Bottoms,Boys Bottoms,Pant,Summer,New,Wholesale,2026,795,25179.88,1038,572
+ST-0065,Tulip Garden Bubble,Tulip Garden,Baby,Rompers,Baby Rompers,Bubble,Spring,New,Wholesale,2026,671,25117.41,1314,819
+ST-0042,Lemon Grove Tee,Lemon Grove,Boys,Tops,Boys Tops,Tee,Summer,New,Retail Stores,2026,472,25115.61,706,55
+ST-0032,Pomegranate PJ Set,Pomegranate,Girls,Sleepwear,Girls Sleepwear,PJ Set,Fall,New,Wholesale,2026,670,25079.98,698,164
+ST-0045,Hydrangea Polo,Hydrangea,Boys,Tops,Boys Tops,Polo,Spring,New,Retail Stores,2025,468,25061.95,938,566
+ST-0013,Hydrangea Cardigan,Hydrangea,Girls,Tops,Girls Tops,Cardigan,Spring,New,Retail Stores,2025,533,24964.84,841,476
+ST-0096,Pomegranate Short,Pomegranate,Women,Bottoms,Women Bottoms,Short,Fall,New,Retail Stores,2025,377,24960.8,808,506
+ST-0018,Acorn Toile Short,Acorn Toile,Girls,Bottoms,Girls Bottoms,Short,Fall,New,Wholesale,2025,665,24892.81,963,128
+ST-0096,Pomegranate Short,Pomegranate,Women,Bottoms,Women Bottoms,Short,Fall,New,Wholesale,2025,480,24879.74,666,507
+ST-0042,Lemon Grove Tee,Lemon Grove,Boys,Tops,Boys Tops,Tee,Summer,New,Wholesale,2026,594,24801.17,1106,93
+ST-0040,Candy Cane Stripe Button-Down,Candy Cane Stripe,Boys,Tops,Boys Tops,Button-Down,Holiday,New,Retail Stores,2025,492,24790.19,510,179
+ST-0029,Hydrangea Rash Guard Set,Hydrangea,Girls,Swim,Girls Swim,Rash Guard Set,Spring,New,Wholesale,2025,572,24706.28,831,372
+ST-0042,Lemon Grove Tee,Lemon Grove,Boys,Tops,Boys Tops,Tee,Summer,New,Retail Stores,2025,447,24604.06,850,247
+ST-0073,Seashell Footie,Seashell,Baby,Sleepwear,Baby Sleepwear,Footie,Summer,New,Wholesale,2026,812,24549.03,673,188
+ST-0047,Wildflower Polo,Wildflower,Boys,Tops,Boys Tops,Polo,Fall,Carryover,Retail Stores,2026,529,24493.87,929,467
+ST-0050,Palm Frond Short,Palm Frond,Boys,Bottoms,Boys Bottoms,Short,Summer,New,Wholesale,2026,654,24481.06,1270,447
+ST-0016,Cherry Blossom Short,Cherry Blossom,Girls,Bottoms,Girls Bottoms,Short,Spring,Carryover,Wholesale,2026,628,24412.12,1270,991
+ST-0079,Seashell Bonnet,Seashell,Baby,Accessories,Baby Accessories,Bonnet,Summer,Carryover,Ecommerce,2026,955,24299.58,2072,455
+ST-0101,Winter Fair Isle PJ Set,Winter Fair Isle,Women,Sleepwear,Women Sleepwear,PJ Set,Holiday,Carryover,Wholesale,2026,411,24262.48,695,394
+ST-0011,Lemon Grove Tee,Lemon Grove,Girls,Tops,Girls Tops,Tee,Summer,New,Wholesale,2026,647,24219.02,531,271
+ST-0010,Holiday Holly Blouse,Holiday Holly,Girls,Tops,Girls Tops,Blouse,Holiday,New,Wholesale,2025,646,24181.59,822,279
+ST-0018,Acorn Toile Short,Acorn Toile,Girls,Bottoms,Girls Bottoms,Short,Fall,New,Retail Stores,2025,500,24129.1,855,419
+ST-0049,Cherry Blossom Short,Cherry Blossom,Boys,Bottoms,Boys Bottoms,Short,Spring,Carryover,Wholesale,2026,761,24103,1177,739
+ST-0012,Wildflower Tee,Wildflower,Girls,Tops,Girls Tops,Tee,Fall,New,Retail Stores,2026,508,24100.78,965,492
+ST-0041,Hydrangea Tee,Hydrangea,Boys,Tops,Boys Tops,Tee,Spring,New,Retail Stores,2026,432,24046.01,885,656
+ST-0021,Seashell Skirt,Seashell,Girls,Bottoms,Girls Bottoms,Skirt,Summer,New,Wholesale,2026,725,24006.79,1551,714
+ST-0049,Cherry Blossom Short,Cherry Blossom,Boys,Bottoms,Boys Bottoms,Short,Spring,Carryover,Retail Stores,2026,623,23993.82,715,367
+ST-0094,Snowdrop Tunic,Snowdrop,Women,Tops,Women Tops,Tunic,Holiday,New,Wholesale,2025,396,23947.22,678,199
+ST-0098,Garden Trellis Pant,Garden Trellis,Women,Bottoms,Women Bottoms,Pant,Spring,New,Wholesale,2026,475,23936.58,643,301
+ST-0072,Strawberry Fields Two-Piece Set,Strawberry Fields,Baby,Sets,Baby Sets,Two-Piece Set,Summer,New,Retail Stores,2025,505,23906.05,730,271
+ST-0022,Cherry Blossom Two-Piece Set,Cherry Blossom,Girls,Sets,Girls Sets,Two-Piece Set,Spring,New,Retail Stores,2025,335,23891.41,611,307
+ST-0012,Wildflower Tee,Wildflower,Girls,Tops,Girls Tops,Tee,Fall,New,Wholesale,2025,636,23807.27,927,257
+ST-0027,Candy Cane Stripe Romper,Candy Cane Stripe,Girls,Sets,Girls Sets,Romper,Holiday,New,Retail Stores,2025,404,23781.7,432,263
+ST-0064,Wildflower PJ Set,Wildflower,Boys,Sleepwear,Boys Sleepwear,PJ Set,Fall,New,Retail Stores,2025,471,23690.34,850,291
+ST-0063,Strawberry Fields PJ Set,Strawberry Fields,Boys,Sleepwear,Boys Sleepwear,PJ Set,Summer,New,Retail Stores,2026,458,23640.99,597,312
+ST-0027,Candy Cane Stripe Romper,Candy Cane Stripe,Girls,Sets,Girls Sets,Romper,Holiday,New,Wholesale,2026,511,23543.2,689,507
+ST-0100,Acorn Toile PJ Set,Acorn Toile,Women,Sleepwear,Women Sleepwear,PJ Set,Fall,New,Ecommerce,2025,279,23491.55,383,295
+ST-0017,Seashell Short,Seashell,Girls,Bottoms,Girls Bottoms,Short,Summer,New,Retail Stores,2026,580,23489.82,918,344
+ST-0048,Candy Cane Stripe Polo,Candy Cane Stripe,Boys,Tops,Boys Tops,Polo,Holiday,New,Retail Stores,2025,455,23253.93,875,517
+ST-0033,Snowdrop PJ Set,Snowdrop,Girls,Sleepwear,Girls Sleepwear,PJ Set,Holiday,New,Wholesale,2025,598,23245.93,943,224
+ST-0071,Tulip Garden Two-Piece Set,Tulip Garden,Baby,Sets,Baby Sets,Two-Piece Set,Spring,New,Retail Stores,2025,388,23189.84,740,364
+ST-0074,Pomegranate Footie,Pomegranate,Baby,Sleepwear,Baby Sleepwear,Footie,Fall,New,Wholesale,2025,767,23188.56,1532,975
+ST-0034,Cherry Blossom Nightgown,Cherry Blossom,Girls,Sleepwear,Girls Sleepwear,Nightgown,Spring,New,Ecommerce,2025,433,23166.39,816,366
+ST-0052,Garden Trellis Pant,Garden Trellis,Boys,Bottoms,Boys Bottoms,Pant,Spring,New,Wholesale,2025,642,23107.37,1120,368
+ST-0068,Strawberry Fields Coverall,Strawberry Fields,Baby,Rompers,Baby Rompers,Coverall,Summer,New,Retail Stores,2025,458,22902.13,940,356
+ST-0057,Wildflower Two-Piece Set,Wildflower,Boys,Sets,Boys Sets,Two-Piece Set,Fall,New,Retail Stores,2025,379,22779.47,632,391
+ST-0017,Seashell Short,Seashell,Girls,Bottoms,Girls Bottoms,Short,Summer,New,Wholesale,2026,715,22646.05,822,110
+ST-0101,Winter Fair Isle PJ Set,Winter Fair Isle,Women,Sleepwear,Women Sleepwear,PJ Set,Holiday,Carryover,Ecommerce,2025,294,22642.45,398,123
+ST-0036,Autumn Gingham Nightgown,Autumn Gingham,Girls,Sleepwear,Girls Sleepwear,Nightgown,Fall,New,Wholesale,2026,683,22616.05,1033,317
+ST-0082,Hydrangea Bib Set,Hydrangea,Baby,Accessories,Baby Accessories,Bib Set,Spring,New,Ecommerce,2025,938,22550.37,1148,209
+ST-0048,Candy Cane Stripe Polo,Candy Cane Stripe,Boys,Tops,Boys Tops,Polo,Holiday,New,Wholesale,2025,559,22534.85,802,479
+ST-0020,Acorn Toile Legging,Acorn Toile,Girls,Bottoms,Girls Bottoms,Legging,Fall,New,Wholesale,2025,626,22531.5,977,534
+ST-0025,Hydrangea Romper,Hydrangea,Girls,Sets,Girls Sets,Romper,Spring,New,Wholesale,2025,504,22494.93,655,479
+ST-0022,Cherry Blossom Two-Piece Set,Cherry Blossom,Girls,Sets,Girls Sets,Two-Piece Set,Spring,New,Retail Stores,2026,322,22438.39,560,145
+ST-0062,Seashell Rash Guard Set,Seashell,Boys,Swim,Boys Swim,Rash Guard Set,Summer,New,Retail Stores,2026,465,22388.79,625,312
+ST-0057,Wildflower Two-Piece Set,Wildflower,Boys,Sets,Boys Sets,Two-Piece Set,Fall,New,Wholesale,2026,501,22361.03,737,133
+ST-0081,Holiday Holly Bonnet,Holiday Holly,Baby,Accessories,Baby Accessories,Bonnet,Holiday,New,Ecommerce,2026,890,22359.21,1337,285
+ST-0043,Pomegranate Tee,Pomegranate,Boys,Tops,Boys Tops,Tee,Fall,New,Retail Stores,2025,472,22335.72,860,530
+ST-0047,Wildflower Polo,Wildflower,Boys,Tops,Boys Tops,Polo,Fall,Carryover,Wholesale,2026,594,22235.08,722,432
+ST-0049,Cherry Blossom Short,Cherry Blossom,Boys,Bottoms,Boys Bottoms,Short,Spring,Carryover,Retail Stores,2025,530,22205.18,806,330
+ST-0080,Pomegranate Bonnet,Pomegranate,Baby,Accessories,Baby Accessories,Bonnet,Fall,Carryover,Wholesale,2025,1100,22168.08,1410,930
+ST-0013,Hydrangea Cardigan,Hydrangea,Girls,Tops,Girls Tops,Cardigan,Spring,New,Wholesale,2025,615,22135.58,1087,682
+ST-0042,Lemon Grove Tee,Lemon Grove,Boys,Tops,Boys Tops,Tee,Summer,New,Wholesale,2025,529,22087.24,1164,822
+ST-0015,Winter Fair Isle Cardigan,Winter Fair Isle,Girls,Tops,Girls Tops,Cardigan,Holiday,Carryover,Retail Stores,2025,445,22081.88,640,310
+ST-0065,Tulip Garden Bubble,Tulip Garden,Baby,Rompers,Baby Rompers,Bubble,Spring,New,Retail Stores,2025,449,22062.2,703,265
+ST-0047,Wildflower Polo,Wildflower,Boys,Tops,Boys Tops,Polo,Fall,Carryover,Wholesale,2025,588,22010.49,842,647
+ST-0044,Snowdrop Tee,Snowdrop,Boys,Tops,Boys Tops,Tee,Holiday,New,Retail Stores,2026,473,22008.59,568,337
+ST-0060,Nantucket Stripe Swim Trunk,Nantucket Stripe,Boys,Swim,Boys Swim,Swim Trunk,Summer,Carryover,Retail Stores,2025,358,21947.8,517,247
+ST-0075,Tulip Garden PJ Set,Tulip Garden,Baby,Sleepwear,Baby Sleepwear,PJ Set,Spring,New,Retail Stores,2025,485,21880.39,812,524
+ST-0030,Nantucket Stripe Rash Guard Set,Nantucket Stripe,Girls,Swim,Girls Swim,Rash Guard Set,Summer,New,Retail Stores,2026,450,21877.6,936,498
+ST-0077,Pomegranate PJ Set,Pomegranate,Baby,Sleepwear,Baby Sleepwear,PJ Set,Fall,New,Retail Stores,2025,500,21782.43,558,394
+ST-0024,Winter Fair Isle Two-Piece Set,Winter Fair Isle,Girls,Sets,Girls Sets,Two-Piece Set,Holiday,Carryover,Retail Stores,2026,295,21761.58,352,246
+ST-0033,Snowdrop PJ Set,Snowdrop,Girls,Sleepwear,Girls Sleepwear,PJ Set,Holiday,New,Retail Stores,2025,420,21646.46,549,252
+ST-0078,Tulip Garden Bonnet,Tulip Garden,Baby,Accessories,Baby Accessories,Bonnet,Spring,New,Wholesale,2025,997,21528.02,1288,552
+ST-0072,Strawberry Fields Two-Piece Set,Strawberry Fields,Baby,Sets,Baby Sets,Two-Piece Set,Summer,New,Retail Stores,2026,451,21399.51,632,374
+ST-0080,Pomegranate Bonnet,Pomegranate,Baby,Accessories,Baby Accessories,Bonnet,Fall,Carryover,Ecommerce,2025,796,21052.67,1403,746
+ST-0049,Cherry Blossom Short,Cherry Blossom,Boys,Bottoms,Boys Bottoms,Short,Spring,Carryover,Ecommerce,2025,529,21008.53,763,252
+ST-0045,Hydrangea Polo,Hydrangea,Boys,Tops,Boys Tops,Polo,Spring,New,Ecommerce,2025,392,20998.21,504,266
+ST-0072,Strawberry Fields Two-Piece Set,Strawberry Fields,Baby,Sets,Baby Sets,Two-Piece Set,Summer,New,Wholesale,2026,583,20983.81,711,498
+ST-0061,Garden Trellis Rash Guard Set,Garden Trellis,Boys,Swim,Boys Swim,Rash Guard Set,Spring,New,Wholesale,2025,485,20948.51,985,728
+ST-0012,Wildflower Tee,Wildflower,Girls,Tops,Girls Tops,Tee,Fall,New,Wholesale,2026,555,20775.21,754,149
+ST-0083,Snowdrop Bib Set,Snowdrop,Baby,Accessories,Baby Accessories,Bib Set,Holiday,Carryover,Ecommerce,2025,974,20702.34,1646,911
+ST-0060,Nantucket Stripe Swim Trunk,Nantucket Stripe,Boys,Swim,Boys Swim,Swim Trunk,Summer,Carryover,Ecommerce,2025,361,20654.41,626,350
+ST-0074,Pomegranate Footie,Pomegranate,Baby,Sleepwear,Baby Sleepwear,Footie,Fall,New,Retail Stores,2025,533,20465.33,763,350
+ST-0050,Palm Frond Short,Palm Frond,Boys,Bottoms,Boys Bottoms,Short,Summer,New,Wholesale,2025,546,20438.31,896,502
+ST-0052,Garden Trellis Pant,Garden Trellis,Boys,Bottoms,Boys Bottoms,Pant,Spring,New,Retail Stores,2025,411,20080.4,428,176
+ST-0011,Lemon Grove Tee,Lemon Grove,Girls,Tops,Girls Tops,Tee,Summer,New,Wholesale,2025,535,20026.55,727,452
+ST-0019,Garden Trellis Legging,Garden Trellis,Girls,Bottoms,Girls Bottoms,Legging,Spring,New,Retail Stores,2026,484,19988.67,612,330
+ST-0076,Lemon Grove PJ Set,Lemon Grove,Baby,Sleepwear,Baby Sleepwear,PJ Set,Summer,Carryover,Retail Stores,2025,503,19928.98,1026,400
+ST-0013,Hydrangea Cardigan,Hydrangea,Girls,Tops,Girls Tops,Cardigan,Spring,New,Wholesale,2026,553,19904.02,825,126
+ST-0083,Snowdrop Bib Set,Snowdrop,Baby,Accessories,Baby Accessories,Bib Set,Holiday,Carryover,Wholesale,2026,1148,19829.18,1594,799
+ST-0029,Hydrangea Rash Guard Set,Hydrangea,Girls,Swim,Girls Swim,Rash Guard Set,Spring,New,Retail Stores,2026,367,19778.59,800,426
+ST-0077,Pomegranate PJ Set,Pomegranate,Baby,Sleepwear,Baby Sleepwear,PJ Set,Fall,New,Retail Stores,2026,467,19705.74,671,422
+ST-0081,Holiday Holly Bonnet,Holiday Holly,Baby,Accessories,Baby Accessories,Bonnet,Holiday,New,Wholesale,2026,970,19548.21,1919,1263
+ST-0008,Seashell Blouse,Seashell,Girls,Tops,Girls Tops,Blouse,Summer,New,Retail Stores,2025,334,19535.83,414,148
+ST-0070,Winter Fair Isle Coverall,Winter Fair Isle,Baby,Rompers,Baby Rompers,Coverall,Holiday,New,Wholesale,2025,565,19522.34,766,374
+ST-0014,Acorn Toile Cardigan,Acorn Toile,Girls,Tops,Girls Tops,Cardigan,Fall,New,Retail Stores,2025,334,19442.92,419,215
+ST-0066,Seashell Bubble,Seashell,Baby,Rompers,Baby Rompers,Bubble,Summer,New,Retail Stores,2026,458,19416.52,843,94
+ST-0048,Candy Cane Stripe Polo,Candy Cane Stripe,Boys,Tops,Boys Tops,Polo,Holiday,New,Retail Stores,2026,375,19382.15,834,587
+ST-0020,Acorn Toile Legging,Acorn Toile,Girls,Bottoms,Girls Bottoms,Legging,Fall,New,Retail Stores,2026,413,18928.62,610,187
+ST-0073,Seashell Footie,Seashell,Baby,Sleepwear,Baby Sleepwear,Footie,Summer,New,Wholesale,2025,625,18895.49,1188,449
+ST-0054,Acorn Toile Pant,Acorn Toile,Boys,Bottoms,Boys Bottoms,Pant,Fall,New,Wholesale,2025,499,18678.97,960,229
+ST-0016,Cherry Blossom Short,Cherry Blossom,Girls,Bottoms,Girls Bottoms,Short,Spring,Carryover,Retail Stores,2025,368,18350.29,615,93
+ST-0099,Strawberry Fields PJ Set,Strawberry Fields,Women,Sleepwear,Women Sleepwear,PJ Set,Summer,New,Wholesale,2025,330,18055.22,533,289
+ST-0005,Palm Frond Maxi Dress,Palm Frond,Girls,Dresses,Girls Dresses,Maxi Dress,Summer,New,Wholesale,2026,272,18015.32,423,235
+ST-0043,Pomegranate Tee,Pomegranate,Boys,Tops,Boys Tops,Tee,Fall,New,Retail Stores,2026,375,17908.97,568,260
+ST-0064,Wildflower PJ Set,Wildflower,Boys,Sleepwear,Boys Sleepwear,PJ Set,Fall,New,Retail Stores,2026,362,17881.53,699,240
+ST-0083,Snowdrop Bib Set,Snowdrop,Baby,Accessories,Baby Accessories,Bib Set,Holiday,Carryover,Ecommerce,2026,787,17796.6,1743,1101
+ST-0078,Tulip Garden Bonnet,Tulip Garden,Baby,Accessories,Baby Accessories,Bonnet,Spring,New,Wholesale,2026,821,17727.69,1255,784
+ST-0016,Cherry Blossom Short,Cherry Blossom,Girls,Bottoms,Girls Bottoms,Short,Spring,Carryover,Retail Stores,2026,357,17584.35,552,284
+ST-0035,Palm Frond Nightgown,Palm Frond,Girls,Sleepwear,Girls Sleepwear,Nightgown,Summer,New,Wholesale,2025,452,17570.51,805,366
+ST-0037,Holiday Holly Nightgown,Holiday Holly,Girls,Sleepwear,Girls Sleepwear,Nightgown,Holiday,Carryover,Retail Stores,2026,316,17348.95,666,430
+ST-0067,Snowdrop Bubble,Snowdrop,Baby,Rompers,Baby Rompers,Bubble,Holiday,New,Retail Stores,2026,359,17325.89,754,418
+ST-0058,Holiday Holly Two-Piece Set,Holiday Holly,Boys,Sets,Boys Sets,Two-Piece Set,Holiday,New,Retail Stores,2025,252,17246.4,435,108
+ST-0074,Pomegranate Footie,Pomegranate,Baby,Sleepwear,Baby Sleepwear,Footie,Fall,New,Retail Stores,2026,443,17174.43,846,357
+ST-0053,Strawberry Fields Pant,Strawberry Fields,Boys,Bottoms,Boys Bottoms,Pant,Summer,New,Retail Stores,2026,404,16957.66,649,233
+ST-0089,Tulip Garden Blouse,Tulip Garden,Women,Tops,Women Tops,Blouse,Spring,New,Wholesale,2026,271,16778.37,340,174
+ST-0029,Hydrangea Rash Guard Set,Hydrangea,Girls,Swim,Girls Swim,Rash Guard Set,Spring,New,Retail Stores,2025,311,16706.41,575,325
+ST-0017,Seashell Short,Seashell,Girls,Bottoms,Girls Bottoms,Short,Summer,New,Retail Stores,2025,427,16460.77,598,376
+ST-0074,Pomegranate Footie,Pomegranate,Baby,Sleepwear,Baby Sleepwear,Footie,Fall,New,Wholesale,2026,541,16355.95,890,541
+ST-0083,Snowdrop Bib Set,Snowdrop,Baby,Accessories,Baby Accessories,Bib Set,Holiday,Carryover,Retail Stores,2025,739,16351.9,1061,580
+ST-0073,Seashell Footie,Seashell,Baby,Sleepwear,Baby Sleepwear,Footie,Summer,New,Retail Stores,2025,418,16327.3,718,398
+ST-0082,Hydrangea Bib Set,Hydrangea,Baby,Accessories,Baby Accessories,Bib Set,Spring,New,Wholesale,2026,853,15962.02,1396,405
+ST-0063,Strawberry Fields PJ Set,Strawberry Fields,Boys,Sleepwear,Boys Sleepwear,PJ Set,Summer,New,Wholesale,2026,408,15860.1,804,512
+ST-0033,Snowdrop PJ Set,Snowdrop,Girls,Sleepwear,Girls Sleepwear,PJ Set,Holiday,New,Wholesale,2026,403,15665.74,321,123
+ST-0055,Candy Cane Stripe Pant,Candy Cane Stripe,Boys,Bottoms,Boys Bottoms,Pant,Holiday,Carryover,Retail Stores,2025,383,15575.51,746,553
+ST-0082,Hydrangea Bib Set,Hydrangea,Baby,Accessories,Baby Accessories,Bib Set,Spring,New,Retail Stores,2025,637,15488.23,1163,380
+ST-0081,Holiday Holly Bonnet,Holiday Holly,Baby,Accessories,Baby Accessories,Bonnet,Holiday,New,Wholesale,2025,768,15477.35,1032,259
+ST-0051,Autumn Gingham Short,Autumn Gingham,Boys,Bottoms,Boys Bottoms,Short,Fall,New,Retail Stores,2026,393,15262.21,758,466
+ST-0076,Lemon Grove PJ Set,Lemon Grove,Baby,Sleepwear,Baby Sleepwear,PJ Set,Summer,Carryover,Wholesale,2025,473,14981.23,524,285
+ST-0028,Tulip Garden One-Piece,Tulip Garden,Girls,Swim,Girls Swim,One-Piece,Spring,New,Wholesale,2026,358,14947.5,393,321
+ST-0075,Tulip Garden PJ Set,Tulip Garden,Baby,Sleepwear,Baby Sleepwear,PJ Set,Spring,New,Retail Stores,2026,334,14945.18,467,242
+ST-0047,Wildflower Polo,Wildflower,Boys,Tops,Boys Tops,Polo,Fall,Carryover,Retail Stores,2025,315,14921.1,634,217
+ST-0079,Seashell Bonnet,Seashell,Baby,Accessories,Baby Accessories,Bonnet,Summer,Carryover,Wholesale,2026,794,14857.96,1333,545
+ST-0053,Strawberry Fields Pant,Strawberry Fields,Boys,Bottoms,Boys Bottoms,Pant,Summer,New,Retail Stores,2025,350,14385.02,490,189
+ST-0031,Strawberry Fields PJ Set,Strawberry Fields,Girls,Sleepwear,Girls Sleepwear,PJ Set,Summer,Carryover,Retail Stores,2026,309,13914.39,537,435
+ST-0067,Snowdrop Bubble,Snowdrop,Baby,Rompers,Baby Rompers,Bubble,Holiday,New,Wholesale,2026,351,13644.35,583,136
+ST-0079,Seashell Bonnet,Seashell,Baby,Accessories,Baby Accessories,Bonnet,Summer,Carryover,Retail Stores,2026,577,13390.27,1181,356
+ST-0036,Autumn Gingham Nightgown,Autumn Gingham,Girls,Sleepwear,Girls Sleepwear,Nightgown,Fall,New,Retail Stores,2025,315,13288.37,549,423
+ST-0080,Pomegranate Bonnet,Pomegranate,Baby,Accessories,Baby Accessories,Bonnet,Fall,Carryover,Wholesale,2026,657,13240.39,1006,407
+ST-0007,Cherry Blossom Blouse,Cherry Blossom,Girls,Tops,Girls Tops,Blouse,Spring,Carryover,Retail Stores,2025,224,13034.58,311,149
+ST-0078,Tulip Garden Bonnet,Tulip Garden,Baby,Accessories,Baby Accessories,Bonnet,Spring,New,Ecommerce,2026,488,12918.15,799,469
+ST-0083,Snowdrop Bib Set,Snowdrop,Baby,Accessories,Baby Accessories,Bib Set,Holiday,Carryover,Retail Stores,2026,573,12661.22,774,408
+ST-0083,Snowdrop Bib Set,Snowdrop,Baby,Accessories,Baby Accessories,Bib Set,Holiday,Carryover,Wholesale,2025,731,12626.41,935,384
+ST-0025,Hydrangea Romper,Hydrangea,Girls,Sets,Girls Sets,Romper,Spring,New,Wholesale,2026,282,12586.44,287,215
+ST-0082,Hydrangea Bib Set,Hydrangea,Baby,Accessories,Baby Accessories,Bib Set,Spring,New,Ecommerce,2026,497,12567.26,591,187
+ST-0021,Seashell Skirt,Seashell,Girls,Bottoms,Girls Bottoms,Skirt,Summer,New,Retail Stores,2025,288,12515.87,267,152
+ST-0049,Cherry Blossom Short,Cherry Blossom,Boys,Bottoms,Boys Bottoms,Short,Spring,Carryover,Wholesale,2025,383,12130.69,467,204
+ST-0092,Winter Fair Isle Blouse,Winter Fair Isle,Women,Tops,Women Tops,Blouse,Holiday,New,Wholesale,2025,179,12113.43,262,3
+ST-0081,Holiday Holly Bonnet,Holiday Holly,Baby,Accessories,Baby Accessories,Bonnet,Holiday,New,Retail Stores,2026,482,11915.34,595,386
+ST-0019,Garden Trellis Legging,Garden Trellis,Girls,Bottoms,Girls Bottoms,Legging,Spring,New,Wholesale,2025,371,11750.61,355,298
+ST-0082,Hydrangea Bib Set,Hydrangea,Baby,Accessories,Baby Accessories,Bib Set,Spring,New,Retail Stores,2026,489,11615.12,729,365
+ST-0069,Autumn Gingham Coverall,Autumn Gingham,Baby,Rompers,Baby Rompers,Coverall,Fall,New,Wholesale,2026,326,11264.21,589,273
+ST-0073,Seashell Footie,Seashell,Baby,Sleepwear,Baby Sleepwear,Footie,Summer,New,Retail Stores,2026,272,11198.49,356,141
+ST-0082,Hydrangea Bib Set,Hydrangea,Baby,Accessories,Baby Accessories,Bib Set,Spring,New,Wholesale,2025,598,11190.25,1171,453
+ST-0028,Tulip Garden One-Piece,Tulip Garden,Girls,Swim,Girls Swim,One-Piece,Spring,New,Retail Stores,2026,191,10423.83,400,220
+ST-0009,Acorn Toile Blouse,Acorn Toile,Girls,Tops,Girls Tops,Blouse,Fall,New,Wholesale,2026,266,10340.16,395,259
+ST-0069,Autumn Gingham Coverall,Autumn Gingham,Baby,Rompers,Baby Rompers,Coverall,Fall,New,Retail Stores,2026,227,10328.84,355,178
+ST-0078,Tulip Garden Bonnet,Tulip Garden,Baby,Accessories,Baby Accessories,Bonnet,Spring,New,Retail Stores,2026,369,10273.1,763,476
+ST-0067,Snowdrop Bubble,Snowdrop,Baby,Rompers,Baby Rompers,Bubble,Holiday,New,Retail Stores,2025,197,10041.13,275,49
+ST-0092,Winter Fair Isle Blouse,Winter Fair Isle,Women,Tops,Women Tops,Blouse,Holiday,New,Wholesale,2026,146,9880.23,320,251
+ST-0079,Seashell Bonnet,Seashell,Baby,Accessories,Baby Accessories,Bonnet,Summer,Carryover,Wholesale,2025,513,9599.66,973,749
+ST-0090,Palm Frond Blouse,Palm Frond,Women,Tops,Women Tops,Blouse,Summer,New,Wholesale,2025,158,9554.7,171,43
+ST-0078,Tulip Garden Bonnet,Tulip Garden,Baby,Accessories,Baby Accessories,Bonnet,Spring,New,Retail Stores,2025,322,9220.69,446,145
+ST-0080,Pomegranate Bonnet,Pomegranate,Baby,Accessories,Baby Accessories,Bonnet,Fall,Carryover,Retail Stores,2026,357,9208.71,422,180
+ST-0053,Strawberry Fields Pant,Strawberry Fields,Boys,Bottoms,Boys Bottoms,Pant,Summer,New,Wholesale,2025,285,9026.75,432,127
+ST-0081,Holiday Holly Bonnet,Holiday Holly,Baby,Accessories,Baby Accessories,Bonnet,Holiday,New,Retail Stores,2025,347,8689.17,726,557
+ST-0080,Pomegranate Bonnet,Pomegranate,Baby,Accessories,Baby Accessories,Bonnet,Fall,Carryover,Retail Stores,2025,325,8189.6,504,296
+ST-0079,Seashell Bonnet,Seashell,Baby,Accessories,Baby Accessories,Bonnet,Summer,Carryover,Retail Stores,2025,354,8140.68,640,169
+ST-0090,Palm Frond Blouse,Palm Frond,Women,Tops,Women Tops,Blouse,Summer,New,Wholesale,2026,107,6470.59,156,115

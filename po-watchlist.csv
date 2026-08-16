@@ -1,0 +1,361 @@
+otb.month_key,otb.fiscal_month,otb.channel,otb.dept_key,otb.division,otb.department,otb.lead_time_weeks,otb.po_placement_by,otb.po_status,otb.days_past_placement,otb.status_rank,otb.plan_receipts_cost,otb.on_order_cost,otb.open_to_buy_cost
+FY2026-07,Aug,Wholesale,Women Sleepwear,Women,Sleepwear,16,2026-04-12,Past due,117,1,0,0,0
+FY2026-07,Aug,Wholesale,Girls Tops,Girls,Tops,16,2026-04-12,Past due,117,1,0,0,0
+FY2026-07,Aug,Wholesale,Boys Tops,Boys,Tops,15,2026-04-19,Past due,110,1,0,0,0
+FY2026-07,Aug,Wholesale,Baby Accessories,Baby,Accessories,14,2026-04-26,Past due,103,1,0,0,0
+FY2026-07,Aug,Wholesale,Baby Sets,Baby,Sets,14,2026-04-26,Past due,103,1,0,0,0
+FY2026-07,Aug,Wholesale,Boys Sets,Boys,Sets,13,2026-05-03,Past due,96,1,0,0,0
+FY2026-07,Aug,Wholesale,Girls Sets,Girls,Sets,13,2026-05-03,Past due,96,1,0,0,0
+FY2026-08,Sep,Wholesale,Girls Tops,Girls,Tops,16,2026-05-10,Past due,89,1,37200.9,35412.88,1788.02
+FY2026-08,Sep,Wholesale,Women Sleepwear,Women,Sleepwear,16,2026-05-10,Past due,89,1,4999.41,4715.27,284.14
+FY2026-08,Sep,Retail Stores,Boys Bottoms,Boys,Bottoms,14,2026-05-24,Past due,75,1,5368.27,5186.6,181.67
+FY2026-08,Sep,Wholesale,Boys Swim,Boys,Swim,14,2026-05-24,Past due,75,1,10897.16,10491.15,406.01
+FY2026-08,Sep,Retail Stores,Baby Rompers,Baby,Rompers,14,2026-05-24,Past due,75,1,9851.24,9013.5,837.74
+FY2026-08,Sep,Ecommerce,Baby Sets,Baby,Sets,14,2026-05-24,Past due,75,1,8324.54,7761.24,563.3
+FY2026-08,Sep,Retail Stores,Girls Sets,Girls,Sets,13,2026-05-31,Past due,68,1,11304.35,10159.84,1144.51
+FY2026-08,Sep,Ecommerce,Girls Sets,Girls,Sets,13,2026-05-31,Past due,68,1,28671.71,27188.62,1483.09
+FY2026-08,Sep,Retail Stores,Baby Sleepwear,Baby,Sleepwear,12,2026-06-07,Past due,61,1,9251.15,8957.25,293.9
+FY2026-08,Sep,Wholesale,Baby Sleepwear,Baby,Sleepwear,12,2026-06-07,Past due,61,1,18045.3,17295.35,749.95
+FY2026-08,Sep,Ecommerce,Baby Sleepwear,Baby,Sleepwear,12,2026-06-07,Past due,61,1,22117.59,20772.59,1345
+FY2026-09,Oct,Wholesale,Girls Tops,Girls,Tops,16,2026-06-14,Past due,54,1,63775.22,53244.02,10531.2
+FY2026-09,Oct,Wholesale,Girls Bottoms,Girls,Bottoms,16,2026-06-14,Past due,54,1,49001.53,43902.27,5099.26
+FY2026-09,Oct,Retail Stores,Women Sleepwear,Women,Sleepwear,16,2026-06-14,Past due,54,1,6048.34,5170.78,877.56
+FY2026-09,Oct,Retail Stores,Girls Tops,Girls,Tops,16,2026-06-14,Past due,54,1,47572.68,38656.54,8916.14
+FY2026-09,Oct,Ecommerce,Girls Tops,Girls,Tops,16,2026-06-14,Past due,54,1,110577.53,104593.88,5983.65
+FY2026-09,Oct,Ecommerce,Women Sleepwear,Women,Sleepwear,16,2026-06-14,Past due,54,1,14834.95,12750.14,2084.81
+FY2026-09,Oct,Retail Stores,Girls Bottoms,Girls,Bottoms,16,2026-06-14,Past due,54,1,37292.81,32971.69,4321.12
+FY2026-09,Oct,Ecommerce,Girls Bottoms,Girls,Bottoms,16,2026-06-14,Past due,54,1,84584.26,69733.04,14851.22
+FY2026-09,Oct,Wholesale,Women Sleepwear,Women,Sleepwear,16,2026-06-14,Past due,54,1,7848.3,7183.48,664.82
+FY2026-09,Oct,Ecommerce,Boys Tops,Boys,Tops,15,2026-06-21,Past due,47,1,67438.96,62159.11,5279.85
+FY2026-09,Oct,Wholesale,Women Bottoms,Women,Bottoms,15,2026-06-21,Past due,47,1,10714.56,8469.6,2244.96
+FY2026-09,Oct,Ecommerce,Women Dresses,Women,Dresses,15,2026-06-21,Past due,47,1,22947.18,19604.54,3342.64
+FY2026-09,Oct,Ecommerce,Women Bottoms,Women,Bottoms,15,2026-06-21,Past due,47,1,19081.61,15243.96,3837.65
+FY2026-09,Oct,Retail Stores,Women Bottoms,Women,Bottoms,15,2026-06-21,Past due,47,1,7947.15,6977.8,969.35
+FY2026-09,Oct,Retail Stores,Boys Tops,Boys,Tops,15,2026-06-21,Past due,47,1,31002.63,25204.91,5797.72
+FY2026-09,Oct,Retail Stores,Women Dresses,Women,Dresses,15,2026-06-21,Past due,47,1,11260.88,9947.31,1313.57
+FY2026-09,Oct,Wholesale,Women Dresses,Women,Dresses,15,2026-06-21,Past due,47,1,13086.15,12357.14,729.01
+FY2026-09,Oct,Wholesale,Boys Tops,Boys,Tops,15,2026-06-21,Past due,47,1,41114.61,35550.72,5563.89
+FY2026-09,Oct,Retail Stores,Girls Dresses,Girls,Dresses,14,2026-06-28,Past due,40,1,100435.89,88696.09,11739.8
+FY2026-09,Oct,Retail Stores,Boys Swim,Boys,Swim,14,2026-06-28,Past due,40,1,13040.78,10397.6,2643.18
+FY2026-09,Oct,Retail Stores,Baby Rompers,Baby,Rompers,14,2026-06-28,Past due,40,1,27365.09,21534.72,5830.37
+FY2026-09,Oct,Ecommerce,Girls Swim,Girls,Swim,14,2026-06-28,Past due,40,1,42491.93,36931.79,5560.14
+FY2026-09,Oct,Wholesale,Boys Swim,Boys,Swim,14,2026-06-28,Past due,40,1,16414.79,14546.63,1868.16
+FY2026-09,Oct,Wholesale,Baby Rompers,Baby,Rompers,14,2026-06-28,Past due,40,1,35312.85,30610.29,4702.56
+FY2026-09,Oct,Wholesale,Girls Sleepwear,Girls,Sleepwear,14,2026-06-28,Past due,40,1,56519.76,51127.99,5391.77
+FY2026-09,Oct,Ecommerce,Baby Sets,Baby,Sets,14,2026-06-28,Past due,40,1,20600.31,19042.37,1557.94
+FY2026-09,Oct,Wholesale,Baby Accessories,Baby,Accessories,14,2026-06-28,Past due,40,1,12551.28,11077.28,1474
+FY2026-09,Oct,Retail Stores,Girls Sleepwear,Girls,Sleepwear,14,2026-06-28,Past due,40,1,43399.8,38190.13,5209.67
+FY2026-09,Oct,Wholesale,Boys Bottoms,Boys,Bottoms,14,2026-06-28,Past due,40,1,27357.57,25831.94,1525.63
+FY2026-09,Oct,Retail Stores,Baby Sets,Baby,Sets,14,2026-06-28,Past due,40,1,9063.43,7477.4,1586.03
+FY2026-09,Oct,Ecommerce,Boys Bottoms,Boys,Bottoms,14,2026-06-28,Past due,40,1,47178.66,39575.09,7603.57
+FY2026-09,Oct,Retail Stores,Baby Accessories,Baby,Accessories,14,2026-06-28,Past due,40,1,9451.6,7878.02,1573.58
+FY2026-09,Oct,Ecommerce,Girls Sleepwear,Girls,Sleepwear,14,2026-06-28,Past due,40,1,103263.12,94073.05,9190.07
+FY2026-09,Oct,Wholesale,Baby Sets,Baby,Sets,14,2026-06-28,Past due,40,1,11866.77,10627.67,1239.1
+FY2026-09,Oct,Wholesale,Girls Dresses,Girls,Dresses,14,2026-06-28,Past due,40,1,114474.48,103852.61,10621.87
+FY2026-09,Oct,Wholesale,Girls Swim,Girls,Swim,14,2026-06-28,Past due,40,1,23792.64,21089.84,2702.8
+FY2026-09,Oct,Ecommerce,Girls Dresses,Girls,Dresses,14,2026-06-28,Past due,40,1,214523.18,193377.06,21146.12
+FY2026-09,Oct,Ecommerce,Baby Accessories,Baby,Accessories,14,2026-06-28,Past due,40,1,20896.84,16905.55,3991.29
+FY2026-09,Oct,Retail Stores,Girls Swim,Girls,Swim,14,2026-06-28,Past due,40,1,16856.09,13087.83,3768.26
+FY2026-09,Oct,Ecommerce,Boys Swim,Boys,Swim,14,2026-06-28,Past due,40,1,29248.44,25368.97,3879.47
+FY2026-09,Oct,Ecommerce,Baby Rompers,Baby,Rompers,14,2026-06-28,Past due,40,1,62375.44,55887.8,6487.64
+FY2026-09,Oct,Retail Stores,Boys Bottoms,Boys,Bottoms,14,2026-06-28,Past due,40,1,21709.41,19442.93,2266.48
+FY2026-09,Oct,Wholesale,Boys Sets,Boys,Sets,13,2026-07-05,Past due,33,1,12631.89,11000.15,1631.74
+FY2026-09,Oct,Retail Stores,Women Tops,Women,Tops,13,2026-07-05,Past due,33,1,13466.39,12021.81,1444.58
+FY2026-09,Oct,Wholesale,Girls Sets,Girls,Sets,13,2026-07-05,Past due,33,1,49633.04,44023.09,5609.95
+FY2026-09,Oct,Retail Stores,Boys Sets,Boys,Sets,13,2026-07-05,Past due,33,1,9927.79,8694.64,1233.15
+FY2026-09,Oct,Retail Stores,Girls Sets,Girls,Sets,13,2026-07-05,Past due,33,1,43906.44,38858.85,5047.59
+FY2026-09,Oct,Ecommerce,Boys Sets,Boys,Sets,13,2026-07-05,Past due,33,1,21322.91,20000.63,1322.28
+FY2026-09,Oct,Ecommerce,Girls Sets,Girls,Sets,13,2026-07-05,Past due,33,1,79990.27,64178.74,15811.53
+FY2026-09,Oct,Ecommerce,Women Tops,Women,Tops,13,2026-07-05,Past due,33,1,26413.71,23550.8,2862.91
+FY2026-09,Oct,Wholesale,Women Tops,Women,Tops,13,2026-07-05,Past due,33,1,16921.48,15526.12,1395.36
+FY2026-09,Oct,Retail Stores,Baby Sleepwear,Baby,Sleepwear,12,2026-07-12,Past due,26,1,20109.84,17402.46,2707.38
+FY2026-10,Nov,Wholesale,Girls Bottoms,Girls,Bottoms,16,2026-07-12,Past due,26,1,8155.71,6265.95,1889.76
+FY2026-09,Oct,Ecommerce,Baby Sleepwear,Baby,Sleepwear,12,2026-07-12,Past due,26,1,45082.8,40141.97,4940.83
+FY2026-10,Nov,Ecommerce,Girls Tops,Girls,Tops,16,2026-07-12,Past due,26,1,163177.58,111186.98,51990.6
+FY2026-09,Oct,Wholesale,Baby Sleepwear,Baby,Sleepwear,12,2026-07-12,Past due,26,1,27368.37,20196.96,7171.41
+FY2026-10,Nov,Retail Stores,Women Sleepwear,Women,Sleepwear,16,2026-07-12,Past due,26,1,11583.32,8792.64,2790.68
+FY2026-10,Nov,Retail Stores,Girls Bottoms,Girls,Bottoms,16,2026-07-12,Past due,26,1,59939.4,43690.08,16249.32
+FY2026-10,Nov,Wholesale,Women Sleepwear,Women,Sleepwear,16,2026-07-12,Past due,26,1,1643.36,1262.96,380.4
+FY2026-10,Nov,Ecommerce,Girls Bottoms,Girls,Bottoms,16,2026-07-12,Past due,26,1,134090.08,116041.36,18048.72
+FY2026-10,Nov,Ecommerce,Women Sleepwear,Women,Sleepwear,16,2026-07-12,Past due,26,1,24088.9,20022.35,4066.55
+FY2026-10,Nov,Wholesale,Girls Tops,Girls,Tops,16,2026-07-12,Past due,26,1,9860,6832.73,3027.27
+FY2026-10,Nov,Retail Stores,Girls Tops,Girls,Tops,16,2026-07-12,Past due,26,1,80927.87,60193.4,20734.47
+FY2026-09,Oct,Retail Stores,Girls Outerwear,Girls,Outerwear,11,2026-07-19,Past due,19,1,5255.9,4321.43,934.47
+FY2026-10,Nov,Ecommerce,Women Dresses,Women,Dresses,15,2026-07-19,Past due,19,1,38318.73,28970.25,9348.48
+FY2026-10,Nov,Retail Stores,Boys Tops,Boys,Tops,15,2026-07-19,Past due,19,1,48220.95,36833.88,11387.07
+FY2026-09,Oct,Wholesale,Boys Sleepwear,Boys,Sleepwear,11,2026-07-19,Past due,19,1,7806.4,5744.16,2062.24
+FY2026-10,Nov,Wholesale,Boys Tops,Boys,Tops,15,2026-07-19,Past due,19,1,6898.2,4630.36,2267.84
+FY2026-09,Oct,Ecommerce,Girls Outerwear,Girls,Outerwear,11,2026-07-19,Past due,19,1,12736.04,10495.65,2240.39
+FY2026-09,Oct,Retail Stores,Boys Sleepwear,Boys,Sleepwear,11,2026-07-19,Past due,19,1,6504.55,6159.87,344.68
+FY2026-09,Oct,Wholesale,Girls Outerwear,Girls,Outerwear,11,2026-07-19,Past due,19,1,7307.61,6438.14,869.47
+FY2026-10,Nov,Ecommerce,Women Bottoms,Women,Bottoms,15,2026-07-19,Past due,19,1,27746.55,21271.73,6474.82
+FY2026-10,Nov,Retail Stores,Women Dresses,Women,Dresses,15,2026-07-19,Past due,19,1,16626.87,12049.93,4576.94
+FY2026-09,Oct,Ecommerce,Boys Sleepwear,Boys,Sleepwear,11,2026-07-19,Past due,19,1,15876.95,13595.1,2281.85
+FY2026-10,Nov,Retail Stores,Women Bottoms,Women,Bottoms,15,2026-07-19,Past due,19,1,13611.08,10275.11,3335.97
+FY2026-10,Nov,Ecommerce,Boys Tops,Boys,Tops,15,2026-07-19,Past due,19,1,104990.36,73345.43,31644.93
+FY2026-10,Nov,Wholesale,Women Dresses,Women,Dresses,15,2026-07-19,Past due,19,1,2986.9,2172.32,814.58
+FY2026-10,Nov,Wholesale,Women Bottoms,Women,Bottoms,15,2026-07-19,Past due,19,1,2045.78,1477.11,568.67
+FY2026-10,Nov,Ecommerce,Girls Dresses,Girls,Dresses,14,2026-07-26,Past due,12,1,337761.48,300308.87,37452.61
+FY2026-10,Nov,Wholesale,Boys Bottoms,Boys,Bottoms,14,2026-07-26,Past due,12,1,5409.08,3765.61,1643.47
+FY2026-10,Nov,Retail Stores,Girls Dresses,Girls,Dresses,14,2026-07-26,Past due,12,1,133741.05,101101.13,32639.92
+FY2026-10,Nov,Ecommerce,Girls Swim,Girls,Swim,14,2026-07-26,Past due,12,1,59630.3,45224.75,14405.55
+FY2026-10,Nov,Retail Stores,Baby Rompers,Baby,Rompers,14,2026-07-26,Past due,12,1,47311.26,35922.35,11388.91
+FY2026-10,Nov,Wholesale,Boys Swim,Boys,Swim,14,2026-07-26,Past due,12,1,2769.11,2196.59,572.52
+FY2026-10,Nov,Retail Stores,Girls Swim,Girls,Swim,14,2026-07-26,Past due,12,1,28413.8,23061.49,5352.31
+FY2026-10,Nov,Ecommerce,Boys Swim,Boys,Swim,14,2026-07-26,Past due,12,1,46224.95,35286.13,10938.82
+FY2026-10,Nov,Retail Stores,Boys Bottoms,Boys,Bottoms,14,2026-07-26,Past due,12,1,37326.02,27897.68,9428.34
+FY2026-10,Nov,Wholesale,Girls Dresses,Girls,Dresses,14,2026-07-26,Past due,12,1,30221.26,25471.61,4749.65
+FY2026-10,Nov,Ecommerce,Baby Accessories,Baby,Accessories,14,2026-07-26,Past due,12,1,37133.72,27013.52,10120.2
+FY2026-10,Nov,Ecommerce,Baby Rompers,Baby,Rompers,14,2026-07-26,Past due,12,1,103727.76,70994.25,32733.51
+FY2026-10,Nov,Wholesale,Baby Rompers,Baby,Rompers,14,2026-07-26,Past due,12,1,6229.12,4839.6,1389.52
+FY2026-10,Nov,Wholesale,Girls Sleepwear,Girls,Sleepwear,14,2026-07-26,Past due,12,1,10098.93,7535.49,2563.44
+FY2026-10,Nov,Wholesale,Baby Accessories,Baby,Accessories,14,2026-07-26,Past due,12,1,1723.82,1164.04,559.78
+FY2026-10,Nov,Retail Stores,Boys Swim,Boys,Swim,14,2026-07-26,Past due,12,1,21566.14,14453.82,7112.32
+FY2026-10,Nov,Wholesale,Baby Sets,Baby,Sets,14,2026-07-26,Past due,12,1,1938.04,1496.46,441.58
+FY2026-10,Nov,Ecommerce,Girls Sleepwear,Girls,Sleepwear,14,2026-07-26,Past due,12,1,137261.64,105742.7,31518.94
+FY2026-10,Nov,Ecommerce,Boys Bottoms,Boys,Bottoms,14,2026-07-26,Past due,12,1,76773.01,50764.27,26008.74
+FY2026-10,Nov,Ecommerce,Baby Sets,Baby,Sets,14,2026-07-26,Past due,12,1,30969.26,21963.51,9005.75
+FY2026-10,Nov,Retail Stores,Baby Accessories,Baby,Accessories,14,2026-07-26,Past due,12,1,14947.71,10539.44,4408.27
+FY2026-10,Nov,Retail Stores,Baby Sets,Baby,Sets,14,2026-07-26,Past due,12,1,15448.67,11834.49,3614.18
+FY2026-10,Nov,Retail Stores,Girls Sleepwear,Girls,Sleepwear,14,2026-07-26,Past due,12,1,66347.67,44613.87,21733.8
+FY2026-10,Nov,Wholesale,Girls Swim,Girls,Swim,14,2026-07-26,Past due,12,1,3091.83,2382.5,709.33
+FY2026-10,Nov,Retail Stores,Women Tops,Women,Tops,13,2026-08-02,Past due,5,1,19827.54,14900.84,4926.7
+FY2026-10,Nov,Ecommerce,Women Tops,Women,Tops,13,2026-08-02,Past due,5,1,46616.18,33363.7,13252.48
+FY2026-10,Nov,Wholesale,Girls Sets,Girls,Sets,13,2026-08-02,Past due,5,1,6956.82,5427.39,1529.43
+FY2026-10,Nov,Ecommerce,Boys Sets,Boys,Sets,13,2026-08-02,Past due,5,1,34687.65,26767.4,7920.25
+FY2026-10,Nov,Ecommerce,Girls Sets,Girls,Sets,13,2026-08-02,Past due,5,1,127223.39,84904.05,42319.34
+FY2026-10,Nov,Wholesale,Women Tops,Women,Tops,13,2026-08-02,Past due,5,1,2128.32,1646.11,482.21
+FY2026-10,Nov,Retail Stores,Girls Sets,Girls,Sets,13,2026-08-02,Past due,5,1,55696.54,44621.82,11074.72
+FY2026-10,Nov,Retail Stores,Boys Sets,Boys,Sets,13,2026-08-02,Past due,5,1,15864.11,11153.36,4710.75
+FY2026-10,Nov,Wholesale,Boys Sets,Boys,Sets,13,2026-08-02,Past due,5,1,2665.31,1826.02,839.29
+FY2026-11,Dec,Ecommerce,Girls Tops,Girls,Tops,16,2026-08-09,Open,-2,2,57108.89,42566.4,14542.49
+FY2026-10,Nov,Retail Stores,Baby Sleepwear,Baby,Sleepwear,12,2026-08-09,Open,-2,2,35079.44,27125.33,7954.11
+FY2026-11,Dec,Wholesale,Girls Bottoms,Girls,Bottoms,16,2026-08-09,Open,-2,2,6345.95,3992.96,2352.99
+FY2026-11,Dec,Retail Stores,Women Sleepwear,Women,Sleepwear,16,2026-08-09,Open,-2,2,4428.35,3305.11,1123.24
+FY2026-10,Nov,Ecommerce,Baby Sleepwear,Baby,Sleepwear,12,2026-08-09,Open,-2,2,69720.39,46956.08,22764.31
+FY2026-11,Dec,Retail Stores,Girls Bottoms,Girls,Bottoms,16,2026-08-09,Open,-2,2,27084.07,15370.67,11713.4
+FY2026-10,Nov,Wholesale,Baby Sleepwear,Baby,Sleepwear,12,2026-08-09,Open,-2,2,3983.3,2883.8,1099.5
+FY2026-11,Dec,Ecommerce,Women Sleepwear,Women,Sleepwear,16,2026-08-09,Open,-2,2,9252.69,5830.28,3422.41
+FY2026-11,Dec,Ecommerce,Girls Bottoms,Girls,Bottoms,16,2026-08-09,Open,-2,2,46319.01,32767.42,13551.59
+FY2026-11,Dec,Wholesale,Women Sleepwear,Women,Sleepwear,16,2026-08-09,Open,-2,2,1193.94,835.39,358.55
+FY2026-11,Dec,Wholesale,Girls Tops,Girls,Tops,16,2026-08-09,Open,-2,2,7994.54,5007.02,2987.52
+FY2026-11,Dec,Retail Stores,Girls Tops,Girls,Tops,16,2026-08-09,Open,-2,2,36126.76,24733.16,11393.6
+FY2026-11,Dec,Wholesale,Women Bottoms,Women,Bottoms,15,2026-08-16,Open,-9,2,1234.78,826.55,408.23
+FY2026-11,Dec,Retail Stores,Boys Tops,Boys,Tops,15,2026-08-16,Open,-9,2,19575.42,12921.78,6653.64
+FY2026-10,Nov,Ecommerce,Boys Sleepwear,Boys,Sleepwear,11,2026-08-16,Open,-9,2,20842.83,16819.56,4023.27
+FY2026-11,Dec,Retail Stores,Women Bottoms,Women,Bottoms,15,2026-08-16,Open,-9,2,4968.22,3500.16,1468.06
+FY2026-11,Dec,Ecommerce,Women Bottoms,Women,Bottoms,15,2026-08-16,Open,-9,2,15389.03,10824.01,4565.02
+FY2026-10,Nov,Wholesale,Boys Sleepwear,Boys,Sleepwear,11,2026-08-16,Open,-9,2,2023.26,1460.73,562.53
+FY2026-10,Nov,Retail Stores,Girls Outerwear,Girls,Outerwear,11,2026-08-16,Open,-9,2,9007.41,6726.07,2281.34
+FY2026-11,Dec,Ecommerce,Women Dresses,Women,Dresses,15,2026-08-16,Open,-9,2,13911.28,8271.24,5640.04
+FY2026-11,Dec,Wholesale,Women Dresses,Women,Dresses,15,2026-08-16,Open,-9,2,1551.29,1094.64,456.65
+FY2026-11,Dec,Ecommerce,Boys Tops,Boys,Tops,15,2026-08-16,Open,-9,2,44282.81,29823.31,14459.5
+FY2026-11,Dec,Wholesale,Boys Tops,Boys,Tops,15,2026-08-16,Open,-9,2,3908.98,2562.92,1346.06
+FY2026-10,Nov,Retail Stores,Boys Sleepwear,Boys,Sleepwear,11,2026-08-16,Open,-9,2,11128.36,8549.05,2579.31
+FY2026-11,Dec,Retail Stores,Women Dresses,Women,Dresses,15,2026-08-16,Open,-9,2,8066.08,4720.95,3345.13
+FY2026-10,Nov,Ecommerce,Girls Outerwear,Girls,Outerwear,11,2026-08-16,Open,-9,2,21266.66,17500.35,3766.31
+FY2026-10,Nov,Wholesale,Girls Outerwear,Girls,Outerwear,11,2026-08-16,Open,-9,2,1289.85,924.11,365.74
+FY2026-11,Dec,Ecommerce,Girls Sleepwear,Girls,Sleepwear,14,2026-08-23,Open,-16,2,75327.39,49786.94,25540.45
+FY2026-11,Dec,Wholesale,Baby Rompers,Baby,Rompers,14,2026-08-23,Open,-16,2,3707.33,2611.98,1095.35
+FY2026-11,Dec,Retail Stores,Baby Rompers,Baby,Rompers,14,2026-08-23,Open,-16,2,13786.49,9458.96,4327.53
+FY2026-11,Dec,Ecommerce,Baby Sets,Baby,Sets,14,2026-08-23,Open,-16,2,19562.58,13935.72,5626.86
+FY2026-11,Dec,Wholesale,Girls Dresses,Girls,Dresses,14,2026-08-23,Open,-16,2,12619.02,8834.9,3784.12
+FY2026-11,Dec,Retail Stores,Boys Bottoms,Boys,Bottoms,14,2026-08-23,Open,-16,2,11626.16,8114.18,3511.98
+FY2026-11,Dec,Ecommerce,Boys Bottoms,Boys,Bottoms,14,2026-08-23,Open,-16,2,27119.45,18398.91,8720.54
+FY2026-11,Dec,Ecommerce,Baby Rompers,Baby,Rompers,14,2026-08-23,Open,-16,2,31071.75,22644.36,8427.39
+FY2026-11,Dec,Ecommerce,Baby Accessories,Baby,Accessories,14,2026-08-23,Open,-16,2,13110.82,8376.84,4733.98
+FY2026-11,Dec,Retail Stores,Baby Sets,Baby,Sets,14,2026-08-23,Open,-16,2,5105.37,3575.69,1529.68
+FY2026-11,Dec,Wholesale,Girls Swim,Girls,Swim,14,2026-08-23,Open,-16,2,2870.99,1807.35,1063.64
+FY2026-11,Dec,Wholesale,Boys Bottoms,Boys,Bottoms,14,2026-08-23,Open,-16,2,2580.53,1712.62,867.91
+FY2026-11,Dec,Ecommerce,Boys Swim,Boys,Swim,14,2026-08-23,Open,-16,2,26242.19,15960.38,10281.81
+FY2026-11,Dec,Wholesale,Boys Swim,Boys,Swim,14,2026-08-23,Open,-16,2,2455.56,1529.24,926.32
+FY2026-11,Dec,Retail Stores,Girls Dresses,Girls,Dresses,14,2026-08-23,Open,-16,2,87281.38,66190.69,21090.69
+FY2026-11,Dec,Wholesale,Baby Sets,Baby,Sets,14,2026-08-23,Open,-16,2,1893.49,1239.8,653.69
+FY2026-11,Dec,Retail Stores,Boys Swim,Boys,Swim,14,2026-08-23,Open,-16,2,7012.87,4399.77,2613.1
+FY2026-11,Dec,Retail Stores,Baby Accessories,Baby,Accessories,14,2026-08-23,Open,-16,2,7153.33,5237.22,1916.11
+FY2026-11,Dec,Wholesale,Girls Sleepwear,Girls,Sleepwear,14,2026-08-23,Open,-16,2,5513.37,3246.78,2266.59
+FY2026-11,Dec,Retail Stores,Girls Sleepwear,Girls,Sleepwear,14,2026-08-23,Open,-16,2,35565.8,24498.57,11067.23
+FY2026-11,Dec,Retail Stores,Girls Swim,Girls,Swim,14,2026-08-23,Open,-16,2,11755.58,7699.2,4056.38
+FY2026-11,Dec,Ecommerce,Girls Swim,Girls,Swim,14,2026-08-23,Open,-16,2,28968.56,17937.27,11031.29
+FY2026-11,Dec,Wholesale,Baby Accessories,Baby,Accessories,14,2026-08-23,Open,-16,2,1664.62,1094.47,570.15
+FY2026-11,Dec,Ecommerce,Girls Dresses,Girls,Dresses,14,2026-08-23,Open,-16,2,171833.33,98939.54,72893.79
+FY2026-11,Dec,Retail Stores,Girls Sets,Girls,Sets,13,2026-08-30,Open,-23,2,19898.61,14571.56,5327.05
+FY2026-11,Dec,Wholesale,Girls Sets,Girls,Sets,13,2026-08-30,Open,-23,2,5840.3,3715.53,2124.77
+FY2026-11,Dec,Ecommerce,Women Tops,Women,Tops,13,2026-08-30,Open,-23,2,21523.05,15007.96,6515.09
+FY2026-11,Dec,Retail Stores,Boys Sets,Boys,Sets,13,2026-08-30,Open,-23,2,5957.12,4434.98,1522.14
+FY2026-11,Dec,Ecommerce,Boys Sets,Boys,Sets,13,2026-08-30,Open,-23,2,12079.83,8586.22,3493.61
+FY2026-11,Dec,Ecommerce,Girls Sets,Girls,Sets,13,2026-08-30,Open,-23,2,58640.9,40940.15,17700.75
+FY2026-11,Dec,Wholesale,Boys Sets,Boys,Sets,13,2026-08-30,Open,-23,2,1470.43,897.57,572.86
+FY2026-11,Dec,Wholesale,Women Tops,Women,Tops,13,2026-08-30,Open,-23,2,2304.5,1557.17,747.33
+FY2026-11,Dec,Retail Stores,Women Tops,Women,Tops,13,2026-08-30,Open,-23,2,7975.07,5283.11,2691.96
+FY2026-11,Dec,Wholesale,Baby Sleepwear,Baby,Sleepwear,12,2026-09-06,Open,-30,2,3923.85,2442.37,1481.48
+FY2026-11,Dec,Retail Stores,Baby Sleepwear,Baby,Sleepwear,12,2026-09-06,Open,-30,2,14972.18,9290.21,5681.97
+FY2026-11,Dec,Ecommerce,Baby Sleepwear,Baby,Sleepwear,12,2026-09-06,Open,-30,2,40638.11,26089.68,14548.43
+FY2026-11,Dec,Wholesale,Boys Sleepwear,Boys,Sleepwear,11,2026-09-13,Open,-37,2,795.75,581.54,214.21
+FY2026-12,Jan,Retail Stores,Women Sleepwear,Women,Sleepwear,16,2026-09-13,Open,-37,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Bottoms,Girls,Bottoms,16,2026-09-13,Open,-37,2,19576.77,12018.83,7557.94
+FY2026-12,Jan,Ecommerce,Girls Bottoms,Girls,Bottoms,16,2026-09-13,Open,-37,2,0,0,0
+FY2026-12,Jan,Retail Stores,Girls Bottoms,Girls,Bottoms,16,2026-09-13,Open,-37,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Tops,Girls,Tops,16,2026-09-13,Open,-37,2,25833.81,12938.18,12895.63
+FY2026-11,Dec,Ecommerce,Boys Sleepwear,Boys,Sleepwear,11,2026-09-13,Open,-37,2,12341.96,7616.29,4725.67
+FY2026-12,Jan,Wholesale,Women Sleepwear,Women,Sleepwear,16,2026-09-13,Open,-37,2,3302.08,2037,1265.08
+FY2026-12,Jan,Ecommerce,Women Sleepwear,Women,Sleepwear,16,2026-09-13,Open,-37,2,0,0,0
+FY2026-11,Dec,Ecommerce,Girls Outerwear,Girls,Outerwear,11,2026-09-13,Open,-37,2,8269.24,5445.51,2823.73
+FY2026-12,Jan,Retail Stores,Girls Tops,Girls,Tops,16,2026-09-13,Open,-37,2,0,0,0
+FY2026-11,Dec,Retail Stores,Girls Outerwear,Girls,Outerwear,11,2026-09-13,Open,-37,2,4121.36,2576.66,1544.7
+FY2026-12,Jan,Ecommerce,Girls Tops,Girls,Tops,16,2026-09-13,Open,-37,2,0,0,0
+FY2026-11,Dec,Retail Stores,Boys Sleepwear,Boys,Sleepwear,11,2026-09-13,Open,-37,2,4582.08,3173.68,1408.4
+FY2026-11,Dec,Wholesale,Girls Outerwear,Girls,Outerwear,11,2026-09-13,Open,-37,2,751.91,509.15,242.76
+FY2026-12,Jan,Retail Stores,Women Dresses,Women,Dresses,15,2026-09-20,Open,-44,2,0,0,0
+FY2026-12,Jan,Ecommerce,Boys Tops,Boys,Tops,15,2026-09-20,Open,-44,2,0,0,0
+FY2026-12,Jan,Wholesale,Women Dresses,Women,Dresses,15,2026-09-20,Open,-44,2,5226.46,2665.3,2561.16
+FY2026-12,Jan,Ecommerce,Women Bottoms,Women,Bottoms,15,2026-09-20,Open,-44,2,0,0,0
+FY2026-12,Jan,Retail Stores,Boys Tops,Boys,Tops,15,2026-09-20,Open,-44,2,0,0,0
+FY2026-12,Jan,Wholesale,Boys Tops,Boys,Tops,15,2026-09-20,Open,-44,2,16346.32,9169.96,7176.36
+FY2026-12,Jan,Ecommerce,Women Dresses,Women,Dresses,15,2026-09-20,Open,-44,2,0,0,0
+FY2026-12,Jan,Wholesale,Women Bottoms,Women,Bottoms,15,2026-09-20,Open,-44,2,4532.54,2513.42,2019.12
+FY2026-12,Jan,Retail Stores,Women Bottoms,Women,Bottoms,15,2026-09-20,Open,-44,2,0,0,0
+FY2026-12,Jan,Ecommerce,Baby Accessories,Baby,Accessories,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Baby Rompers,Baby,Rompers,14,2026-09-27,Open,-51,2,14703.35,8233.32,6470.03
+FY2026-12,Jan,Retail Stores,Girls Dresses,Girls,Dresses,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Dresses,Girls,Dresses,14,2026-09-27,Open,-51,2,52654.13,29099.87,23554.26
+FY2026-12,Jan,Retail Stores,Baby Accessories,Baby,Accessories,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Retail Stores,Boys Bottoms,Boys,Bottoms,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Retail Stores,Boys Swim,Boys,Swim,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Boys Bottoms,Boys,Bottoms,14,2026-09-27,Open,-51,2,11194.31,7570.51,3623.8
+FY2026-12,Jan,Ecommerce,Boys Bottoms,Boys,Bottoms,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Ecommerce,Girls Swim,Girls,Swim,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Swim,Girls,Swim,14,2026-09-27,Open,-51,2,9462.94,5317.08,4145.86
+FY2026-12,Jan,Wholesale,Baby Accessories,Baby,Accessories,14,2026-09-27,Open,-51,2,5295.94,3581.29,1714.65
+FY2026-12,Jan,Retail Stores,Girls Sleepwear,Girls,Sleepwear,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Retail Stores,Girls Swim,Girls,Swim,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Boys Swim,Boys,Swim,14,2026-09-27,Open,-51,2,6726.98,4632.01,2094.97
+FY2026-12,Jan,Ecommerce,Girls Dresses,Girls,Dresses,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Ecommerce,Baby Rompers,Baby,Rompers,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Retail Stores,Baby Rompers,Baby,Rompers,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Ecommerce,Boys Swim,Boys,Swim,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Baby Sets,Baby,Sets,14,2026-09-27,Open,-51,2,4816.06,2995.29,1820.77
+FY2026-12,Jan,Retail Stores,Baby Sets,Baby,Sets,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Ecommerce,Girls Sleepwear,Girls,Sleepwear,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Ecommerce,Baby Sets,Baby,Sets,14,2026-09-27,Open,-51,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Sleepwear,Girls,Sleepwear,14,2026-09-27,Open,-51,2,22950.87,12559.02,10391.85
+FY2026-12,Jan,Ecommerce,Women Tops,Women,Tops,13,2026-10-04,Open,-58,2,0,0,0
+FY2026-12,Jan,Wholesale,Boys Sets,Boys,Sets,13,2026-10-04,Open,-58,2,5547.84,3230.55,2317.29
+FY2026-12,Jan,Retail Stores,Girls Sets,Girls,Sets,13,2026-10-04,Open,-58,2,0,0,0
+FY2026-12,Jan,Wholesale,Women Tops,Women,Tops,13,2026-10-04,Open,-58,2,7024.61,4271.72,2752.89
+FY2026-12,Jan,Retail Stores,Women Tops,Women,Tops,13,2026-10-04,Open,-58,2,0,0,0
+FY2026-12,Jan,Retail Stores,Boys Sets,Boys,Sets,13,2026-10-04,Open,-58,2,0,0,0
+FY2026-12,Jan,Ecommerce,Girls Sets,Girls,Sets,13,2026-10-04,Open,-58,2,0,0,0
+FY2026-12,Jan,Ecommerce,Boys Sets,Boys,Sets,13,2026-10-04,Open,-58,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Sets,Girls,Sets,13,2026-10-04,Open,-58,2,18381.8,10546.85,7834.95
+FY2026-12,Jan,Wholesale,Baby Sleepwear,Baby,Sleepwear,12,2026-10-11,Open,-65,2,11935.05,7831.97,4103.08
+FY2026-12,Jan,Ecommerce,Baby Sleepwear,Baby,Sleepwear,12,2026-10-11,Open,-65,2,0,0,0
+FY2026-12,Jan,Retail Stores,Baby Sleepwear,Baby,Sleepwear,12,2026-10-11,Open,-65,2,0,0,0
+FY2026-12,Jan,Ecommerce,Boys Sleepwear,Boys,Sleepwear,11,2026-10-18,Open,-72,2,0,0,0
+FY2026-12,Jan,Wholesale,Boys Sleepwear,Boys,Sleepwear,11,2026-10-18,Open,-72,2,3449.68,1972.21,1477.47
+FY2026-12,Jan,Retail Stores,Boys Sleepwear,Boys,Sleepwear,11,2026-10-18,Open,-72,2,0,0,0
+FY2026-12,Jan,Wholesale,Girls Outerwear,Girls,Outerwear,11,2026-10-18,Open,-72,2,2960.22,1855.49,1104.73
+FY2026-12,Jan,Retail Stores,Girls Outerwear,Girls,Outerwear,11,2026-10-18,Open,-72,2,0,0,0
+FY2026-12,Jan,Ecommerce,Girls Outerwear,Girls,Outerwear,11,2026-10-18,Open,-72,2,0,0,0
+FY2026-07,Aug,Wholesale,Girls Bottoms,Girls,Bottoms,16,2026-04-12,Committed,117,3,883.63,883.63,0
+FY2026-07,Aug,Retail Stores,Women Sleepwear,Women,Sleepwear,16,2026-04-12,Committed,117,3,3409.57,3409.57,0
+FY2026-07,Aug,Ecommerce,Women Sleepwear,Women,Sleepwear,16,2026-04-12,Committed,117,3,8798.96,8798.96,0
+FY2026-07,Aug,Retail Stores,Girls Bottoms,Girls,Bottoms,16,2026-04-12,Committed,117,3,19034.86,19034.86,0
+FY2026-07,Aug,Ecommerce,Girls Bottoms,Girls,Bottoms,16,2026-04-12,Committed,117,3,53296.97,53296.97,0
+FY2026-07,Aug,Retail Stores,Girls Tops,Girls,Tops,16,2026-04-12,Committed,117,3,28573.94,28573.94,0
+FY2026-07,Aug,Ecommerce,Girls Tops,Girls,Tops,16,2026-04-12,Committed,117,3,75718.09,75718.09,0
+FY2026-07,Aug,Wholesale,Women Dresses,Women,Dresses,15,2026-04-19,Committed,110,3,330.32,330.32,0
+FY2026-07,Aug,Retail Stores,Women Dresses,Women,Dresses,15,2026-04-19,Committed,110,3,6182.79,6182.79,0
+FY2026-07,Aug,Ecommerce,Women Dresses,Women,Dresses,15,2026-04-19,Committed,110,3,12975.29,12975.29,0
+FY2026-07,Aug,Wholesale,Women Bottoms,Women,Bottoms,15,2026-04-19,Committed,110,3,51.86,51.86,0
+FY2026-07,Aug,Retail Stores,Women Bottoms,Women,Bottoms,15,2026-04-19,Committed,110,3,4583.35,4583.35,0
+FY2026-07,Aug,Retail Stores,Boys Tops,Boys,Tops,15,2026-04-19,Committed,110,3,17228.47,17228.47,0
+FY2026-07,Aug,Ecommerce,Boys Tops,Boys,Tops,15,2026-04-19,Committed,110,3,34562.2,34562.2,0
+FY2026-07,Aug,Ecommerce,Women Bottoms,Women,Bottoms,15,2026-04-19,Committed,110,3,11872.99,11872.99,0
+FY2026-07,Aug,Ecommerce,Baby Accessories,Baby,Accessories,14,2026-04-26,Committed,103,3,13247.25,13247.25,0
+FY2026-07,Aug,Retail Stores,Girls Sleepwear,Girls,Sleepwear,14,2026-04-26,Committed,103,3,24916.95,24916.95,0
+FY2026-07,Aug,Ecommerce,Boys Swim,Boys,Swim,14,2026-04-26,Committed,103,3,21243.3,21243.3,0
+FY2026-07,Aug,Wholesale,Boys Swim,Boys,Swim,14,2026-04-26,Committed,103,3,557.53,557.53,0
+FY2026-07,Aug,Wholesale,Boys Bottoms,Boys,Bottoms,14,2026-04-26,Committed,103,3,1171.89,1171.89,0
+FY2026-07,Aug,Retail Stores,Boys Swim,Boys,Swim,14,2026-04-26,Committed,103,3,6372.37,6372.37,0
+FY2026-07,Aug,Ecommerce,Baby Rompers,Baby,Rompers,14,2026-04-26,Committed,103,3,32202.8,32202.8,0
+FY2026-07,Aug,Ecommerce,Girls Swim,Girls,Swim,14,2026-04-26,Committed,103,3,18786.56,18786.56,0
+FY2026-07,Aug,Retail Stores,Boys Bottoms,Boys,Bottoms,14,2026-04-26,Committed,103,3,15773.82,15773.82,0
+FY2026-07,Aug,Ecommerce,Boys Bottoms,Boys,Bottoms,14,2026-04-26,Committed,103,3,30935.4,30935.4,0
+FY2026-07,Aug,Retail Stores,Baby Rompers,Baby,Rompers,14,2026-04-26,Committed,103,3,14317.83,14317.83,0
+FY2026-07,Aug,Ecommerce,Girls Sleepwear,Girls,Sleepwear,14,2026-04-26,Committed,103,3,48409.09,48409.09,0
+FY2026-07,Aug,Wholesale,Baby Rompers,Baby,Rompers,14,2026-04-26,Committed,103,3,1144.76,1144.76,0
+FY2026-07,Aug,Wholesale,Girls Dresses,Girls,Dresses,14,2026-04-26,Committed,103,3,5837.25,5837.25,0
+FY2026-07,Aug,Retail Stores,Baby Accessories,Baby,Accessories,14,2026-04-26,Committed,103,3,6410.84,6410.84,0
+FY2026-07,Aug,Ecommerce,Baby Sets,Baby,Sets,14,2026-04-26,Committed,103,3,11258.03,11258.03,0
+FY2026-07,Aug,Retail Stores,Baby Sets,Baby,Sets,14,2026-04-26,Committed,103,3,6307.48,6307.48,0
+FY2026-07,Aug,Retail Stores,Girls Dresses,Girls,Dresses,14,2026-04-26,Committed,103,3,56414.93,56414.93,0
+FY2026-07,Aug,Wholesale,Girls Swim,Girls,Swim,14,2026-04-26,Committed,103,3,114.53,114.53,0
+FY2026-07,Aug,Retail Stores,Girls Swim,Girls,Swim,14,2026-04-26,Committed,103,3,10531.73,10531.73,0
+FY2026-07,Aug,Wholesale,Girls Sleepwear,Girls,Sleepwear,14,2026-04-26,Committed,103,3,1557.46,1557.46,0
+FY2026-07,Aug,Ecommerce,Girls Dresses,Girls,Dresses,14,2026-04-26,Committed,103,3,131626.38,131626.38,0
+FY2026-07,Aug,Ecommerce,Women Tops,Women,Tops,13,2026-05-03,Committed,96,3,15473.48,15473.48,0
+FY2026-07,Aug,Retail Stores,Boys Sets,Boys,Sets,13,2026-05-03,Committed,96,3,5476.88,5476.88,0
+FY2026-07,Aug,Ecommerce,Boys Sets,Boys,Sets,13,2026-05-03,Committed,96,3,13868.9,13868.9,0
+FY2026-07,Aug,Ecommerce,Girls Sets,Girls,Sets,13,2026-05-03,Committed,96,3,45082.23,45082.23,0
+FY2026-07,Aug,Retail Stores,Women Tops,Women,Tops,13,2026-05-03,Committed,96,3,7324.32,7324.32,0
+FY2026-07,Aug,Wholesale,Women Tops,Women,Tops,13,2026-05-03,Committed,96,3,375.34,375.34,0
+FY2026-07,Aug,Retail Stores,Girls Sets,Girls,Sets,13,2026-05-03,Committed,96,3,19764.97,19764.97,0
+FY2026-07,Aug,Ecommerce,Baby Sleepwear,Baby,Sleepwear,12,2026-05-10,Committed,89,3,26948.36,26948.36,0
+FY2026-08,Sep,Wholesale,Girls Bottoms,Girls,Bottoms,16,2026-05-10,Committed,89,3,29136.72,29136.72,0
+FY2026-08,Sep,Ecommerce,Girls Tops,Girls,Tops,16,2026-05-10,Committed,89,3,45095.39,45095.39,0
+FY2026-08,Sep,Retail Stores,Girls Bottoms,Girls,Bottoms,16,2026-05-10,Committed,89,3,15437.7,15437.7,0
+FY2026-07,Aug,Retail Stores,Baby Sleepwear,Baby,Sleepwear,12,2026-05-10,Committed,89,3,13258.28,13258.28,0
+FY2026-08,Sep,Ecommerce,Women Sleepwear,Women,Sleepwear,16,2026-05-10,Committed,89,3,4475.28,4475.28,0
+FY2026-07,Aug,Wholesale,Baby Sleepwear,Baby,Sleepwear,12,2026-05-10,Committed,89,3,307.72,307.72,0
+FY2026-08,Sep,Ecommerce,Girls Bottoms,Girls,Bottoms,16,2026-05-10,Committed,89,3,31947.09,31947.09,0
+FY2026-08,Sep,Retail Stores,Girls Tops,Girls,Tops,16,2026-05-10,Committed,89,3,20778,20378.68,399.32
+FY2026-08,Sep,Retail Stores,Women Sleepwear,Women,Sleepwear,16,2026-05-10,Committed,89,3,3413.35,3413.35,0
+FY2026-08,Sep,Retail Stores,Boys Tops,Boys,Tops,15,2026-05-17,Committed,82,3,15598.78,15598.78,0
+FY2026-07,Aug,Ecommerce,Boys Sleepwear,Boys,Sleepwear,11,2026-05-17,Committed,82,3,7319.6,7319.6,0
+FY2026-08,Sep,Retail Stores,Women Dresses,Women,Dresses,15,2026-05-17,Committed,82,3,3496.91,3439.22,57.69
+FY2026-07,Aug,Ecommerce,Girls Outerwear,Girls,Outerwear,11,2026-05-17,Committed,82,3,6363.14,6363.14,0
+FY2026-07,Aug,Wholesale,Boys Sleepwear,Boys,Sleepwear,11,2026-05-17,Committed,82,3,287.32,287.32,0
+FY2026-08,Sep,Wholesale,Boys Tops,Boys,Tops,15,2026-05-17,Committed,82,3,24905.66,24905.66,0
+FY2026-07,Aug,Retail Stores,Girls Outerwear,Girls,Outerwear,11,2026-05-17,Committed,82,3,3181.63,3181.63,0
+FY2026-08,Sep,Ecommerce,Boys Tops,Boys,Tops,15,2026-05-17,Committed,82,3,40532.94,40532.94,0
+FY2026-08,Sep,Wholesale,Women Dresses,Women,Dresses,15,2026-05-17,Committed,82,3,8991.54,8834.35,157.19
+FY2026-08,Sep,Ecommerce,Women Dresses,Women,Dresses,15,2026-05-17,Committed,82,3,10418.9,10371.35,47.55
+FY2026-07,Aug,Wholesale,Girls Outerwear,Girls,Outerwear,11,2026-05-17,Committed,82,3,349.99,349.99,0
+FY2026-07,Aug,Retail Stores,Boys Sleepwear,Boys,Sleepwear,11,2026-05-17,Committed,82,3,3974.14,3974.14,0
+FY2026-08,Sep,Wholesale,Women Bottoms,Women,Bottoms,15,2026-05-17,Committed,82,3,6848.66,6646.73,201.93
+FY2026-08,Sep,Ecommerce,Women Bottoms,Women,Bottoms,15,2026-05-17,Committed,82,3,7545.74,7545.74,0
+FY2026-08,Sep,Retail Stores,Women Bottoms,Women,Bottoms,15,2026-05-17,Committed,82,3,4002.43,4002.43,0
+FY2026-08,Sep,Wholesale,Girls Swim,Girls,Swim,14,2026-05-24,Committed,75,3,14062.17,14062.17,0
+FY2026-08,Sep,Retail Stores,Girls Swim,Girls,Swim,14,2026-05-24,Committed,75,3,6461.77,6461.77,0
+FY2026-08,Sep,Ecommerce,Baby Accessories,Baby,Accessories,14,2026-05-24,Committed,75,3,6922.06,6922.06,0
+FY2026-08,Sep,Retail Stores,Baby Accessories,Baby,Accessories,14,2026-05-24,Committed,75,3,4296.27,4296.27,0
+FY2026-08,Sep,Ecommerce,Girls Swim,Girls,Swim,14,2026-05-24,Committed,75,3,15372.42,15372.42,0
+FY2026-08,Sep,Wholesale,Boys Bottoms,Boys,Bottoms,14,2026-05-24,Committed,75,3,15877.07,15877.07,0
+FY2026-08,Sep,Wholesale,Baby Accessories,Baby,Accessories,14,2026-05-24,Committed,75,3,7568.11,7568.11,0
+FY2026-08,Sep,Ecommerce,Baby Rompers,Baby,Rompers,14,2026-05-24,Committed,75,3,25544.04,25544.04,0
+FY2026-08,Sep,Wholesale,Baby Rompers,Baby,Rompers,14,2026-05-24,Committed,75,3,21575.21,21575.21,0
+FY2026-08,Sep,Wholesale,Girls Sleepwear,Girls,Sleepwear,14,2026-05-24,Committed,75,3,33879.96,33879.96,0
+FY2026-08,Sep,Retail Stores,Baby Sets,Baby,Sets,14,2026-05-24,Committed,75,3,4048.34,4048.34,0
+FY2026-08,Sep,Retail Stores,Boys Swim,Boys,Swim,14,2026-05-24,Committed,75,3,5756.28,5756.28,0
+FY2026-08,Sep,Wholesale,Baby Sets,Baby,Sets,14,2026-05-24,Committed,75,3,7228.9,7228.9,0
+FY2026-08,Sep,Ecommerce,Boys Bottoms,Boys,Bottoms,14,2026-05-24,Committed,75,3,21146.83,20563.36,583.47
+FY2026-08,Sep,Ecommerce,Girls Sleepwear,Girls,Sleepwear,14,2026-05-24,Committed,75,3,40086.96,40086.96,0
+FY2026-08,Sep,Wholesale,Girls Dresses,Girls,Dresses,14,2026-05-24,Committed,75,3,78795.64,78795.64,0
+FY2026-08,Sep,Retail Stores,Girls Dresses,Girls,Dresses,14,2026-05-24,Committed,75,3,50014.22,49321.76,692.46
+FY2026-08,Sep,Ecommerce,Boys Swim,Boys,Swim,14,2026-05-24,Committed,75,3,9492.41,9492.41,0
+FY2026-08,Sep,Ecommerce,Girls Dresses,Girls,Dresses,14,2026-05-24,Committed,75,3,82811.12,80964.19,1846.93
+FY2026-08,Sep,Retail Stores,Girls Sleepwear,Girls,Sleepwear,14,2026-05-24,Committed,75,3,13861.49,13720.97,140.52
+FY2026-08,Sep,Ecommerce,Women Tops,Women,Tops,13,2026-05-31,Committed,68,3,12974.32,12974.32,0
+FY2026-08,Sep,Retail Stores,Women Tops,Women,Tops,13,2026-05-31,Committed,68,3,5239.19,5239.19,0
+FY2026-08,Sep,Wholesale,Girls Sets,Girls,Sets,13,2026-05-31,Committed,68,3,28069.53,27624.76,444.77
+FY2026-08,Sep,Wholesale,Boys Sets,Boys,Sets,13,2026-05-31,Committed,68,3,7790.47,7790.47,0
+FY2026-08,Sep,Retail Stores,Boys Sets,Boys,Sets,13,2026-05-31,Committed,68,3,3986.54,3986.54,0
+FY2026-08,Sep,Wholesale,Women Tops,Women,Tops,13,2026-05-31,Committed,68,3,10140.3,10140.3,0
+FY2026-08,Sep,Ecommerce,Boys Sets,Boys,Sets,13,2026-05-31,Committed,68,3,8377.59,8377.59,0
+FY2026-08,Sep,Retail Stores,Boys Sleepwear,Boys,Sleepwear,11,2026-06-14,Committed,54,3,1918.06,1916.11,1.95
+FY2026-08,Sep,Retail Stores,Girls Outerwear,Girls,Outerwear,11,2026-06-14,Committed,54,3,2226.67,2226.67,0
+FY2026-08,Sep,Ecommerce,Boys Sleepwear,Boys,Sleepwear,11,2026-06-14,Committed,54,3,6454.24,6454.24,0
+FY2026-08,Sep,Wholesale,Boys Sleepwear,Boys,Sleepwear,11,2026-06-14,Committed,54,3,5656.44,5588.91,67.53
+FY2026-08,Sep,Ecommerce,Girls Outerwear,Girls,Outerwear,11,2026-06-14,Committed,54,3,5382.33,5250.35,131.98
+FY2026-08,Sep,Wholesale,Girls Outerwear,Girls,Outerwear,11,2026-06-14,Committed,54,3,4197.03,4076.79,120.24
