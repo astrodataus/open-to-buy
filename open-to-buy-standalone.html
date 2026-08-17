@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTY0IiBoZWlnaHQ9IjE2NCIgdmlld0JveD0iMCAwIDE2NCAxNjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+IDxjaXJjbGUgY3g9IjgyIiBjeT0iODIiIHI9IjgyIiBmaWxsPSJ1cmwoI2FkX2Zhdl9ncmFkKSIvPiA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTU0LjY1ODQgNTUuNzAzOUM1Ni4wNDQ2IDUzLjU5NiA1OC41MzE5IDUyLjY0NzYgNjAuODYyIDUzLjExODNDNjIuMzc4NyA1My40MjI3IDYzLjc3NzggNTQuMzA5OCA2NC42OTQ5IDU1LjcwNDRMOTQuMzY1OCAxMDAuODIyQzk2LjE4NjYgMTAzLjU5MSA5NS40MTgxIDEwNy4zMTIgOTIuNjQ5NCAxMDkuMTMyQzg5Ljg4MDggMTEwLjk1MyA4Ni4xNjAzIDExMC4xODUgODQuMzM5NiAxMDcuNDE2TDU5LjY3NjUgNjkuOTEyOUwzNS4wMTM4IDEwNy40MTZDMzMuMTkzIDExMC4xODQgMjkuNDcyNiAxMTAuOTUzIDI2LjcwMzkgMTA5LjEzMkMyMy45MzUyIDEwNy4zMTEgMjMuMTY2OCAxMDMuNTkxIDI0Ljk4NzYgMTAwLjgyMkw1NC42NTg0IDU1LjcwMzlaTTE0MSAxMDRDMTQxIDEwNy4zMTQgMTM4LjMxNCAxMTAgMTM1IDExMEgxMDlDMTA1LjY4NiAxMTAgMTAzIDEwNy4zMTQgMTAzIDEwNEMxMDMgMTAwLjY4NiAxMDUuNjg2IDk4IDEwOSA5OEgxMzVDMTM4LjMxNCA5OCAxNDEgMTAwLjY4NiAxNDEgMTA0WiIgZmlsbD0iYmxhY2siLz4gPGRlZnM+IDxsaW5lYXJHcmFkaWVudCBpZD0iYWRfZmF2X2dyYWQiIHgxPSI5NS43Mzg2IiB5MT0iMTUuNTkwMSIgeDI9IjYzLjE0MTEiIHkyPSIxNDMuMTQ2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+IDxzdG9wIHN0b3AtY29sb3I9IiNGQkQwNDIiLz4gPHN0b3Agb2Zmc2V0PSIwLjczNSIgc3RvcC1jb2xvcj0iI0ZCOTU0MiIvPiA8c3RvcCBvZmZzZXQ9IjAuOTg1IiBzdG9wLWNvbG9yPSIjRkJBQjQyIi8+IDwvbGluZWFyR3JhZGllbnQ+IDwvZGVmcz4gPC9zdmc+">
+<link rel="icon" type="image/png" sizes="48x48" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open to Buy · The Season in Flight — Astrodata</title>
 <!-- Fonts are base64 woff2, inlined at build time from fonts/inline-fonts.css.
@@ -60,11 +63,14 @@ h1,h2,h3{font-family:'Newsreader',Georgia,serif; font-weight:300; margin:0; lett
 .masthead{background:var(--card); border-bottom:1px solid var(--rule)}
 .mast-top{display:flex; align-items:flex-start; justify-content:space-between; gap:24px; padding:26px 0 20px}
 .brandmark{display:flex; align-items:center; gap:12px}
+/* The Astrodata mark, inlined from microsites/_brand-kit/logos. The slot was
+   already in the stylesheet with nothing in it. */
 .brand-slot{
-  width:40px; height:40px; border-radius:var(--r-pill); background:var(--dusty);
-  display:grid; place-items:center; color:var(--accent); flex:none;
-  font-family:'Newsreader',serif; font-size:19px; font-style:italic;
+  width:40px; height:40px; flex:none; display:block; line-height:0;
+  border-radius:var(--r-pill); overflow:hidden;
 }
+.brand-slot svg{width:100%; height:100%; display:block}
+.brand-slot:hover{opacity:.86}
 .brand-name{font-family:'Newsreader',serif; font-size:22px; letter-spacing:.01em; line-height:1.15; margin-top:3px}
 .brand-sub{font-size:11px; color:var(--muted); letter-spacing:.02em}
 .mast-title{margin-top:18px}
@@ -110,6 +116,16 @@ h1,h2,h3{font-family:'Newsreader',Georgia,serif; font-weight:300; margin:0; lett
          background:transparent; border:1px solid var(--rule); border-radius:2px;
          padding:5px 10px; cursor:pointer; white-space:nowrap}
 .sortbtn:hover{color:var(--ink); border-color:var(--muted)}
+.viewtabs{display:flex; align-items:center; gap:6px; flex:none}
+.viewtab{font-family:inherit; font-size:11px; letter-spacing:.06em; color:var(--muted);
+         background:transparent; border:1px solid var(--rule); border-radius:2px;
+         padding:5px 12px; cursor:pointer}
+.viewtab:hover{color:var(--ink); border-color:var(--muted)}
+.viewtab[aria-selected="true"]{background:var(--accent); border-color:var(--accent); color:#fff}
+#var-table th{cursor:pointer; user-select:none; white-space:nowrap}
+#var-table th .caret{opacity:.45; margin-left:4px; font-size:9px}
+#var-table tr.rowlink{cursor:pointer}
+#var-table tbody tr:hover{background:var(--blush)}
 .datalink{font-size:11.5px; color:var(--muted); text-decoration:none;
           border-bottom:1px solid var(--rule); cursor:pointer; background:none;
           border-left:0; border-right:0; border-top:0; padding:0; font-family:inherit}
@@ -271,6 +287,8 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
     <div class="mast-top">
       <div>
         <div class="brandmark">
+          <a class="brand-slot" href="https://astrodata.us" target="_blank" rel="noopener"
+             aria-label="Astrodata"><svg viewBox="0 0 164 164" role="img" aria-hidden="true"><circle cx="82" cy="82" r="82" fill="url(#ad_sunburst_grad)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M54.6584 55.7039C56.0446 53.596 58.5319 52.6476 60.862 53.1183C62.3787 53.4227 63.7778 54.3098 64.6949 55.7044L94.3658 100.822C96.1866 103.591 95.4181 107.312 92.6494 109.132C89.8808 110.953 86.1603 110.185 84.3396 107.416L59.6765 69.9129L35.0138 107.416C33.193 110.184 29.4726 110.953 26.7039 109.132C23.9352 107.311 23.1668 103.591 24.9876 100.822L54.6584 55.7039ZM141 104C141 107.314 138.314 110 135 110H109C105.686 110 103 107.314 103 104C103 100.686 105.686 98 109 98H135C138.314 98 141 100.686 141 104Z" fill="black"/> <defs> <linearGradient id="ad_sunburst_grad" x1="95.7386" y1="15.5901" x2="63.1411" y2="143.146" gradientUnits="userSpaceOnUse"> <stop stop-color="#FBD042"/> <stop offset="0.735" stop-color="#FB9542"/> <stop offset="0.985" stop-color="#FBAB42"/> </linearGradient> </defs></svg></a>
           <div>
             <div class="eyebrow">Merchandise planning · a data portrait</div>
             <div class="brand-name">Open to Buy</div>
@@ -338,12 +356,16 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
               <h2 id="var-head">Which departments are off plan</h2>
               <p class="sub" id="var-sub">Percent above or below the current plan, season to date. The company total looks flat because these offset each other, which is what a single top-line number hides.</p>
             </div>
-            <button class="sortbtn" type="button" id="var-sort">Ahead first</button>
+            <div class="viewtabs" role="tablist" aria-label="Chart or table">
+              <button class="viewtab" role="tab" type="button" data-view="chart" aria-selected="true">Chart</button>
+              <button class="viewtab" role="tab" type="button" data-view="table" aria-selected="false">Table</button>
+              <button class="sortbtn" type="button" id="var-sort">Ahead first</button>
+            </div>
           </div>
-          <p style="margin:6px 0 0"><button class="datalink" type="button" id="var-table">See the full data table</button></p>
         </header>
         <div id="var-chart"></div>
-        <div class="legend">
+        <div id="var-table" hidden></div>
+        <div class="legend" id="var-legend">
           <span><i style="background:var(--pos)"></i>Ahead of plan</span>
           <span><i style="background:var(--accent)"></i>Behind plan</span>
         </div>
@@ -688,7 +710,7 @@ function loadAll(done){
 
 /* ============================================================ utilities */
 const state = { tab:'variance', channel:'All', division:'All', basis:'plan',
-                sort:'best', drill:null };
+                sort:'best', drill:null, varview:'chart', tsort:null, tdir:-1 };
 
 /* State lives in the URL so a view can be sent to somebody. "Share with team"
    is a link, not an email: a static page cannot send mail, and a link is what
@@ -699,14 +721,14 @@ function readUrl(){
     const i = kv.indexOf('=');
     if (i > 0) p[decodeURIComponent(kv.slice(0,i))] = decodeURIComponent(kv.slice(i+1));
   });
-  ['tab','channel','division','basis','sort'].forEach(function(k){
+  ['tab','channel','division','basis','sort','varview'].forEach(function(k){
     if (p[k]) state[k] = p[k];
   });
   if (p.dept) state.drill = p.dept;
 }
 function writeUrl(){
   const p = [];
-  ['tab','channel','division','basis','sort'].forEach(function(k){
+  ['tab','channel','division','basis','sort','varview'].forEach(function(k){
     p.push(k + '=' + encodeURIComponent(state[k]));
   });
   if (state.drill) p.push('dept=' + encodeURIComponent(state.drill));
@@ -1106,7 +1128,11 @@ function openDrill(dept){
   const link = el('button','datalink','Open the full data table');
   link.type = 'button';
   link.style.marginTop = '16px';
-  link.onclick = function(){ closeDrill(); selectTab('styles'); };
+  link.onclick = function(){
+    closeDrill();
+    state.varview = 'table'; state.tab = 'variance';
+    writeUrl(); selectTab('variance'); renderAll();
+  };
   host.appendChild(link);
 }
 
@@ -1114,6 +1140,73 @@ function closeDrill(){
   state.drill = null; writeUrl();
   document.getElementById('drawer').hidden = true;
   document.getElementById('drawer-veil').hidden = true;
+}
+
+/* Column headers sort the table. Clicking the one already sorted flips it. */
+function renderVarianceTable(){
+  const host = document.getElementById('var-table');
+  host.innerHTML = '';
+  const data = rollupVariance();
+  if (!data.length){ host.appendChild(el('div','state','No departments match this filter.')); return; }
+
+  const cols = [
+    { k:'key',     label:'Department', get:function(d){ return d.key; },   align:'' },
+    { k:'actual',  label:'Actual',     get:function(d){ return d.actual; }, fmt:money },
+    { k:'vPlan',   label:'To forecast',  get:function(d){ return d.vPlan; },  fmt:signed },
+    { k:'vLy',     label:'To last year', get:function(d){ return d.vLy; },    fmt:signed },
+    { k:'vBudget', label:'To budget',    get:function(d){ return d.vBudget; }, fmt:signed },
+    { k:'fcVsBud', label:'Plan moved',   get:function(d){ return d.fcVsBud; }, fmt:signed }
+  ];
+
+  /* Default order follows the chart, so switching views does not reshuffle. */
+  const key = state.tsort;
+  if (key){
+    const col = cols.filter(function(c){ return c.k === key; })[0];
+    data.sort(function(a,b){
+      const av = col.get(a), bv = col.get(b);
+      if (typeof av === 'string') return state.tdir * av.localeCompare(bv);
+      return state.tdir * ((av == null ? -Infinity : av) - (bv == null ? -Infinity : bv));
+    });
+  }
+
+  const t = el('table');
+  const th = el('thead'), hr = el('tr');
+  cols.forEach(function(c, i){
+    const cell = el('th', i ? 'r' : '', c.label);
+    if (state.tsort === c.k){
+      const car = el('span','caret', state.tdir < 0 ? '\u25BC' : '\u25B2');
+      cell.appendChild(car);
+    }
+    cell.onclick = function(){
+      state.tdir = state.tsort === c.k ? -state.tdir : -1;
+      state.tsort = c.k;
+      renderVarianceTable();
+    };
+    hr.appendChild(cell);
+  });
+  th.appendChild(hr); t.appendChild(th);
+
+  const tb = el('tbody');
+  data.forEach(function(d){
+    const tr = el('tr','rowlink');
+    tr.onclick = function(){ openDrill(d.key); };
+    tr.title = 'Open the detail for ' + d.key;
+    cols.forEach(function(c, i){
+      const v = c.get(d);
+      const txt = c.fmt ? c.fmt(v) : v;
+      const cell = el('td', i ? 'r num' : '', txt);
+      if (c.fmt === signed && v != null) cell.classList.add(v >= 0 ? 'pos' : 'neg');
+      tr.appendChild(cell);
+    });
+    tb.appendChild(tr);
+  });
+  t.appendChild(tb);
+  host.appendChild(t);
+
+  const note = el('p','sub','Every column sorts. A row opens the same detail the chart does. '
+    + '\u201cPlan moved\u201d is the forecast against the budget: negative means the department was cut in season.');
+  note.style.marginTop = '10px';
+  host.appendChild(note);
 }
 
 /* ====================================================== variance rollup */
@@ -1158,9 +1251,27 @@ function rollupVariance(){
     });
 }
 
+/* The same twenty departments, two ways of reading them. The chart is the
+   default because the shape is the point; the table is there for the person
+   who wants the numbers, and for anyone who would otherwise export to a
+   spreadsheet to get them. */
 function renderVariance(){
+  const chartHost = document.getElementById('var-chart');
+  const tableHost = document.getElementById('var-table');
+  const legend = document.getElementById('var-legend');
+  const isTable = state.varview === 'table';
+  chartHost.hidden = isTable;
+  tableHost.hidden = !isTable;
+  if (legend) legend.hidden = isTable;
+  document.querySelectorAll('.viewtab').forEach(function(b){
+    b.setAttribute('aria-selected', b.dataset.view === state.varview ? 'true' : 'false');
+  });
+  const sortBtn = document.getElementById('var-sort');
+  if (sortBtn) sortBtn.hidden = isTable;   /* the table sorts by its own headers */
+  if (isTable) return renderVarianceTable();
+
   const data = rollupVariance();
-  const host = document.getElementById('var-chart');
+  const host = chartHost;
   host.innerHTML = '';
   if (!data.length){ host.appendChild(el('div','state','No departments match this filter.')); return; }
 
@@ -2053,8 +2164,13 @@ function boot(){
       label(); writeUrl(); renderAll();
     };
   }
-  const tbl = document.getElementById('var-table');
-  if (tbl) tbl.onclick = function(){ selectTab('styles'); };
+  document.querySelectorAll('.viewtab').forEach(function(b){
+    b.onclick = function(){
+      state.varview = b.dataset.view;
+      writeUrl();
+      renderAll();
+    };
+  });
 
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeDrill(); });
 
