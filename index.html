@@ -83,6 +83,26 @@ h1,h2,h3{font-family:'Newsreader',Georgia,serif; font-weight:300; margin:0; lett
 .stat .n{font-size:11px; color:var(--muted); margin-top:2px}
 .stat .v.pos{color:var(--pos)} .stat .v.neg{color:var(--neg)}
 
+/* The triple. Every headline number carries its comparisons, so last year is
+   never something you have to go and look for. */
+.stat .triple{margin-top:7px; display:flex; flex-direction:column; gap:2px}
+.stat .tl{font-size:11px; line-height:1.35}
+.stat .tv{font-weight:500}
+.stat .tv.pos{color:var(--pos)} .stat .tv.neg{color:var(--neg)}
+.stat .tk{color:var(--muted); margin-left:5px}
+
+/* The grounding line: the sentence a planner says out loud to leadership. */
+.ground{display:flex; align-items:flex-start; gap:14px; padding:14px 20px 16px;
+        border-top:1px solid var(--rule); background:var(--blush)}
+.ground .ground-text{margin:0; font-family:'Newsreader',serif; font-size:15px;
+        line-height:1.5; max-width:78ch; color:var(--ink)}
+.ground .ground-copy{flex:0 0 auto; margin-left:auto; font-family:inherit; font-size:11px;
+        letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
+        background:transparent; border:1px solid var(--rule); border-radius:2px;
+        padding:5px 10px; cursor:pointer}
+.ground .ground-copy:hover{color:var(--ink); border-color:var(--muted)}
+.fgroup-basis{margin-left:auto}
+
 /* --------------------------------------------------------------- tabs */
 .tabbar{background:var(--card); border-bottom:1px solid var(--rule); position:sticky; top:0; z-index:20}
 .tabs{display:flex; gap:4px; overflow-x:auto; scrollbar-width:none}
@@ -225,6 +245,7 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
     </div>
 
     <div class="stats" id="statrow"></div>
+    <div class="ground" id="grounding"></div>
   </div>
 </header>
 
@@ -250,6 +271,10 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
       <span class="flabel">Division</span>
       <div id="f-division"></div>
     </div>
+    <div class="fgroup fgroup-basis">
+      <span class="flabel">Compare to</span>
+      <div id="f-basis"></div>
+    </div>
   </div>
 </div>
 
@@ -260,8 +285,8 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
     <div class="grid">
       <div class="card">
         <header>
-          <h2>Which departments are off plan</h2>
-          <p class="sub">Percent above or below the current plan, season to date. The company total looks flat because these offset each other, which is what a single top-line number hides.</p>
+          <h2 id="var-head">Which departments are off plan</h2>
+          <p class="sub" id="var-sub">Percent above or below the current plan, season to date. The company total looks flat because these offset each other, which is what a single top-line number hides.</p>
         </header>
         <div id="var-chart"></div>
         <div class="legend">
@@ -323,7 +348,7 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
       <div class="card">
         <header>
           <h2>What the reforecast changed</h2>
-          <p class="sub">Current plan against the plan set before the year started. Positive means the department was raised in season, negative means it was cut.</p>
+          <p class="sub">Forecast against the budget finance set before the year started. Positive means the department was raised in season, negative means it was cut.</p>
         </header>
         <div class="tscroll"><table id="ver-table"></table></div>
         <p class="note"><b>What to look for:</b> a department that was cut here and is still behind on the Variance tab. It has missed twice, and the second miss is the one nobody counts.</p>
@@ -454,7 +479,7 @@ const EMBEDDED = {};
 /* Filled at build time from the same dataframe that writes the CSVs, so the
    reader never has to guess a column's type. Guessing is how identifiers lose
    their leading zeros. */
-const TYPES = {"Plan Vs Actual Monthly":{"plan_vs_actual.month_key":"str","plan_vs_actual.fiscal_year":"num","plan_vs_actual.fiscal_month":"str","plan_vs_actual.fiscal_month_no":"num","plan_vs_actual.channel":"str","plan_vs_actual.plan_sales_dollars":"num","plan_vs_actual.actual_sales_dollars":"num","plan_vs_actual.plan_gross_margin_dollars":"num","plan_vs_actual.actual_gross_margin_dollars":"num"},"Department Variance":{"plan_vs_actual.dept_key":"str","plan_vs_actual.division":"str","plan_vs_actual.department":"str","plan_vs_actual.channel":"str","plan_vs_actual.fiscal_year":"num","plan_vs_actual.fiscal_month":"str","plan_vs_actual.fiscal_month_no":"num","plan_vs_actual.has_actual":"bool","plan_vs_actual.plan_sales_dollars":"num","plan_vs_actual.actual_sales_dollars":"num","plan_vs_actual.plan_markdown_dollars":"num","plan_vs_actual.actual_markdown_dollars":"num","plan_vs_actual.actual_eom_retail":"num","plan_vs_actual.plan_bom_retail":"num","plan_vs_actual.plan_eom_retail":"num","plan_vs_actual.plan_receipts_retail":"num","plan_vs_actual.plan_shrink_dollars":"num"},"Plan Version Compare":{"merch_plan.dept_key":"str","merch_plan.division":"str","merch_plan.department":"str","merch_plan.plan_version":"str","merch_plan.fiscal_year":"num","merch_plan.plan_sales_dollars":"num","merch_plan.plan_receipts_cost":"num","merch_plan.plan_gross_margin_dollars":"num"},"OTB By Month":{"otb.month_key":"str","otb.fiscal_month":"str","otb.fiscal_month_no":"num","otb.channel":"str","otb.plan_receipts_cost":"num","otb.on_order_cost":"num","otb.open_to_buy_cost":"num"},"OTB By Department":{"otb.dept_key":"str","otb.division":"str","otb.department":"str","otb.channel":"str","otb.plan_receipts_cost":"num","otb.on_order_cost":"num","otb.open_to_buy_cost":"num"},"PO Watchlist":{"otb.month_key":"str","otb.fiscal_month":"str","otb.channel":"str","otb.dept_key":"str","otb.division":"str","otb.department":"str","otb.lead_time_weeks":"num","otb.po_placement_by":"str","otb.po_status":"str","otb.days_past_placement":"num","otb.status_rank":"num","otb.plan_receipts_cost":"num","otb.on_order_cost":"num","otb.open_to_buy_cost":"num"},"Style Detail":{"style_month.style_key":"str","style_month.style_name":"str","style_month.print_name":"str","style_month.division":"str","style_month.department":"str","style_month.dept_key":"str","style_month.class_name":"str","style_month.season":"str","style_month.lifecycle":"str","style_month.channel":"str","style_month.fiscal_year":"num","style_month.units_sold":"num","style_month.sales_dollars":"num","style_month.on_hand_units":"num","style_month.on_order_units":"num"},"Year Totals":{"plan_vs_actual.fiscal_year":"num","plan_vs_actual.plan_sales_dollars":"num","plan_vs_actual.actual_sales_dollars":"num","plan_vs_actual.plan_gross_margin_dollars":"num","plan_vs_actual.plan_receipts_cost":"num"}};
+const TYPES = {"Plan Vs Actual Monthly":{"plan_vs_actual.month_key":"str","plan_vs_actual.fiscal_year":"num","plan_vs_actual.fiscal_month":"str","plan_vs_actual.fiscal_month_no":"num","plan_vs_actual.channel":"str","plan_vs_actual.plan_sales_dollars":"num","plan_vs_actual.budget_sales_dollars":"num","plan_vs_actual.actual_sales_dollars":"num","plan_vs_actual.plan_gross_margin_dollars":"num","plan_vs_actual.actual_gross_margin_dollars":"num"},"Department Variance":{"plan_vs_actual.dept_key":"str","plan_vs_actual.division":"str","plan_vs_actual.department":"str","plan_vs_actual.channel":"str","plan_vs_actual.fiscal_year":"num","plan_vs_actual.fiscal_month":"str","plan_vs_actual.fiscal_month_no":"num","plan_vs_actual.has_actual":"bool","plan_vs_actual.plan_sales_dollars":"num","plan_vs_actual.budget_sales_dollars":"num","plan_vs_actual.budget_markdown_dollars":"num","plan_vs_actual.budget_receipts_cost":"num","plan_vs_actual.actual_sales_dollars":"num","plan_vs_actual.plan_markdown_dollars":"num","plan_vs_actual.actual_markdown_dollars":"num","plan_vs_actual.actual_eom_retail":"num","plan_vs_actual.plan_bom_retail":"num","plan_vs_actual.plan_eom_retail":"num","plan_vs_actual.plan_receipts_retail":"num","plan_vs_actual.plan_shrink_dollars":"num"},"Plan Version Compare":{"merch_plan.dept_key":"str","merch_plan.division":"str","merch_plan.department":"str","merch_plan.plan_version":"str","merch_plan.fiscal_year":"num","merch_plan.plan_sales_dollars":"num","merch_plan.plan_receipts_cost":"num","merch_plan.plan_gross_margin_dollars":"num"},"OTB By Month":{"otb.month_key":"str","otb.fiscal_month":"str","otb.fiscal_month_no":"num","otb.channel":"str","otb.plan_receipts_cost":"num","otb.on_order_cost":"num","otb.open_to_buy_cost":"num"},"OTB By Department":{"otb.dept_key":"str","otb.division":"str","otb.department":"str","otb.channel":"str","otb.plan_receipts_cost":"num","otb.on_order_cost":"num","otb.open_to_buy_cost":"num"},"PO Watchlist":{"otb.month_key":"str","otb.fiscal_month":"str","otb.channel":"str","otb.dept_key":"str","otb.division":"str","otb.department":"str","otb.lead_time_weeks":"num","otb.po_placement_by":"str","otb.po_status":"str","otb.days_past_placement":"num","otb.status_rank":"num","otb.plan_receipts_cost":"num","otb.on_order_cost":"num","otb.open_to_buy_cost":"num"},"Style Detail":{"style_month.style_key":"str","style_month.style_name":"str","style_month.print_name":"str","style_month.division":"str","style_month.department":"str","style_month.dept_key":"str","style_month.class_name":"str","style_month.season":"str","style_month.lifecycle":"str","style_month.channel":"str","style_month.fiscal_year":"num","style_month.units_sold":"num","style_month.sales_dollars":"num","style_month.on_hand_units":"num","style_month.on_order_units":"num"},"Year Totals":{"plan_vs_actual.fiscal_year":"num","plan_vs_actual.plan_sales_dollars":"num","plan_vs_actual.budget_sales_dollars":"num","plan_vs_actual.actual_sales_dollars":"num","plan_vs_actual.plan_gross_margin_dollars":"num","plan_vs_actual.plan_receipts_cost":"num"}};
 
 /* Row count per query, also from build time. A CSV that comes back short is a
    truncated or partial upload, which is the most common way a Pages deploy
@@ -608,9 +633,25 @@ function loadAll(done){
 }
 
 /* ============================================================ utilities */
-const state = { tab:'variance', channel:'All', division:'All' };
+const state = { tab:'variance', channel:'All', division:'All', basis:'plan' };
+
+/* The comparison basis. From the review with Lisa: planning talks in four
+   numbers, not two. Budget is set once by finance and never moves, and is what
+   receipts are bought against. Forecast is re-agreed every month. Then actual,
+   then last year. The app used to show only actual against forecast.
+
+   One control repoints every chart, so the same twenty-by-six grid answers
+   three different questions. */
+const BASES = [
+  { key:'plan',   label:'Forecast',  vk:'vPlan',   note:'against the plan as it stands today' },
+  { key:'ly',     label:'Last year', vk:'vLy',     note:'against the same months last year' },
+  { key:'budget', label:'Budget',    vk:'vBudget', note:'against the plan finance set at the start of the year' }
+];
+function basis(){ return BASES.filter(function(b){ return b.key === state.basis; })[0] || BASES[0]; }
+function vOf(d){ const v = d[basis().vk]; return v == null ? null : v; }
 
 const CHANNELS  = ['All','Ecommerce','Retail Stores','Wholesale'];
+const BASIS_KEYS = BASES.map(function(b){ return b.key; });
 const DIVISIONS = ['All','Girls','Baby','Boys','Women'];
 
 function money(n){
@@ -657,11 +698,15 @@ function divOK(r, pfx){  return state.division === 'All' || r[pfx + 'division'] 
 
 /* ============================================================== filters */
 function buildFilters(){
-  [['f-channel', CHANNELS, 'channel'], ['f-division', DIVISIONS, 'division']].forEach(function(cfg){
+  [['f-channel', CHANNELS, 'channel'], ['f-division', DIVISIONS, 'division'],
+   ['f-basis', BASIS_KEYS, 'basis']].forEach(function(cfg){
     const host = document.getElementById(cfg[0]);
     host.innerHTML = '';
     cfg[1].forEach(function(v){
-      const b = el('button', 'pill', v);
+      const label = cfg[2] === 'basis'
+        ? BASES.filter(function(x){ return x.key === v; })[0].label : v;
+      const b = el('button', 'pill', label);
+      if (cfg[2] === 'basis') b.title = BASES.filter(function(x){ return x.key === v; })[0].note;
       b.type = 'button';
       b.setAttribute('aria-pressed', state[cfg[2]] === v);
       b.style.marginRight = '6px';
@@ -696,12 +741,26 @@ function renderStats(){
     return chanOK(r, F.otb) && divOK(r, F.otb) && r[F.otb+'po_status'] === 'Past due';
   });
 
-  const v = plan ? actual/plan - 1 : 0;
+  const budget = byDept.reduce(function(s,d){ return s + d.budget; }, 0);
+  const ly     = byDept.reduce(function(s,d){ return s + d.ly; }, 0);
+
+  const v   = plan ? actual/plan - 1 : null;
+  const vly = ly   ? actual/ly   - 1 : null;
+
+  /* Lisa, on the department spread tile: "That means nothing to me right now."
+     It is replaced by the number she asked for twice, which is last year.
+     And "129 lines past due" cost her a beat, so it now says what it is. */
   const cards = [
-    { k:'Season to date', v:money(actual), n:'against ' + money(plan) + ' planned' },
-    { k:'To plan',        v:signed(v), n:'aggregate', cls: v >= 0 ? 'pos' : 'neg' },
-    { k:'Department spread', v:(spread*100).toFixed(1) + ' pts', n:'worst to best' },
-    { k:'Open to buy',    v:money(open), n:pct(rec ? open/rec : 0, 0) + ' of the balance · ' + late.length + ' lines past due' }
+    { k:'Season to date', v:money(actual),
+      sub:[ [signed(v),   'to forecast'],
+            [signed(vly), 'to last year'] ] },
+    { k:'To forecast',  v:signed(v),   n:'against ' + money(plan) + ' planned',
+      cls: v   >= 0 ? 'pos' : 'neg' },
+    { k:'To last year', v:signed(vly), n:'against ' + money(ly) + ' the same months',
+      cls: vly >= 0 ? 'pos' : 'neg' },
+    { k:'Open to buy',  v:money(open),
+      n:pct(rec ? open/rec : 0, 0) + ' of the balance · ' + late.length +
+        ' orders not yet placed, past their date' }
   ];
 
   const host = document.getElementById('statrow');
@@ -710,33 +769,142 @@ function renderStats(){
     const d = el('div','stat');
     d.appendChild(el('div','k', c.k));
     d.appendChild(el('div','v num' + (c.cls ? ' ' + c.cls : ''), c.v));
-    d.appendChild(el('div','n', c.n));
+    if (c.sub){
+      const w = el('div','triple');
+      c.sub.forEach(function(pair){
+        const line = el('div','tl');
+        const n = el('span','tv num' + (pair[0].charAt(0) === '-' ? ' neg' : ' pos'), pair[0]);
+        line.appendChild(n);
+        line.appendChild(el('span','tk', pair[1]));
+        w.appendChild(line);
+      });
+      d.appendChild(w);
+    }
+    if (c.n) d.appendChild(el('div','n', c.n));
     host.appendChild(d);
   });
+
+  const vh = document.getElementById('var-head');
+  if (vh) vh.textContent = state.basis === 'ly'
+    ? 'Which departments moved against last year'
+    : state.basis === 'budget'
+    ? 'Which departments are off budget'
+    : 'Which departments are off plan';
+
+  const vs = document.getElementById('var-sub');
+  if (vs) vs.textContent = state.basis === 'ly'
+    ? 'Percent above or below the same months last year, season to date. A department can be ahead of plan and behind last year at the same time.'
+    : state.basis === 'budget'
+    ? 'Percent above or below the budget finance set before the year started, season to date.'
+    : 'Percent above or below the forecast, season to date. The company total looks flat because these offset each other, which is what a single top-line number hides.';
+
+  renderGrounding(byDept, actual, plan, budget, ly, v, vly);
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   The grounding line.
+
+   Lisa rehearses this sentence twice in the review, once in each direction,
+   and says she has to keep re-grounding upper management with it. The awkward
+   case is the one where the plan was deliberately below last year: "no one
+   ever likes to look at a number and say we're missing to last year, but that
+   was intentional."
+
+   So the app writes the sentence. Every number in it is measured, and the
+   clause about intent is only stated when the plan itself says so.
+   ══════════════════════════════════════════════════════════════════════ */
+function renderGrounding(byDept, actual, plan, budget, ly, v, vly){
+  const host = document.getElementById('grounding');
+  if (!host) return;
+  const planVsLy = (ly && plan) ? plan/ly - 1 : null;
+  const moved = byDept.filter(function(d){
+    return d.fcVsBud != null && Math.abs(d.fcVsBud) >= 0.03;
+  }).length;
+
+  const bits = [];
+  bits.push('Season to date ' + money(actual) + ', ' +
+            (Math.abs(v) < 0.01 ? 'on plan at ' + signed(v)
+                                : signed(v) + ' to plan') +
+            ', and ' + (vly >= 0 ? 'up ' : 'down ') +
+            Math.abs(vly*100).toFixed(1) + '% on last year.');
+
+  if (planVsLy != null){
+    bits.push('The plan was set ' + (planVsLy >= 0 ? 'above' : 'below') +
+              ' last year by ' + Math.abs(planVsLy*100).toFixed(0) + '%, ' +
+              (planVsLy >= 0
+                ? 'so the season is running as intended.'
+                : 'so a shortfall against last year is intentional.'));
+  }
+  if (moved){
+    const netFc = budget ? plan/budget - 1 : 0;
+    bits.push('The forecast sits ' + signed(netFc) + ' against budget overall, but ' +
+              moved + ' of ' + byDept.length + ' departments were reforecast by ' +
+              'more than three percent, so the total moved far less than its parts.');
+  }
+
+  const text = bits.join(' ');
+  host.innerHTML = '';
+  const para = el('p','ground-text', text);
+  const btn = el('button','ground-copy','Copy');
+  btn.type = 'button';
+  btn.onclick = function(){
+    navigator.clipboard.writeText(text).then(function(){
+      btn.textContent = 'Copied';
+      setTimeout(function(){ btn.textContent = 'Copy'; }, 1600);
+    }, function(){ btn.textContent = 'Select and copy'; });
+  };
+  host.appendChild(para);
+  host.appendChild(btn);
+}
+
+/* The months FY2026 has closed. Last year has to be compared on the same
+   months or the number is meaningless, which is the whole point of it. */
+function closedMonths(){
+  const set = {};
+  DB['Department Variance'].forEach(function(r){
+    if (yr(r[F.pa+'fiscal_year']) === 2026 && truthy(r[F.pa+'has_actual']))
+      set[Number(r[F.pa+'fiscal_month_no'])] = 1;
+  });
+  return set;
 }
 
 /* ====================================================== variance rollup */
 function rollupVariance(){
-  const m = {};
+  const m = {}, closed = closedMonths();
+  function slot(k, r){
+    if (!m[k]) m[k] = { key:k, division:r[F.pa+'division'],
+                        plan:0, actual:0, budget:0, ly:0, mdPlan:0, mdAct:0, eom:0 };
+    return m[k];
+  }
   DB['Department Variance'].forEach(function(r){
-    /* The query now returns every year and both actual/plan rows, so the
-       season-to-date filter that used to live in Omni lives here instead. */
-    if (yr(r[F.pa+'fiscal_year']) !== 2026 || !truthy(r[F.pa+'has_actual'])) return;
     if (!chanOK(r, F.pa) || !divOK(r, F.pa)) return;
+    const y = yr(r[F.pa+'fiscal_year']), mo = Number(r[F.pa+'fiscal_month_no']);
     const k = r[F.pa+'dept_key'];
-    if (!m[k]) m[k] = { key:k, division:r[F.pa+'division'], plan:0, actual:0, mdPlan:0, mdAct:0, eom:0 };
-    m[k].plan   += r[F.pa+'plan_sales_dollars'];
-    m[k].actual += r[F.pa+'actual_sales_dollars'];
-    m[k].mdPlan += r[F.pa+'plan_markdown_dollars'];
-    m[k].mdAct  += r[F.pa+'actual_markdown_dollars'];
-    m[k].eom    += r[F.pa+'actual_eom_retail'];
+    /* This year, closed months only. The season-to-date filter that used to
+       live in Omni lives here, where it can be tested. */
+    if (y === 2026 && truthy(r[F.pa+'has_actual'])){
+      const d = slot(k, r);
+      d.plan   += r[F.pa+'plan_sales_dollars'];
+      d.actual += r[F.pa+'actual_sales_dollars'];
+      d.budget += r[F.pa+'budget_sales_dollars'] || 0;
+      d.mdPlan += r[F.pa+'plan_markdown_dollars'];
+      d.mdAct  += r[F.pa+'actual_markdown_dollars'];
+      d.eom    += r[F.pa+'actual_eom_retail'];
+    }
+    /* Last year, the same months, so the comparison is like for like. */
+    if (y === 2025 && closed[mo]) slot(k, r).ly += r[F.pa+'actual_sales_dollars'] || 0;
   });
   return Object.keys(m).map(function(k){
     const d = m[k];
-    d.v = d.plan ? d.actual/d.plan - 1 : 0;
+    d.vPlan   = d.plan   ? d.actual/d.plan   - 1 : null;
+    d.vLy     = d.ly     ? d.actual/d.ly     - 1 : null;
+    d.vBudget = d.budget ? d.actual/d.budget - 1 : null;
+    d.fcVsBud = (d.budget && d.plan) ? d.plan/d.budget - 1 : null;
+    d.v = d.vPlan;
     d.mdV = d.mdPlan ? d.mdAct/d.mdPlan - 1 : 0;
     return d;
-  }).sort(function(a,b){ return a.v - b.v; });
+  }).map(function(d){ d.v = vOf(d); return d; })
+    .sort(function(a,b){ return (a.v == null ? 9 : a.v) - (b.v == null ? 9 : b.v); });
 }
 
 function renderVariance(){
@@ -906,7 +1074,7 @@ function renderPlan(){
   const vt = document.getElementById('ver-table');
   vt.innerHTML = '';
   const th = el('thead'), hr = el('tr');
-  ['Department','Original plan','Current plan','Change'].forEach(function(h,i){ hr.appendChild(el('th', i?'r':'', h)); });
+  ['Department','Budget','Forecast','Change'].forEach(function(h,i){ hr.appendChild(el('th', i?'r':'', h)); });
   th.appendChild(hr); vt.appendChild(th);
   const tb = el('tbody');
   vd.forEach(function(d){
@@ -1175,17 +1343,28 @@ function renderHeatmap(){
   if (!host) return;
   host.innerHTML = '';
 
-  const m = {}, months = {};
-  DB['Department Variance'].forEach(function(r){
-    if (yr(r[F.pa+'fiscal_year']) !== 2026 || !truthy(r[F.pa+'has_actual'])) return;
-    if (!chanOK(r, F.pa) || !divOK(r, F.pa)) return;
-    const d = r[F.pa+'dept_key'], mo = Number(r[F.pa+'fiscal_month_no']);
-    months[mo] = r[F.pa+'fiscal_month'];
+  const m = {}, months = {}, closed = closedMonths();
+  function cell(d, mo){
     const k = d + '|' + mo;
-    if (!m[k]) m[k] = { d:d, mo:mo, plan:0, act:0 };
-    m[k].plan += r[F.pa+'plan_sales_dollars'];
-    m[k].act  += r[F.pa+'actual_sales_dollars'];
+    if (!m[k]) m[k] = { d:d, mo:mo, plan:0, act:0, budget:0, ly:0 };
+    return m[k];
+  }
+  DB['Department Variance'].forEach(function(r){
+    if (!chanOK(r, F.pa) || !divOK(r, F.pa)) return;
+    const y = yr(r[F.pa+'fiscal_year']), mo = Number(r[F.pa+'fiscal_month_no']);
+    const d = r[F.pa+'dept_key'];
+    if (y === 2026 && truthy(r[F.pa+'has_actual'])){
+      months[mo] = r[F.pa+'fiscal_month'];
+      const c = cell(d, mo);
+      c.plan   += r[F.pa+'plan_sales_dollars'];
+      c.act    += r[F.pa+'actual_sales_dollars'];
+      c.budget += r[F.pa+'budget_sales_dollars'] || 0;
+    }
+    /* Same month last year, so a cell can be read against either basis. */
+    if (y === 2025 && closed[mo]) cell(d, mo).ly += r[F.pa+'actual_sales_dollars'] || 0;
   });
+  /* Comparison denominator for the active basis. */
+  function den(c){ return state.basis === 'ly' ? c.ly : state.basis === 'budget' ? c.budget : c.plan; }
   const cells = Object.keys(m).map(function(k){ return m[k]; });
   if (!cells.length){ host.appendChild(el('div','state','No closed months match this filter.')); return; }
   /* Needs a month grain. If the query has not been widened, say so plainly
@@ -1199,11 +1378,13 @@ function renderHeatmap(){
   const monthList = Object.keys(months).map(Number).sort(function(a,b){ return a-b; });
   const totals = {};
   cells.forEach(function(c){
-    if (!totals[c.d]) totals[c.d] = { plan:0, act:0 };
-    totals[c.d].plan += c.plan; totals[c.d].act += c.act;
+    if (!totals[c.d]) totals[c.d] = { den:0, act:0 };
+    totals[c.d].den += den(c); totals[c.d].act += c.act;
   });
   const depts = Object.keys(totals).sort(function(a,b){
-    return (totals[a].act/totals[a].plan) - (totals[b].act/totals[b].plan);
+    const ra = totals[a].den ? totals[a].act/totals[a].den : 9;
+    const rb = totals[b].den ? totals[b].act/totals[b].den : 9;
+    return ra - rb;
   });
 
   const padL = 118, padT = 20, cw = 44, ch = 19, gap = 2;
@@ -1226,18 +1407,20 @@ function renderHeatmap(){
     monthList.forEach(function(mo, i){
       const c = m[d + '|' + mo];
       const x = padL + i*(cw+gap);
-      const v = c && c.plan ? c.act/c.plan - 1 : null;
+      const v = c && den(c) ? c.act/den(c) - 1 : null;
       const rect = svgEl('rect', {
         x:x, y:y, width:cw, height:ch, rx:2, class:'hm-cell',
         fill: v == null ? '#F4EADC' : divColor(v, 0.09)
       });
       const ttl = svgEl('title');
-      ttl.textContent = d + ' · ' + months[mo] + ' · ' + (v == null ? 'no actual' : signed(v));
+      ttl.textContent = d + ' · ' + months[mo] + ' · ' +
+        (v == null ? 'no comparison available' : signed(v) + ' to ' + basis().label.toLowerCase());
       rect.appendChild(ttl);
       svg.appendChild(rect);
     });
 
-    const tv = totals[d].act/totals[d].plan - 1;
+    const tv = totals[d].den ? totals[d].act/totals[d].den - 1 : null;
+    if (tv == null) return;
     const tt = svgEl('text', {
       x:W-6, y:y+13, 'text-anchor':'end', 'font-size':10.5,
       fill: tv >= 0 ? 'var(--pos)' : 'var(--accent)', 'font-weight':'500'
