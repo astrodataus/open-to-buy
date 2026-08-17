@@ -70,7 +70,7 @@ h1,h2,h3{font-family:'Newsreader',Georgia,serif; font-weight:300; margin:0; lett
 .mast-title{margin-top:18px}
 .mast-title h1{font-size:40px; line-height:1.05}
 .mast-title h1 em{font-style:italic; color:var(--burgundy)}
-.mast-lede{font-size:15px; color:var(--muted); max-width:56ch; margin-top:8px}
+.mast-lede{font-size:15px; color:var(--muted); max-width:82ch; margin-top:8px}
 .asof{text-align:right; font-size:11px; color:var(--muted); line-height:1.7; flex:none}
 .asof b{display:block; color:var(--ink); font-weight:500; font-size:12px}
 
@@ -92,15 +92,60 @@ h1,h2,h3{font-family:'Newsreader',Georgia,serif; font-weight:300; margin:0; lett
 .stat .tk{color:var(--muted); margin-left:5px}
 
 /* The grounding line: the sentence a planner says out loud to leadership. */
-.ground{display:flex; align-items:flex-start; gap:14px; padding:14px 20px 16px;
-        border-top:1px solid var(--rule); background:var(--blush)}
+.ground{display:flex; align-items:flex-start; gap:14px; padding:15px 20px 17px;
+        margin-top:14px; border-top:1px solid var(--rule); background:var(--blush)}
 .ground .ground-text{margin:0; font-family:'Newsreader',serif; font-size:15px;
         line-height:1.5; max-width:78ch; color:var(--ink)}
-.ground .ground-copy{flex:0 0 auto; margin-left:auto; font-family:inherit; font-size:11px;
+.ground .ground-actions{flex:0 0 auto; margin-left:auto; display:flex; gap:8px; align-items:center}
+.ground .ground-copy{font-family:inherit; font-size:11px;
         letter-spacing:.06em; text-transform:uppercase; color:var(--muted);
         background:transparent; border:1px solid var(--rule); border-radius:2px;
         padding:5px 10px; cursor:pointer}
 .ground .ground-copy:hover{color:var(--ink); border-color:var(--muted)}
+.ground .ground-copy.primary{color:var(--ink); border-color:var(--muted)}
+
+/* Sort affordance on the department chart. */
+.card-head{display:flex; align-items:flex-start; justify-content:space-between; gap:16px}
+.sortbtn{font-family:inherit; font-size:11px; letter-spacing:.04em; color:var(--muted);
+         background:transparent; border:1px solid var(--rule); border-radius:2px;
+         padding:5px 10px; cursor:pointer; white-space:nowrap}
+.sortbtn:hover{color:var(--ink); border-color:var(--muted)}
+.datalink{font-size:11.5px; color:var(--muted); text-decoration:none;
+          border-bottom:1px solid var(--rule); cursor:pointer; background:none;
+          border-left:0; border-right:0; border-top:0; padding:0; font-family:inherit}
+.datalink:hover{color:var(--ink); border-bottom-color:var(--muted)}
+.rowlink{cursor:pointer}
+.rowlink:hover .barlabel{fill:var(--ink)}
+.stat.drill{cursor:pointer}
+.stat.drill:hover{background:var(--blush)}
+
+/* Drill-down. One panel, opened from a stat tile or a department bar, walking
+   the chain Lisa described: what is off, in which months, on which styles, and
+   what is still to place. It ends on a decision, not a table. */
+.drawer-veil{position:fixed; inset:0; background:rgba(26,29,36,.28); z-index:60}
+.drawer{position:fixed; top:0; right:0; bottom:0; width:min(560px,94vw); z-index:61;
+        background:var(--card); border-left:1px solid var(--rule);
+        box-shadow:-18px 0 44px rgba(26,29,36,.13); overflow-y:auto; padding:22px 24px 40px}
+.drawer h3{font-family:'Newsreader',serif; font-weight:300; font-size:25px; margin:0}
+.drawer .eyebrow{font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+.drawer .close{position:absolute; top:16px; right:18px; background:none; border:0;
+               font-size:20px; line-height:1; color:var(--muted); cursor:pointer; font-family:inherit}
+.drawer .close:hover{color:var(--ink)}
+.drawer .dsent{font-family:'Newsreader',serif; font-size:15px; line-height:1.5;
+               margin:12px 0 18px; color:var(--ink)}
+.drawer .dgrid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:20px}
+.drawer .dcell{border-top:1px solid var(--rule); padding-top:8px}
+.drawer .dcell .dk{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.drawer .dcell .dv{font-family:'Newsreader',serif; font-size:21px; margin-top:3px}
+.drawer .dsec{font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+              color:var(--muted); margin:20px 0 8px}
+.drawer table{width:100%; border-collapse:collapse}
+.drawer th,.drawer td{font-size:11.5px; padding:5px 6px; border-bottom:1px solid var(--rule)}
+.drawer th{color:var(--muted); font-weight:400; text-align:left}
+.drawer td.r,.drawer th.r{text-align:right}
+.drawer .act{background:var(--blush); padding:12px 14px; margin-top:18px; font-size:12.5px;
+             line-height:1.55}
+.drawer .act b{color:var(--burgundy)}
 .fgroup-basis{margin-left:auto}
 
 /* --------------------------------------------------------------- tabs */
@@ -278,6 +323,9 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
   </div>
 </div>
 
+<aside class="drawer" id="drawer" hidden aria-label="Department detail"></aside>
+<div class="drawer-veil" id="drawer-veil" hidden></div>
+
 <main class="wrap">
 
   <!-- ===================================================== VARIANCE -->
@@ -285,8 +333,14 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
     <div class="grid">
       <div class="card">
         <header>
-          <h2 id="var-head">Which departments are off plan</h2>
-          <p class="sub" id="var-sub">Percent above or below the current plan, season to date. The company total looks flat because these offset each other, which is what a single top-line number hides.</p>
+          <div class="card-head">
+            <div>
+              <h2 id="var-head">Which departments are off plan</h2>
+              <p class="sub" id="var-sub">Percent above or below the current plan, season to date. The company total looks flat because these offset each other, which is what a single top-line number hides.</p>
+            </div>
+            <button class="sortbtn" type="button" id="var-sort">Ahead first</button>
+          </div>
+          <p style="margin:6px 0 0"><button class="datalink" type="button" id="var-table">See the full data table</button></p>
         </header>
         <div id="var-chart"></div>
         <div class="legend">
@@ -633,7 +687,32 @@ function loadAll(done){
 }
 
 /* ============================================================ utilities */
-const state = { tab:'variance', channel:'All', division:'All', basis:'plan' };
+const state = { tab:'variance', channel:'All', division:'All', basis:'plan',
+                sort:'best', drill:null };
+
+/* State lives in the URL so a view can be sent to somebody. "Share with team"
+   is a link, not an email: a static page cannot send mail, and a link is what
+   actually gets forwarded anyway. */
+function readUrl(){
+  const p = {};
+  (location.hash || '').replace(/^#/, '').split('&').forEach(function(kv){
+    const i = kv.indexOf('=');
+    if (i > 0) p[decodeURIComponent(kv.slice(0,i))] = decodeURIComponent(kv.slice(i+1));
+  });
+  ['tab','channel','division','basis','sort'].forEach(function(k){
+    if (p[k]) state[k] = p[k];
+  });
+  if (p.dept) state.drill = p.dept;
+}
+function writeUrl(){
+  const p = [];
+  ['tab','channel','division','basis','sort'].forEach(function(k){
+    p.push(k + '=' + encodeURIComponent(state[k]));
+  });
+  if (state.drill) p.push('dept=' + encodeURIComponent(state.drill));
+  const next = '#' + p.join('&');
+  if (next !== location.hash) history.replaceState(null, '', location.pathname + location.search + next);
+}
 
 /* The comparison basis. From the review with Lisa: planning talks in four
    numbers, not two. Budget is set once by finance and never moves, and is what
@@ -713,6 +792,7 @@ function buildFilters(){
       b.onclick = function(){
         state[cfg[2]] = v;
         buildFilters();
+        writeUrl();
         renderAll();
       };
       host.appendChild(b);
@@ -766,7 +846,12 @@ function renderStats(){
   const host = document.getElementById('statrow');
   host.innerHTML = '';
   cards.forEach(function(c){
-    const d = el('div','stat');
+    const d = el('div','stat drill');
+    d.tabIndex = 0;
+    d.setAttribute('role','button');
+    d.title = 'Open the detail behind this number';
+    d.onclick = function(){ openDrill('__total__'); };
+    d.onkeydown = function(e){ if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openDrill('__total__'); } };
     d.appendChild(el('div','k', c.k));
     d.appendChild(el('div','v num' + (c.cls ? ' ' + c.cls : ''), c.v));
     if (c.sub){
@@ -845,16 +930,33 @@ function renderGrounding(byDept, actual, plan, budget, ly, v, vly){
   const text = bits.join(' ');
   host.innerHTML = '';
   const para = el('p','ground-text', text);
+  const actions = el('div','ground-actions');
+
+  const share = el('button','ground-copy primary','Share with team');
+  share.type = 'button';
+  share.title = 'Copies a link to exactly this view, with the sentence above it';
+  share.onclick = function(){
+    writeUrl();
+    const payload = text + '\n\n' + location.href;
+    navigator.clipboard.writeText(payload).then(function(){
+      share.textContent = 'Link copied';
+      setTimeout(function(){ share.textContent = 'Share with team'; }, 1900);
+    }, function(){ share.textContent = 'Copy failed'; });
+  };
+
   const btn = el('button','ground-copy','Copy');
   btn.type = 'button';
+  btn.title = 'Copies the sentence on its own';
   btn.onclick = function(){
     navigator.clipboard.writeText(text).then(function(){
       btn.textContent = 'Copied';
       setTimeout(function(){ btn.textContent = 'Copy'; }, 1600);
     }, function(){ btn.textContent = 'Select and copy'; });
   };
+  actions.appendChild(share);
+  actions.appendChild(btn);
   host.appendChild(para);
-  host.appendChild(btn);
+  host.appendChild(actions);
 }
 
 /* The months FY2026 has closed. Last year has to be compared on the same
@@ -866,6 +968,152 @@ function closedMonths(){
       set[Number(r[F.pa+'fiscal_month_no'])] = 1;
   });
   return set;
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   Drill-down.
+
+   Lisa narrates the chain twice: "what's not making it? … I see these red
+   lines here, these departments … well, I'm bought to that inventory and now
+   I'm down a million dollars. So do I have to trigger markdowns? Do I have to
+   trigger a sales promotion?"
+
+   So this walks department, then month, then style, then the orders still to
+   place, and closes on the two decisions she names. Opened from a stat tile or
+   a department bar; both go to the same place.
+   ══════════════════════════════════════════════════════════════════════ */
+function openDrill(dept){
+  state.drill = dept;
+  writeUrl();
+  const host = document.getElementById('drawer'), veil = document.getElementById('drawer-veil');
+  host.hidden = false; veil.hidden = false;
+  host.innerHTML = '';
+  veil.onclick = closeDrill;
+
+  const x = el('button','close','×'); x.type='button'; x.onclick = closeDrill;
+  x.setAttribute('aria-label','Close'); host.appendChild(x);
+
+  const all = rollupVariance();
+  const d = dept === '__total__'
+    ? all.reduce(function(a,b){
+        return { key:'All departments', plan:a.plan+b.plan, actual:a.actual+b.actual,
+                 budget:a.budget+b.budget, ly:a.ly+b.ly,
+                 mdPlan:a.mdPlan+b.mdPlan, mdAct:a.mdAct+b.mdAct, eom:a.eom+b.eom };
+      }, { key:'All departments', plan:0, actual:0, budget:0, ly:0, mdPlan:0, mdAct:0, eom:0 })
+    : all.filter(function(r){ return r.key === dept; })[0];
+  if (!d){ closeDrill(); return; }
+
+  const vPlan = d.plan ? d.actual/d.plan - 1 : null;
+  const vLy   = d.ly   ? d.actual/d.ly   - 1 : null;
+  const vBud  = d.budget ? d.actual/d.budget - 1 : null;
+  const fcBud = (d.plan && d.budget) ? d.plan/d.budget - 1 : null;
+  const mdV   = d.mdPlan ? d.mdAct/d.mdPlan - 1 : null;
+
+  host.appendChild(el('div','eyebrow','Season to date · Feb to Jul 2026'));
+  host.appendChild(el('h3', '', d.key));
+
+  /* The same sentence the masthead writes, scoped to this department. */
+  const bits = [ money(d.actual) + ' against ' + money(d.plan) + ' planned, ' + signed(vPlan) + '.' ];
+  if (vLy != null) bits.push('That is ' + (vLy >= 0 ? 'up ' : 'down ') +
+      Math.abs(vLy*100).toFixed(1) + '% on the same months last year.');
+  if (fcBud != null && Math.abs(fcBud) >= 0.03)
+    bits.push('The plan itself was ' + (fcBud < 0 ? 'cut ' : 'raised ') +
+      Math.abs(fcBud*100).toFixed(1) + '% in season, so this is measured against a ' +
+      (fcBud < 0 ? 'lowered' : 'raised') + ' number.');
+  host.appendChild(el('p','dsent', bits.join(' ')));
+
+  const grid = el('div','dgrid');
+  [['To forecast', signed(vPlan)], ['To last year', signed(vLy)], ['To budget', signed(vBud)]]
+    .forEach(function(pair){
+      const c = el('div','dcell');
+      c.appendChild(el('div','dk', pair[0]));
+      c.appendChild(el('div','dv num', pair[1]));
+      grid.appendChild(c);
+    });
+  host.appendChild(grid);
+
+  /* month by month */
+  host.appendChild(el('div','dsec','Month by month'));
+  const closed = closedMonths(), mrows = {};
+  DB['Department Variance'].forEach(function(r){
+    if (!chanOK(r, F.pa) || !divOK(r, F.pa)) return;
+    if (dept !== '__total__' && r[F.pa+'dept_key'] !== dept) return;
+    const y = yr(r[F.pa+'fiscal_year']), mo = Number(r[F.pa+'fiscal_month_no']);
+    if (!mrows[mo]) mrows[mo] = { mo:mo, label:r[F.pa+'fiscal_month'], plan:0, act:0, ly:0 };
+    if (y === 2026 && truthy(r[F.pa+'has_actual'])){
+      mrows[mo].plan += r[F.pa+'plan_sales_dollars'];
+      mrows[mo].act  += r[F.pa+'actual_sales_dollars'];
+    }
+    if (y === 2025 && closed[mo]) mrows[mo].ly += r[F.pa+'actual_sales_dollars'] || 0;
+  });
+  const mt = el('table'), mh = el('tr');
+  ['Month','Actual','To forecast','To last year'].forEach(function(h,i){ mh.appendChild(el('th', i?'r':'', h)); });
+  mt.appendChild(mh);
+  Object.keys(mrows).map(Number).filter(function(mo){ return closed[mo]; })
+    .sort(function(a,b){ return a-b; }).forEach(function(mo){
+      const r = mrows[mo], tr = el('tr');
+      tr.appendChild(el('td','', r.label));
+      tr.appendChild(el('td','r num', money(r.act)));
+      tr.appendChild(el('td','r num', signed(r.plan ? r.act/r.plan - 1 : null)));
+      tr.appendChild(el('td','r num', signed(r.ly ? r.act/r.ly - 1 : null)));
+      mt.appendChild(tr);
+    });
+  host.appendChild(mt);
+
+  /* the styles carrying it */
+  const styles = DB['Style Detail'].filter(function(r){
+    return yr(r[F.sd+'fiscal_year']) === 2026 && chanOK(r, F.sd) && divOK(r, F.sd) &&
+           (dept === '__total__' || r[F.sd+'dept_key'] === dept);
+  }).sort(function(a,b){ return b[F.sd+'sales_dollars'] - a[F.sd+'sales_dollars']; }).slice(0,6);
+  if (styles.length){
+    host.appendChild(el('div','dsec','Top styles'));
+    const st = el('table'), sh = el('tr');
+    ['Style','Print','Units','Sales'].forEach(function(h,i){ sh.appendChild(el('th', i>1?'r':'', h)); });
+    st.appendChild(sh);
+    styles.forEach(function(r){
+      const tr = el('tr');
+      tr.appendChild(el('td','', r[F.sd+'style_name']));
+      tr.appendChild(el('td','', r[F.sd+'print_name']));
+      tr.appendChild(el('td','r num', num(r[F.sd+'units_sold'])));
+      tr.appendChild(el('td','r num', money(r[F.sd+'sales_dollars'])));
+      st.appendChild(tr);
+    });
+    host.appendChild(st);
+  }
+
+  /* what is still to place */
+  const pos = DB['PO Watchlist'].filter(function(r){
+    return chanOK(r, F.otb) && divOK(r, F.otb) &&
+           (dept === '__total__' || r[F.otb+'dept_key'] === dept);
+  });
+  const late = pos.filter(function(r){ return r[F.otb+'po_status'] === 'Past due'; });
+  const otbRows = DB['OTB By Department'].filter(function(r){
+    return chanOK(r, F.otb) && divOK(r, F.otb) &&
+           (dept === '__total__' || r[F.otb+'dept_key'] === dept);
+  });
+  const openBuy = otbRows.reduce(function(a,r){ return a + r[F.otb+'open_to_buy_cost']; }, 0);
+
+  /* the decision */
+  const act = el('div','act');
+  const parts = [];
+  parts.push('<b>Markdown</b> is running ' + signed(mdV) + ' against plan');
+  parts.push('<b>' + money(openBuy) + '</b> is still open to spend');
+  if (late.length) parts.push('<b>' + late.length + '</b> order' + (late.length===1?'':'s') +
+                              ' past the date they had to be placed');
+  act.innerHTML = parts.join(' · ') + '.';
+  host.appendChild(act);
+
+  const link = el('button','datalink','Open the full data table');
+  link.type = 'button';
+  link.style.marginTop = '16px';
+  link.onclick = function(){ closeDrill(); selectTab('styles'); };
+  host.appendChild(link);
+}
+
+function closeDrill(){
+  state.drill = null; writeUrl();
+  document.getElementById('drawer').hidden = true;
+  document.getElementById('drawer-veil').hidden = true;
 }
 
 /* ====================================================== variance rollup */
@@ -904,7 +1152,10 @@ function rollupVariance(){
     d.mdV = d.mdPlan ? d.mdAct/d.mdPlan - 1 : 0;
     return d;
   }).map(function(d){ d.v = vOf(d); return d; })
-    .sort(function(a,b){ return (a.v == null ? 9 : a.v) - (b.v == null ? 9 : b.v); });
+    .sort(function(a,b){
+      const av = a.v == null ? -99 : a.v, bv = b.v == null ? -99 : b.v;
+      return state.sort === 'best' ? bv - av : av - bv;
+    });
 }
 
 function renderVariance(){
@@ -934,20 +1185,31 @@ function renderVariance(){
     const y = 24 + i*rowH;
     const w = Math.abs(d.v) * scale;
     const x = d.v >= 0 ? mid : mid - w;
-    svg.appendChild(svgEl('rect', {
+    /* The whole row is the target, not just the bar, so a short bar is still
+       easy to hit. */
+    const row = svgEl('g', { class:'rowlink' });
+    row.appendChild(svgEl('rect', { x:0, y:y-4, width:W, height:rowH-2, fill:'transparent' }));
+    row.appendChild(svgEl('rect', {
       x:x, y:y, width:Math.max(w, 1.5), height:14, rx:3,
       fill: d.v >= 0 ? 'var(--pos)' : 'var(--accent)', opacity:.85
     }));
-    const lb = svgEl('text', { x:padL-12, y:y+11, 'text-anchor':'end', 'font-size':11.5, fill:'var(--ink)' });
+    const lb = svgEl('text', { x:padL-12, y:y+11, 'text-anchor':'end', 'font-size':11.5,
+                               fill:'var(--ink)', class:'barlabel' });
     lb.textContent = d.key;
-    svg.appendChild(lb);
+    row.appendChild(lb);
+    const tt = svgEl('title');
+    tt.textContent = d.key + ' · ' + money(d.actual) + ' · ' + signed(d.vPlan) + ' to forecast · ' +
+                     signed(d.vLy) + ' to last year · click for detail';
+    row.appendChild(tt);
+    row.addEventListener('click', function(){ openDrill(d.key); });
+    svg.appendChild(row);
     const vl = svgEl('text', {
       x: d.v >= 0 ? x + w + 8 : x - 8, y:y+11,
       'text-anchor': d.v >= 0 ? 'start' : 'end',
       'font-size':11, fill:'var(--muted)'
     });
     vl.textContent = signed(d.v);
-    svg.appendChild(vl);
+    row.appendChild(vl);
   });
   host.appendChild(svg);
 
@@ -1765,6 +2027,7 @@ function renderAll(){
 
 function selectTab(name){
   state.tab = name;
+  writeUrl();
   document.querySelectorAll('.tab').forEach(function(b){
     b.setAttribute('aria-selected', b.dataset.tab === name);
   });
@@ -1781,6 +2044,20 @@ function boot(){
   });
   buildFilters();
 
+  const sortBtn = document.getElementById('var-sort');
+  if (sortBtn){
+    const label = function(){ sortBtn.textContent = state.sort === 'best' ? 'Ahead first' : 'Behind first'; };
+    label();
+    sortBtn.onclick = function(){
+      state.sort = state.sort === 'best' ? 'worst' : 'best';
+      label(); writeUrl(); renderAll();
+    };
+  }
+  const tbl = document.getElementById('var-table');
+  if (tbl) tbl.onclick = function(){ selectTab('styles'); };
+
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeDrill(); });
+
   const closed = DB['Plan Vs Actual Monthly']
     .filter(function(r){ return r[F.pa+'fiscal_year'] === 2026 && r[F.pa+'actual_sales_dollars'] != null; });
   const lastNo = Math.max.apply(null, closed.map(function(r){ return r[F.pa+'fiscal_month_no']; }));
@@ -1793,11 +2070,13 @@ function boot(){
     : MODE === 'web'  ? NAMES.length + ' queries · static data, snapshot through Jul 2026'
     :                   NAMES.length + ' queries · single file, snapshot through Jul 2026';
 
-  selectTab('variance');
+  selectTab(state.tab || 'variance');
+  if (state.drill) openDrill(state.drill);
   let rt;
   window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(renderAll, 160); });
 }
 
+readUrl();
 loadAll(boot);
 </script>
 </body>
