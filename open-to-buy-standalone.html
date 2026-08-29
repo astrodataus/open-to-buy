@@ -812,7 +812,20 @@ const state = { tab:'variance', channel:'All', division:'All', basis:'plan',
 /* State lives in the URL so a view can be sent to somebody. "Share with team"
    is a link, not an email: a static page cannot send mail, and a link is what
    actually gets forwarded anyway. */
+/* Published Omni apps run in a sandboxed srcdoc iframe with an opaque
+   origin: any write to location or history counts as navigating the frame
+   and the sandbox stops the app. Detect that and keep view state entirely
+   in memory; the URL is only read or written when this page owns it. */
+var SANDBOXED = (typeof omni !== 'undefined');
+try { if (window.origin === 'null') SANDBOXED = true; } catch (e) { SANDBOXED = true; }
+window.__hashState = window.__hashState || '';
+/* Belt and braces: a click on a bare hash link must never reach the URL bar. */
+document.addEventListener('click', function(e){
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
+  if (a) e.preventDefault();
+}, true);
 function readUrl(){
+  if (SANDBOXED) return;
   const p = {};
   (location.hash || '').replace(/^#/, '').split('&').forEach(function(kv){
     const i = kv.indexOf('=');
@@ -830,6 +843,8 @@ function writeUrl(){
   });
   if (state.drill) p.push('dept=' + encodeURIComponent(state.drill));
   const next = '#' + p.join('&');
+  window.__hashState = next;
+  if (SANDBOXED) return;
   if (next !== location.hash) history.replaceState(null, '', location.pathname + location.search + next);
 }
 
@@ -2702,6 +2717,9 @@ function boot(){
 
   selectTab(state.tab || 'variance');
   if (state.drill) openDrill(state.drill);
+  if (!SANDBOXED) window.addEventListener('hashchange', function(){
+    readUrl(); buildFilters(); selectTab(state.tab || 'variance');
+  });
   let rt;
   window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(renderAll, 160); });
 }
@@ -2779,5 +2797,63 @@ loadAll(boot);
   if (document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
 })();
 </script>
+<style>
+/* ==========================================================================
+   PHONE PASS (720px and down)
+   --------------------------------------------------------------------------
+   The workbook stays dense; it just stops being wide. Grids go single
+   column, the tab strip scrolls with a fade telling you there is more,
+   and anything wider than the card scrolls inside the card. */
+@media (max-width:720px){
+  .wrap{padding:0 14px}
+  .mast-top{padding:20px 0 14px}
+  .mast-title{margin-top:12px}
+  .mast-title h1{font-size:27px; line-height:1.12}
+  .mast-lede{font-size:14px}
+  .brand-name{font-size:19px}
+
+  .stat{padding:12px 12px 14px}
+  .stat .v{font-size:22px}
+
+  /* the grounding line stacks, its actions under the sentence */
+  .ground{flex-direction:column; gap:10px; padding:13px 14px 15px}
+  .ground .ground-actions{margin-left:0}
+
+  /* every layout goes single column; grid children keep min-width:0 */
+  .grid,.g2,.g3,.drawer .dgrid{grid-template-columns:1fr}
+  .grid > *,.drawer .dgrid > *{min-width:0}
+
+  /* tab strip: one scrollable row, right-edge fade as the affordance */
+  .tabbar .wrap{position:relative}
+  .tabbar .wrap::after{content:""; position:absolute; top:0; right:0; bottom:0;
+    width:36px; background:linear-gradient(90deg, rgba(255,255,255,0), var(--card));
+    pointer-events:none}
+  .tab{padding:12px 2px; margin-right:18px; font-size:12.5px}
+
+  .filters{gap:10px 14px; padding:14px 0 2px}
+  .fgroup{flex-wrap:wrap}
+  .fgroup-basis{margin-left:0}
+
+  main{padding:4px 0 56px}
+  .card{padding:14px 14px 16px}
+  .card h2{font-size:18px}
+  .card-head{flex-wrap:wrap}
+  .note{margin-top:12px}
+
+  /* wide tables scroll inside their card rather than stretching it */
+  .tscroll{margin:0; padding:0}
+  .drawer{width:100vw; padding:18px 16px 34px}
+  .drawer table{display:block; overflow-x:auto; -webkit-overflow-scrolling:touch}
+
+  .legend{gap:10px 16px}
+  footer{flex-direction:column; gap:8px}
+}
+@media (max-width:480px){
+  /* the headline tiles stack fully once two-up starts to pinch */
+  .stats{grid-template-columns:1fr}
+  .stat{border-right:0; border-bottom:1px solid var(--rule)}
+  .stat:last-child{border-bottom:0}
+}
+</style>
 </body>
 </html>

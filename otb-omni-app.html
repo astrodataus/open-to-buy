@@ -614,6 +614,7 @@ footer a:hover{color:var(--ink); border-bottom-color:currentColor}
 <footer class="wrap">
   <span>Open to Buy · the season in flight · <a href="https://astrodata.us" target="_blank" rel="noopener"><b>Astrodata</b></a></span>
   <span id="foot-source">—</span>
+  <button type="button" class="tour-btn" id="tour-toggle" aria-pressed="false" title="Numbered tips on the parts of the page worth knowing"><span class="dot"></span><span>Tour tips</span></button>
   <a href="https://design.wagabaza.com" target="_blank" rel="noopener">Design System</a>
 </footer>
 
@@ -822,7 +823,20 @@ function shareHref(){
   } catch(e){ return APP_URL + (location.hash || window.__hashState || ''); }
   return location.href;
 }
+/* Published Omni apps run in a sandboxed srcdoc iframe with an opaque
+   origin: any write to location or history counts as navigating the frame
+   and the sandbox stops the app. Detect that and keep view state entirely
+   in memory; the URL is only read or written when this page owns it. */
+var SANDBOXED = (typeof omni !== 'undefined');
+try { if (window.origin === 'null') SANDBOXED = true; } catch (e) { SANDBOXED = true; }
+window.__hashState = window.__hashState || '';
+/* Belt and braces: a click on a bare hash link must never reach the URL bar. */
+document.addEventListener('click', function(e){
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
+  if (a) e.preventDefault();
+}, true);
 function readUrl(){
+  if (SANDBOXED) return;
   const p = {};
   (location.hash || '').replace(/^#/, '').split('&').forEach(function(kv){
     const i = kv.indexOf('=');
@@ -840,7 +854,9 @@ function writeUrl(){
   });
   if (state.drill) p.push('dept=' + encodeURIComponent(state.drill));
   const next = '#' + p.join('&');
-  if (next !== location.hash){ try { history.replaceState(null, '', location.pathname + location.search + next); } catch(e){ window.__hashState = next; } }
+  window.__hashState = next;
+  if (SANDBOXED) return;
+  if (next !== location.hash){ try { history.replaceState(null, '', location.pathname + location.search + next); } catch(e){} }
 }
 
 /* The comparison basis. From the review with Lisa: planning talks in four
@@ -2742,6 +2758,9 @@ function boot(){
 
   selectTab(state.tab || 'variance');
   if (state.drill) openDrill(state.drill);
+  if (!SANDBOXED) window.addEventListener('hashchange', function(){
+    readUrl(); buildFilters(); selectTab(state.tab || 'variance');
+  });
   let rt;
   window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(renderAll, 160); });
 }
@@ -2819,5 +2838,345 @@ loadAll(boot);
   if (document.readyState==='loading') document.addEventListener('DOMContentLoaded', wire); else wire();
 })();
 </script>
+<style>
+/* ==========================================================================
+   TOUR TIPS
+   --------------------------------------------------------------------------
+   An alternative to tooltips: numbered markers pinned to the parts of the page
+   worth explaining, each opening a short card in the layered-paper style the
+   Axiom app uses. Off by default. The footer button turns it on and the choice
+   is remembered per browser. Nothing here touches the data layer.
+   ========================================================================== */
+.tour-btn{background:transparent; border:0; padding:0; font:inherit; color:inherit; cursor:pointer;
+  border-bottom:1px solid transparent; display:inline-flex; align-items:center; gap:6px}
+.tour-btn:hover{color:var(--ink); border-bottom-color:currentColor}
+.tour-btn .dot{width:7px; height:7px; border-radius:50%; background:var(--rule); flex:none;
+  transition:background .2s}
+body.tour-on .tour-btn{color:var(--burgundy)}
+body.tour-on .tour-btn .dot{background:var(--accent); box-shadow:0 0 0 3px rgba(221,75,101,.18)}
+
+.tour-layer{position:fixed; inset:0; pointer-events:none; z-index:60}
+.tour-mark{position:fixed; pointer-events:auto; width:24px; height:24px; border-radius:50%;
+  background:var(--accent); color:#fff; border:2px solid var(--paper); cursor:pointer;
+  font:600 11px/20px 'Poppins',sans-serif; text-align:center; padding:0;
+  box-shadow:0 1px 2px rgba(67,66,64,.2), 0 0 0 4px rgba(221,75,101,.14);
+  transform:translate(-50%,-50%); transition:transform .15s, box-shadow .15s}
+.tour-mark:hover,.tour-mark:focus-visible{transform:translate(-50%,-50%) scale(1.12); outline:0;
+  box-shadow:0 1px 2px rgba(67,66,64,.2), 0 0 0 6px rgba(221,75,101,.22)}
+.tour-mark[aria-expanded="true"]{background:var(--burgundy)}
+.tour-mark.pulse{animation:tour-pulse 1.8s ease-out 2}
+@keyframes tour-pulse{0%{box-shadow:0 0 0 4px rgba(221,75,101,.3)} 100%{box-shadow:0 0 0 14px rgba(221,75,101,0)}}
+
+.tour-card{position:fixed; pointer-events:auto; width:292px; z-index:61;
+  animation:tour-fade 180ms ease-out both}
+.tour-card .back{position:absolute; left:0; top:5px; width:288px; height:100%;
+  background:var(--wash); border:1px solid var(--khaki)}
+.tour-card .front{position:relative; left:4px; top:0; width:288px; background:var(--card);
+  border:1px solid var(--khaki); padding:14px 18px 12px; box-sizing:border-box}
+.tour-card .step{font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted);
+  display:flex; justify-content:space-between; align-items:center; margin-bottom:6px}
+.tour-card .step button{background:transparent; border:0; color:var(--muted); cursor:pointer;
+  font-size:16px; line-height:1; padding:0 2px}
+.tour-card .step button:hover{color:var(--ink)}
+.tour-card h4{margin:0 0 6px; font:400 16px/1.25 'Newsreader',serif; color:var(--ink)}
+.tour-card p{margin:0; font:300 13.5px/1.5 'Newsreader',serif; color:var(--ink)}
+.tour-card .try{display:inline-block; margin-top:10px; background:transparent; border:0; padding:0;
+  color:var(--accent); cursor:pointer; font:500 12.5px/1.4 'Poppins',sans-serif; letter-spacing:.01em}
+.tour-card .try:hover{text-decoration:underline}
+.tour-card .nav{display:flex; justify-content:space-between; align-items:center; margin-top:12px;
+  padding-top:10px; border-top:1px solid var(--rule); font-size:11.5px; color:var(--muted)}
+.tour-card .nav button{background:transparent; border:1px solid var(--rule); border-radius:var(--r-pill);
+  padding:4px 12px; font:400 11.5px 'Poppins',sans-serif; color:var(--ink); cursor:pointer}
+.tour-card .nav button:hover{border-color:var(--muted)}
+.tour-card .nav button:disabled{opacity:.35; cursor:default}
+.tour-card .tail{position:absolute; width:10px; height:10px; background:var(--card);
+  border-left:1px solid var(--khaki); border-top:1px solid var(--khaki); transform:rotate(45deg)}
+.tour-card.below .tail{top:-6px; left:22px}
+.tour-card.above .tail{bottom:-6px; left:22px; transform:rotate(225deg)}
+.tour-card.flip.below .tail,.tour-card.flip.above .tail{left:auto; right:22px}
+@keyframes tour-fade{from{opacity:0; transform:translateY(4px)} to{opacity:1; transform:none}}
+@media (prefers-reduced-motion: reduce){
+  .tour-card{animation:none} .tour-mark.pulse{animation:none} .tour-mark{transition:none}
+}
+@media print{.tour-layer,.tour-card{display:none}}
+</style>
+<script>
+(function(){
+  /* Each step names the element it sits on, the tab that element lives in,
+     and, where it helps, one thing to try. Copy is kept short on purpose:
+     the long version, with the meeting scenarios, lives in the walkthrough
+     guide. Order follows how a planner reads the page, top to bottom, then
+     tab by tab. */
+  const STEPS = [
+    { sel:'#statrow', tab:null, at:'tl',
+      title:'Four numbers, first',
+      msg:'Season to date, against forecast, against last year, and what is still open to buy. Hover a tile for what it means. Every one of them opens the detail behind it.',
+      cta:'Open the detail', run:function(){ if (window.openDrill) openDrill('__total__'); } },
+    { sel:'#grounding', tab:null, at:'tl',
+      title:'The sentence for leadership',
+      msg:'Written from the figures above, in the words a planner actually says. Copy it as is, or share the view with a brief that suits each reader.',
+      cta:'Share with team', run:function(){ if (window.openShare) openShare(); } },
+    { sel:'#sc-open', tab:null, at:'tr',
+      title:'The story behind the data',
+      msg:'The plan is synthetic but it behaves like a real one: a reforecast mid-year, a department that was cut and is still missing, a February to July actuals window. This link explains the scenario.',
+      cta:'Read the scenario', run:function(){ const a=document.getElementById('sc-open'); if (a) a.click(); } },
+    { sel:'#f-basis', tab:null, at:'tl',
+      title:'Budget, forecast, last year',
+      msg:'Budget is set once by finance and never moves. Forecast is re-agreed every month. Switch here to read the same season against either, or against the same months last year.',
+      cta:'Compare to last year', run:function(){ clickPill('#f-basis', /last year/i); } },
+    { sel:'.tabs', tab:null, at:'tl',
+      title:'Five questions, one per tab',
+      msg:'Where you stand, which departments moved, how much of the balance-of-year buy is committed, which orders are late, and which styles are driving it.',
+      cta:'Go to Plan', run:function(){ go('plan'); } },
+    { sel:'#var-chart', tab:'variance', at:'tl',
+      title:'Which departments are off plan',
+      msg:'Ranked by variance, so the offsetting moves a single top-line number hides are visible. Click any bar to open that department. The sort button flips it to behind-first.',
+      cta:'Sort behind first', run:function(){ const b=document.getElementById('var-sort'); if (b) b.click(); } },
+    { sel:'#var-heatmap', tab:'variance', at:'tl',
+      title:'Chronic, or one bad month',
+      msg:'Month by month per department. A row that is red all the way across is a plan problem; one red cell is an event.',
+      cta:null },
+    { sel:'#plan-chart', tab:'plan', at:'tl',
+      title:'Where the year stands',
+      msg:'Plan against actual by month, with the closed years beside it. Below, the version compare shows what the reforecast changed and by how much.',
+      cta:'See what the reforecast changed', run:function(){ scrollTo('#ver-table'); } },
+    { sel:'#otb-chart', tab:'buy', at:'tl',
+      title:'How much of the rest of the year is bought',
+      msg:'Open to buy is plan receipts less what is already on order. The waterfall underneath shows how the plan ties together on the retail identity, to the dollar.',
+      cta:'Show the waterfall', run:function(){ scrollTo('#wf-chart'); } },
+    { sel:'#po-table', tab:'watchlist', at:'tl',
+      title:'Which orders are already late',
+      msg:'Every purchase order past its placement date, with lead time and the dollars it holds. This is the list you take into the Monday meeting.',
+      cta:null },
+    { sel:'#style-chart', tab:'styles', at:'tl',
+      title:'What is actually selling',
+      msg:'Top styles by sales dollars. Each channel sells a different mix, so switch the channel above and the order changes. Prints cut across departments and get their own view below.',
+      cta:'Switch to Ecommerce', run:function(){ clickPill('#f-channel', /ecommerce/i); } }
+  ];
+
+  const KEY = 'otb-tour';
+  let on = false, active = -1, layer = null, card = null, raf = 0;
+
+  function clickPill(host, re){
+    const b = Array.prototype.slice.call(document.querySelectorAll(host + ' .pill'))
+      .filter(function(x){ return re.test(x.textContent); })[0];
+    if (b) b.click();
+  }
+  function go(tab){
+    if (window.selectTab) selectTab(tab);
+    const i = STEPS.map(function(s){ return s.tab; }).indexOf(tab);
+    if (i >= 0) setTimeout(function(){ show(i); }, 60);
+  }
+  function scrollTo(sel){
+    const n = document.querySelector(sel);
+    if (n) n.scrollIntoView({ behavior:'smooth', block:'center' });
+  }
+  function visible(n){ return !!(n && n.offsetParent !== null && n.getBoundingClientRect().height > 0); }
+
+  function ensureLayer(){
+    if (layer) return;
+    layer = document.createElement('div');
+    layer.className = 'tour-layer';
+    STEPS.forEach(function(s, i){
+      const m = document.createElement('button');
+      m.type = 'button';
+      m.className = 'tour-mark';
+      m.textContent = String(i + 1);
+      m.setAttribute('aria-label', 'Tour tip ' + (i + 1) + ': ' + s.title);
+      m.setAttribute('aria-expanded', 'false');
+      m.onclick = function(){ active === i ? hide() : show(i); };
+      s.mark = m;
+      layer.appendChild(m);
+    });
+    document.body.appendChild(layer);
+  }
+
+  function place(){
+    raf = 0;
+    if (!on) return;
+    STEPS.forEach(function(s){
+      const n = document.querySelector(s.sel);
+      const m = s.mark;
+      if (!visible(n)){ m.style.display = 'none'; return; }
+      const r = n.getBoundingClientRect();
+      m.style.display = '';
+      m.style.left = (s.at === 'tr' ? r.right : r.left) + 'px';
+      m.style.top  = r.top + 'px';
+    });
+    if (card && active >= 0) placeCard();
+  }
+  function queue(){ if (!raf) raf = requestAnimationFrame(place); }
+
+  function placeCard(){
+    const s = STEPS[active];
+    const n = document.querySelector(s.sel);
+    if (!visible(n)){ hide(); return; }
+    const r = n.getBoundingClientRect();
+    const w = 292, h = card.offsetHeight, margin = 12;
+    const vw = window.innerWidth, vh = window.innerHeight;
+    let left = (s.at === 'tr' ? r.right : r.left) - 22;
+    let flip = false;
+    if (left + w + margin > vw){ left = Math.max(margin, (s.at === 'tr' ? r.right : r.left) - w + 22); flip = true; }
+    left = Math.max(margin, left);
+    let top = r.top + 18, below = true;
+    if (top + h + margin > vh && r.top - h - 18 > margin){ top = r.top - h - 18; below = false; }
+    top = Math.max(margin, Math.min(top, vh - h - margin));
+    card.style.left = left + 'px';
+    card.style.top = top + 'px';
+    card.className = 'tour-card ' + (below ? 'below' : 'above') + (flip ? ' flip' : '');
+  }
+
+  function show(i){
+    if (!on) return;
+    const s = STEPS[i];
+    if (s.tab && window.selectTab && document.getElementById('p-' + s.tab).hidden){
+      selectTab(s.tab);
+      return setTimeout(function(){ show(i); }, 60);
+    }
+    const n = document.querySelector(s.sel);
+    if (!visible(n)) return;
+    hide(true);
+    active = i;
+    s.mark.setAttribute('aria-expanded', 'true');
+
+    card = document.createElement('div');
+    card.className = 'tour-card below';
+    card.setAttribute('role', 'dialog');
+    card.setAttribute('aria-label', s.title);
+    const back = document.createElement('div'); back.className = 'back';
+    const front = document.createElement('div'); front.className = 'front';
+    const step = document.createElement('div'); step.className = 'step';
+    step.appendChild(document.createTextNode('Tip ' + (i + 1) + ' of ' + STEPS.length));
+    const x = document.createElement('button'); x.type = 'button'; x.textContent = '×';
+    x.setAttribute('aria-label', 'Close tip'); x.onclick = function(){ hide(); };
+    step.appendChild(x);
+    front.appendChild(step);
+    const h = document.createElement('h4'); h.textContent = s.title; front.appendChild(h);
+    const p = document.createElement('p'); p.textContent = s.msg; front.appendChild(p);
+    if (s.cta){
+      const t = document.createElement('button'); t.type = 'button'; t.className = 'try';
+      t.textContent = s.cta + ' →';
+      t.onclick = function(){ s.run(); };
+      front.appendChild(t);
+    }
+    const nav = document.createElement('div'); nav.className = 'nav';
+    const prev = document.createElement('button'); prev.type = 'button'; prev.textContent = 'Back';
+    prev.disabled = i === 0; prev.onclick = function(){ show(i - 1); };
+    const next = document.createElement('button'); next.type = 'button';
+    next.textContent = i === STEPS.length - 1 ? 'Done' : 'Next';
+    next.onclick = function(){ i === STEPS.length - 1 ? hide() : show(i + 1); };
+    nav.appendChild(prev); nav.appendChild(next);
+    front.appendChild(nav);
+    const tail = document.createElement('div'); tail.className = 'tail';
+    card.appendChild(back); card.appendChild(front); card.appendChild(tail);
+    document.body.appendChild(card);
+    /* Bring the target to the middle of the window first, then pin the card
+       once the scroll has settled; a card placed against a moving target ends
+       up half off the screen. */
+    n.scrollIntoView({ behavior:'auto', block:'center' });
+    placeCard();
+    setTimeout(placeCard, 60);
+    next.focus({ preventScroll:true });
+  }
+  function hide(keep){
+    if (card){ card.remove(); card = null; }
+    if (active >= 0) STEPS[active].mark.setAttribute('aria-expanded', 'false');
+    active = -1;
+  }
+
+  function setOn(v, first){
+    on = v;
+    document.body.classList.toggle('tour-on', on);
+    const b = document.getElementById('tour-toggle');
+    if (b){ b.setAttribute('aria-pressed', on); b.lastChild.textContent = on ? 'Tour tips on' : 'Tour tips'; }
+    try { localStorage.setItem(KEY, on ? '1' : '0'); } catch(e){}
+    if (on){
+      ensureLayer();
+      layer.style.display = '';
+      place();
+      if (!first){
+        STEPS.forEach(function(s){ s.mark.classList.add('pulse'); });
+        setTimeout(function(){ show(0); }, 200);
+      }
+    } else {
+      hide();
+      if (layer) layer.style.display = 'none';
+    }
+  }
+
+  function wire(){
+    const b = document.getElementById('tour-toggle');
+    if (!b || !document.getElementById('statrow')) return setTimeout(wire, 300);
+    b.onclick = function(){ setOn(!on); };
+    window.addEventListener('scroll', queue, { passive:true });
+    window.addEventListener('resize', queue);
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && card) hide(); });
+    /* Any re-render (tab, filter, drawer) moves things; re-pin on the next frame. */
+    new MutationObserver(queue).observe(document.getElementById('statrow').parentNode.parentNode.parentNode, { childList:true, subtree:true, attributes:true, attributeFilter:['hidden','aria-selected','aria-pressed'] });
+    let saved = null;
+    try { saved = localStorage.getItem(KEY); } catch(e){}
+    if (saved === '1') setOn(true, true);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', wire); else wire();
+})();
+</script>
+<style>
+/* ==========================================================================
+   PHONE PASS (720px and down)
+   --------------------------------------------------------------------------
+   The workbook stays dense; it just stops being wide. Grids go single
+   column, the tab strip scrolls with a fade telling you there is more,
+   and anything wider than the card scrolls inside the card. */
+@media (max-width:720px){
+  .wrap{padding:0 14px}
+  .mast-top{padding:20px 0 14px}
+  .mast-title{margin-top:12px}
+  .mast-title h1{font-size:27px; line-height:1.12}
+  .mast-lede{font-size:14px}
+  .brand-name{font-size:19px}
+
+  .stat{padding:12px 12px 14px}
+  .stat .v{font-size:22px}
+
+  /* the grounding line stacks, its actions under the sentence */
+  .ground{flex-direction:column; gap:10px; padding:13px 14px 15px}
+  .ground .ground-actions{margin-left:0}
+
+  /* every layout goes single column; grid children keep min-width:0 */
+  .grid,.g2,.g3,.drawer .dgrid{grid-template-columns:1fr}
+  .grid > *,.drawer .dgrid > *{min-width:0}
+
+  /* tab strip: one scrollable row, right-edge fade as the affordance */
+  .tabbar .wrap{position:relative}
+  .tabbar .wrap::after{content:""; position:absolute; top:0; right:0; bottom:0;
+    width:36px; background:linear-gradient(90deg, rgba(255,255,255,0), var(--card));
+    pointer-events:none}
+  .tab{padding:12px 2px; margin-right:18px; font-size:12.5px}
+
+  .filters{gap:10px 14px; padding:14px 0 2px}
+  .fgroup{flex-wrap:wrap}
+  .fgroup-basis{margin-left:0}
+
+  main{padding:4px 0 56px}
+  .card{padding:14px 14px 16px}
+  .card h2{font-size:18px}
+  .card-head{flex-wrap:wrap}
+  .note{margin-top:12px}
+
+  /* wide tables scroll inside their card rather than stretching it */
+  .tscroll{margin:0; padding:0}
+  .drawer{width:100vw; padding:18px 16px 34px}
+  .drawer table{display:block; overflow-x:auto; -webkit-overflow-scrolling:touch}
+
+  .legend{gap:10px 16px}
+  footer{flex-direction:column; gap:8px}
+}
+@media (max-width:480px){
+  /* the headline tiles stack fully once two-up starts to pinch */
+  .stats{grid-template-columns:1fr}
+  .stat{border-right:0; border-bottom:1px solid var(--rule)}
+  .stat:last-child{border-bottom:0}
+}
+</style>
 </body>
 </html>
