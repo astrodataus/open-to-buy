@@ -1,0 +1,23 @@
+{
+  "name": "open-to-buy",
+  "version": "1.0.0",
+  "description": "A merchandise planning application for an apparel buyer. It answers the question a planner asks in the first week of every month: where is the season against plan, what did that cost in markdown, and what still has to be bought.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astrodataus/open-to-buy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astrodataus/open-to-buy/issues"
+  },
+  "homepage": "https://github.com/astrodataus/open-to-buy#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
